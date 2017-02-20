@@ -649,3 +649,300 @@ Migrating to AddIssueIdToMessages (20170220142241)
   [1m[36mMessage Load (0.4ms)[0m  [1m[34mSELECT "messages".* FROM "messages" WHERE "messages"."issue_id" = $1[0m  [["issue_id", 3]]
   [1m[36mIssue Load (0.7ms)[0m  [1m[34mSELECT  "issues".* FROM "issues" ORDER BY "issues"."id" ASC LIMIT $1[0m  [["LIMIT", 1]]
   [1m[36mMessage Load (0.7ms)[0m  [1m[34mSELECT "messages".* FROM "messages" WHERE "messages"."issue_id" = $1[0m  [["issue_id", 3]]
+Started GET "/users" for 127.0.0.1 at 2017-02-20 14:36:39 +0000
+  [1m[36mActiveRecord::SchemaMigration Load (0.6ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by UsersController#index as */*
+  Parameters: {"email"=>"kenny@kenny.com", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]", "user"=>{"email"=>"kenny@kenny.com"}}
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (0.22ms)
+Filter chain halted as :authenticate_user! rendered or redirected
+Completed 401 Unauthorized in 8ms (Views: 6.9ms | ActiveRecord: 2.6ms)
+
+
+Started POST "/login" for 127.0.0.1 at 2017-02-20 14:37:12 +0000
+Processing by AuthenticationsController#login as */*
+  Parameters: {"email"=>"davinder@kaur.com", "password"=>"[FILTERED]", "authentication"=>{"email"=>"davinder@kaur.com", "password"=>"[FILTERED]"}}
+  [1m[36mUser Load (4.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "davinder@kaur.com"], ["LIMIT", 1]]
+[active_model_serializers]   [1m[36mIssue Load (0.4ms)[0m  [1m[34mSELECT "issues".* FROM "issues" WHERE "issues"."user_id" = $1[0m  [["user_id", 7]]
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (94.08ms)
+Completed 200 OK in 217ms (Views: 85.7ms | ActiveRecord: 20.3ms)
+
+
+Started GET "/users" for 127.0.0.1 at 2017-02-20 14:37:41 +0000
+Processing by UsersController#index as */*
+  Parameters: {"email"=>"davinder@kaur.com", "password"=>"[FILTERED]", "user"=>{"email"=>"davinder@kaur.com"}}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 7], ["LIMIT", 1]]
+Completed 500 Internal Server Error in 3ms (ActiveRecord: 0.3ms)
+
+
+  
+NameError (uninitialized constant UsersController::Users):
+  
+app/controllers/users_controller.rb:3:in `index'
+Started GET "/users" for 127.0.0.1 at 2017-02-20 14:38:14 +0000
+Processing by UsersController#index as */*
+  Parameters: {"email"=>"davinder@kaur.com", "password"=>"[FILTERED]", "user"=>{"email"=>"davinder@kaur.com"}}
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 7], ["LIMIT", 1]]
+Completed 500 Internal Server Error in 20ms (ActiveRecord: 4.7ms)
+
+
+  
+NameError (uninitialized constant UsersController::Users):
+  
+app/controllers/users_controller.rb:3:in `index'
+Started GET "/users" for 127.0.0.1 at 2017-02-20 14:40:22 +0000
+Processing by UsersController#index as */*
+  Parameters: {"email"=>"davinder@kaur.com", "password"=>"[FILTERED]", "user"=>{"email"=>"davinder@kaur.com"}}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 7], ["LIMIT", 1]]
+Completed 500 Internal Server Error in 17ms (ActiveRecord: 0.4ms)
+
+
+  
+NameError (uninitialized constant UsersController::Users):
+  
+app/controllers/users_controller.rb:3:in `index'
+Started GET "/users/1" for 127.0.0.1 at 2017-02-20 14:40:48 +0000
+Processing by UsersController#show as */*
+  Parameters: {"email"=>"davinder@kaur.com", "password"=>"[FILTERED]", "id"=>"1", "user"=>{"email"=>"davinder@kaur.com"}}
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 7], ["LIMIT", 1]]
+Completed 500 Internal Server Error in 10ms (ActiveRecord: 0.6ms)
+
+
+  
+NameError (uninitialized constant UsersController::Users):
+  
+app/controllers/users_controller.rb:8:in `show'
+Started GET "/users" for 127.0.0.1 at 2017-02-20 14:41:11 +0000
+  [1m[36mActiveRecord::SchemaMigration Load (1.0ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by UsersController#index as */*
+  Parameters: {"email"=>"davinder@kaur.com", "password"=>"[FILTERED]", "user"=>{"email"=>"davinder@kaur.com"}}
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 7], ["LIMIT", 1]]
+Completed 500 Internal Server Error in 24ms (ActiveRecord: 7.4ms)
+
+
+  
+NameError (uninitialized constant UsersController::Users):
+  
+app/controllers/users_controller.rb:3:in `index'
+Started GET "/users" for 127.0.0.1 at 2017-02-20 14:41:30 +0000
+Started GET "/users" for 127.0.0.1 at 2017-02-20 14:41:40 +0000
+Processing by UsersController#index as */*
+  Parameters: {"email"=>"davinder@kaur.com", "password"=>"[FILTERED]", "user"=>{"email"=>"davinder@kaur.com"}}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 7], ["LIMIT", 1]]
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+[active_model_serializers]   [1m[36mIssue Load (0.4ms)[0m  [1m[34mSELECT "issues".* FROM "issues" WHERE "issues"."user_id" = $1[0m  [["user_id", 7]]
+[active_model_serializers]   [1m[36mIssue Load (0.4ms)[0m  [1m[34mSELECT "issues".* FROM "issues" WHERE "issues"."user_id" = $1[0m  [["user_id", 8]]
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (63.61ms)
+Completed 200 OK in 97ms (Views: 81.2ms | ActiveRecord: 6.4ms)
+
+
+Processing by UsersController#index as */*
+  Parameters: {"email"=>"davinder@kaur.com", "password"=>"[FILTERED]", "user"=>{"email"=>"davinder@kaur.com"}}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 7], ["LIMIT", 1]]
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+[active_model_serializers]   [1m[36mIssue Load (0.3ms)[0m  [1m[34mSELECT "issues".* FROM "issues" WHERE "issues"."user_id" = $1[0m  [["user_id", 7]]
+[active_model_serializers]   [1m[36mIssue Load (0.3ms)[0m  [1m[34mSELECT "issues".* FROM "issues" WHERE "issues"."user_id" = $1[0m  [["user_id", 8]]
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (14.33ms)
+Completed 200 OK in 28ms (Views: 15.7ms | ActiveRecord: 1.4ms)
+
+
+Started GET "/users/1" for 127.0.0.1 at 2017-02-20 14:41:44 +0000
+Processing by UsersController#show as */*
+  Parameters: {"email"=>"davinder@kaur.com", "password"=>"[FILTERED]", "id"=>"1", "user"=>{"email"=>"davinder@kaur.com"}}
+  [1m[36mUser Load (0.9ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 7], ["LIMIT", 1]]
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+Completed 404 Not Found in 3ms (ActiveRecord: 1.4ms)
+
+
+  
+ActiveRecord::RecordNotFound (Couldn't find User with 'id'=1):
+  
+app/controllers/users_controller.rb:8:in `show'
+Started GET "/users" for 127.0.0.1 at 2017-02-20 14:41:48 +0000
+Processing by UsersController#index as */*
+  Parameters: {"email"=>"davinder@kaur.com", "password"=>"[FILTERED]", "user"=>{"email"=>"davinder@kaur.com"}}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 7], ["LIMIT", 1]]
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+[active_model_serializers]   [1m[36mIssue Load (0.5ms)[0m  [1m[34mSELECT "issues".* FROM "issues" WHERE "issues"."user_id" = $1[0m  [["user_id", 7]]
+[active_model_serializers]   [1m[36mIssue Load (0.3ms)[0m  [1m[34mSELECT "issues".* FROM "issues" WHERE "issues"."user_id" = $1[0m  [["user_id", 8]]
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (4.48ms)
+Completed 200 OK in 8ms (Views: 5.1ms | ActiveRecord: 1.6ms)
+
+
+Started GET "/users/7" for 127.0.0.1 at 2017-02-20 14:41:55 +0000
+Processing by UsersController#show as */*
+  Parameters: {"email"=>"davinder@kaur.com", "password"=>"[FILTERED]", "id"=>"7", "user"=>{"email"=>"davinder@kaur.com"}}
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 7], ["LIMIT", 1]]
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 7], ["LIMIT", 1]]
+[active_model_serializers]   [1m[36mIssue Load (1.1ms)[0m  [1m[34mSELECT "issues".* FROM "issues" WHERE "issues"."user_id" = $1[0m  [["user_id", 7]]
+[active_model_serializers] Rendered UserSerializer with ActiveModelSerializers::Adapter::Attributes (3.81ms)
+Completed 200 OK in 7ms (Views: 3.2ms | ActiveRecord: 2.0ms)
+
+
+Started GET "/messages" for 127.0.0.1 at 2017-02-20 14:42:06 +0000
+Processing by MessagesController#index as */*
+  Parameters: {"email"=>"davinder@kaur.com", "password"=>"[FILTERED]", "message"=>{}}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 7], ["LIMIT", 1]]
+  [1m[36mMessage Load (0.5ms)[0m  [1m[34mSELECT "messages".* FROM "messages"[0m
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (0.78ms)
+Completed 200 OK in 15ms (Views: 10.6ms | ActiveRecord: 5.5ms)
+
+
+Started GET "/issues" for 127.0.0.1 at 2017-02-20 14:42:10 +0000
+Processing by IssuesController#index as */*
+  Parameters: {"email"=>"davinder@kaur.com", "password"=>"[FILTERED]", "issue"=>{}}
+  [1m[36mUser Load (1.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 7], ["LIMIT", 1]]
+  [1m[36mIssue Load (0.4ms)[0m  [1m[34mSELECT "issues".* FROM "issues"[0m
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (6.8ms)
+Completed 500 Internal Server Error in 15ms (ActiveRecord: 1.4ms)
+
+
+  
+NoMethodError (undefined method `owner_id' for #<Issue:0x007f9c28316f98>):
+  
+app/controllers/issues_controller.rb:8:in `index'
+Started GET "/issues" for 127.0.0.1 at 2017-02-20 14:43:12 +0000
+Processing by IssuesController#index as */*
+  Parameters: {"email"=>"davinder@kaur.com", "password"=>"[FILTERED]", "issue"=>{}}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 7], ["LIMIT", 1]]
+  [1m[36mIssue Load (0.3ms)[0m  [1m[34mSELECT "issues".* FROM "issues"[0m
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (7.15ms)
+Completed 500 Internal Server Error in 37ms (ActiveRecord: 10.5ms)
+
+
+  
+NoMethodError (undefined method `owner_id' for #<Issue:0x007f9c28b5e160>):
+  
+app/controllers/issues_controller.rb:8:in `index'
+Started GET "/issues" for 127.0.0.1 at 2017-02-20 14:44:00 +0000
+Processing by IssuesController#index as */*
+  Parameters: {"email"=>"davinder@kaur.com", "password"=>"[FILTERED]", "issue"=>{}}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 7], ["LIMIT", 1]]
+  [1m[36mIssue Load (0.4ms)[0m  [1m[34mSELECT "issues".* FROM "issues"[0m
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (0.3ms)
+Completed 200 OK in 20ms (Views: 8.8ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/messages" for 127.0.0.1 at 2017-02-20 14:44:07 +0000
+Processing by MessagesController#index as */*
+  Parameters: {"email"=>"davinder@kaur.com", "password"=>"[FILTERED]", "message"=>{}}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 7], ["LIMIT", 1]]
+  [1m[36mMessage Load (0.6ms)[0m  [1m[34mSELECT "messages".* FROM "messages"[0m
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (0.35ms)
+Completed 200 OK in 14ms (Views: 8.4ms | ActiveRecord: 8.5ms)
+
+
+Started GET "/messages/2" for 127.0.0.1 at 2017-02-20 14:44:11 +0000
+Processing by MessagesController#show as */*
+  Parameters: {"email"=>"davinder@kaur.com", "password"=>"[FILTERED]", "id"=>"2", "message"=>{}}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 7], ["LIMIT", 1]]
+  [1m[36mMessage Load (0.3ms)[0m  [1m[34mSELECT  "messages".* FROM "messages" WHERE "messages"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+[active_model_serializers] Rendered MessageSerializer with ActiveModelSerializers::Adapter::Attributes (0.16ms)
+Completed 200 OK in 5ms (Views: 0.6ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/issues" for 127.0.0.1 at 2017-02-20 14:44:14 +0000
+Processing by IssuesController#index as */*
+  Parameters: {"email"=>"davinder@kaur.com", "password"=>"[FILTERED]", "issue"=>{}}
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 7], ["LIMIT", 1]]
+  [1m[36mIssue Load (0.5ms)[0m  [1m[34mSELECT "issues".* FROM "issues"[0m
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (0.26ms)
+Completed 200 OK in 5ms (Views: 2.0ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/issues/3" for 127.0.0.1 at 2017-02-20 14:44:18 +0000
+Processing by IssuesController#show as */*
+  Parameters: {"email"=>"davinder@kaur.com", "password"=>"[FILTERED]", "id"=>"3", "issue"=>{}}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 7], ["LIMIT", 1]]
+  [1m[36mIssue Load (0.4ms)[0m  [1m[34mSELECT  "issues".* FROM "issues" WHERE "issues"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+[active_model_serializers] Rendered IssueSerializer with ActiveModelSerializers::Adapter::Attributes (0.16ms)
+Completed 200 OK in 5ms (Views: 0.8ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/users" for 127.0.0.1 at 2017-02-20 14:44:32 +0000
+Processing by UsersController#index as */*
+  Parameters: {"email"=>"davinder@kaur.com", "password"=>"[FILTERED]", "user"=>{"email"=>"davinder@kaur.com"}}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 7], ["LIMIT", 1]]
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+[active_model_serializers]   [1m[36mIssue Load (0.3ms)[0m  [1m[34mSELECT "issues".* FROM "issues" WHERE "issues"."user_id" = $1[0m  [["user_id", 7]]
+[active_model_serializers]   [1m[36mIssue Load (0.2ms)[0m  [1m[34mSELECT "issues".* FROM "issues" WHERE "issues"."user_id" = $1[0m  [["user_id", 8]]
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (16.85ms)
+Completed 200 OK in 29ms (Views: 18.7ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/users" for 127.0.0.1 at 2017-02-20 14:44:51 +0000
+Processing by UsersController#index as */*
+  Parameters: {"email"=>"davinder@kaur.com", "password"=>"[FILTERED]", "user"=>{"email"=>"davinder@kaur.com"}}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 7], ["LIMIT", 1]]
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+[active_model_serializers]   [1m[36mIssue Load (0.3ms)[0m  [1m[34mSELECT "issues".* FROM "issues" WHERE "issues"."user_id" = $1[0m  [["user_id", 7]]
+[active_model_serializers]   [1m[36mIssue Load (0.2ms)[0m  [1m[34mSELECT "issues".* FROM "issues" WHERE "issues"."user_id" = $1[0m  [["user_id", 8]]
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (22.43ms)
+Completed 200 OK in 41ms (Views: 31.5ms | ActiveRecord: 1.2ms)
+
+
+Started GET "/issues" for 127.0.0.1 at 2017-02-20 14:44:57 +0000
+Processing by IssuesController#index as */*
+  Parameters: {"email"=>"davinder@kaur.com", "password"=>"[FILTERED]", "issue"=>{}}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 7], ["LIMIT", 1]]
+  [1m[36mIssue Load (0.3ms)[0m  [1m[34mSELECT "issues".* FROM "issues"[0m
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (0.24ms)
+Completed 200 OK in 3ms (Views: 1.4ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/issues" for 127.0.0.1 at 2017-02-20 14:45:12 +0000
+Processing by IssuesController#index as */*
+  Parameters: {"email"=>"davinder@kaur.com", "password"=>"[FILTERED]", "issue"=>{}}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 7], ["LIMIT", 1]]
+  [1m[36mIssue Load (0.4ms)[0m  [1m[34mSELECT "issues".* FROM "issues"[0m
+[active_model_serializers]   [1m[36mMessage Load (0.3ms)[0m  [1m[34mSELECT "messages".* FROM "messages" WHERE "messages"."issue_id" = $1[0m  [["issue_id", 3]]
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (28.08ms)
+Completed 200 OK in 67ms (Views: 30.4ms | ActiveRecord: 17.9ms)
+
+
+Started GET "/messages" for 127.0.0.1 at 2017-02-20 14:45:29 +0000
+Processing by MessagesController#index as */*
+  Parameters: {"email"=>"davinder@kaur.com", "password"=>"[FILTERED]", "message"=>{}}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 7], ["LIMIT", 1]]
+  [1m[36mMessage Load (0.4ms)[0m  [1m[34mSELECT "messages".* FROM "messages"[0m
+[active_model_serializers]   [1m[36mIssue Load (0.4ms)[0m  [1m[34mSELECT  "issues".* FROM "issues" WHERE "issues"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+[active_model_serializers]   [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "issues".* FROM "issues" WHERE "issues"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (19.08ms)
+Completed 200 OK in 47ms (Views: 32.9ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/issue" for 127.0.0.1 at 2017-02-20 14:45:46 +0000
+  
+ActionController::RoutingError (No route matches [GET] "/issue"):
+  
+actionpack (5.0.1) lib/action_dispatch/middleware/debug_exceptions.rb:53:in `call'
+actionpack (5.0.1) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.0.1) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.0.1) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.0.1) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.0.1) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.0.1) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.0.1) lib/rails/rack/logger.rb:24:in `call'
+actionpack (5.0.1) lib/action_dispatch/middleware/request_id.rb:24:in `call'
+rack (2.0.1) lib/rack/runtime.rb:22:in `call'
+activesupport (5.0.1) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+actionpack (5.0.1) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.0.1) lib/action_dispatch/middleware/static.rb:136:in `call'
+rack (2.0.1) lib/rack/sendfile.rb:111:in `call'
+rack-cors (0.4.1) lib/rack/cors.rb:81:in `call'
+railties (5.0.1) lib/rails/engine.rb:522:in `call'
+puma (3.7.0) lib/puma/configuration.rb:226:in `call'
+puma (3.7.0) lib/puma/server.rb:578:in `handle_request'
+puma (3.7.0) lib/puma/server.rb:415:in `process_client'
+puma (3.7.0) lib/puma/server.rb:275:in `block in run'
+puma (3.7.0) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+Started GET "/issues" for 127.0.0.1 at 2017-02-20 14:45:48 +0000
+Processing by IssuesController#index as */*
+  Parameters: {"email"=>"davinder@kaur.com", "password"=>"[FILTERED]", "issue"=>{}}
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 7], ["LIMIT", 1]]
+  [1m[36mIssue Load (0.4ms)[0m  [1m[34mSELECT "issues".* FROM "issues"[0m
+[active_model_serializers]   [1m[36mMessage Load (0.3ms)[0m  [1m[34mSELECT "messages".* FROM "messages" WHERE "messages"."issue_id" = $1[0m  [["issue_id", 3]]
+[active_model_serializers]   [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 7], ["LIMIT", 1]]
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (33.15ms)
+Completed 200 OK in 67ms (Views: 38.5ms | ActiveRecord: 15.7ms)
+
+
