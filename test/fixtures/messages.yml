@@ -1,13 +1,13 @@
 # Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
 
 one:
-  category: MyString
-  messageText: MyText
+  issue_id: 1
   sender_id: 1
   receiver_id: 1
+  msg_text: MyText
 
 two:
-  category: MyString
-  messageText: MyText
+  issue_id: 1
   sender_id: 1
   receiver_id: 1
+  msg_text: MyText

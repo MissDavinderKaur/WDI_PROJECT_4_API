@@ -1,4 +1,3 @@
 class IssueSerializer < ActiveModel::Serializer
-  attributes :id, :title
-  has_many :messages
+  attributes :id, :owner_id, :title, :category
 end

@@ -1,9 +1,11 @@
 # Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
 
 one:
+  owner_id: 1
   title: MyText
-  messages: one
+  category: MyString
 
 two:
+  owner_id: 1
   title: MyText
-  messages: two
+  category: MyString
