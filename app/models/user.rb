@@ -4,5 +4,5 @@ class User < ApplicationRecord
   validates :alias, presence: true, uniqueness: true,
   validates :sector, presence: true,
   validates :city, presence: true,
-  has_many :messages
+  has_many :issues
 end

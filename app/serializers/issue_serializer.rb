@@ -1,4 +1,4 @@
 class IssueSerializer < ActiveModel::Serializer
   attributes :id, :title
-  has_one :messages
+  has_many :messages
 end

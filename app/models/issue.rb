@@ -1,3 +1,3 @@
 class Issue < ApplicationRecord
-  belongs_to :messages
+  has_many :messages
 end
