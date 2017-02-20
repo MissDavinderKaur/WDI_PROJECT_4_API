@@ -6,7 +6,6 @@ class UsersController < ApplicationController
 
   def show
       @user = User.find(params[:id])
-      p '****HERE****', @user
       render json: @user
     end
 end

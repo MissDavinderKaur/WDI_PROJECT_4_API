@@ -11,3 +11,9 @@ issue1 = user1.issues.create!(title:"My super serious sexism issue", category:"s
 issue1.messages.create!(sender_id: user2.id, receiver_id: user1.id, msg_text:"Some advice")
 
 issue1.messages.create!(sender_id: user1.id, receiver_id: user1.id, msg_text:"Thank you for the advice")
+
+issue2 = user1.issues.create!(title:"Another super serious issue", category:"racism")
+
+issue2.messages.create!(sender_id: user2.id, receiver_id: user1.id, msg_text:"Some good advice")
+
+issue2.messages.create!(sender_id: user1.id, receiver_id: user1.id, msg_text:"Thank you for the good advice")
