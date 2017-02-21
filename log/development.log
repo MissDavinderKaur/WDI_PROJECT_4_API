@@ -14032,3 +14032,2097 @@ Processing by IssuesController#show as HTML
 Completed 200 OK in 8ms (Views: 4.9ms | ActiveRecord: 0.9ms)
 
 
+Started GET "/users/23" for 127.0.0.1 at 2017-02-21 20:52:39 +0000
+  [1m[36mActiveRecord::SchemaMigration Load (1.0ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"23"}
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 23], ["LIMIT", 1]]
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 23], ["LIMIT", 1]]
+[active_model_serializers]   [1m[36mIssue Load (0.6ms)[0m  [1m[34mSELECT "issues".* FROM "issues" WHERE "issues"."user_id" = $1[0m  [["user_id", 23]]
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (87.59ms)
+Completed 200 OK in 148ms (Views: 85.7ms | ActiveRecord: 14.5ms)
+
+
+Started GET "/users/23" for 127.0.0.1 at 2017-02-21 20:52:55 +0000
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"23"}
+  [1m[36mUser Load (3.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 23], ["LIMIT", 1]]
+  [1m[36mUser Load (2.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 23], ["LIMIT", 1]]
+[active_model_serializers]   [1m[36mIssue Load (0.8ms)[0m  [1m[34mSELECT "issues".* FROM "issues" WHERE "issues"."user_id" = $1[0m  [["user_id", 23]]
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (4.45ms)
+Completed 200 OK in 17ms (Views: 4.6ms | ActiveRecord: 6.6ms)
+
+
+Started GET "/users/23" for 127.0.0.1 at 2017-02-21 20:52:56 +0000
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"23"}
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 23], ["LIMIT", 1]]
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 23], ["LIMIT", 1]]
+[active_model_serializers]   [1m[36mIssue Load (0.7ms)[0m  [1m[34mSELECT "issues".* FROM "issues" WHERE "issues"."user_id" = $1[0m  [["user_id", 23]]
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (9.1ms)
+Completed 200 OK in 14ms (Views: 9.1ms | ActiveRecord: 1.7ms)
+
+
+Started POST "/login" for 127.0.0.1 at 2017-02-21 20:53:02 +0000
+Processing by AuthenticationsController#login as HTML
+  Parameters: {"email"=>"davinder@kaur.com", "password"=>"[FILTERED]", "authentication"=>{"email"=>"davinder@kaur.com", "password"=>"[FILTERED]"}}
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "davinder@kaur.com"], ["LIMIT", 1]]
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 23], ["LIMIT", 1]]
+[active_model_serializers]   [1m[36mIssue Load (0.3ms)[0m  [1m[34mSELECT "issues".* FROM "issues" WHERE "issues"."user_id" = $1[0m  [["user_id", 23]]
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (3.32ms)
+Completed 200 OK in 90ms (Views: 4.2ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/users/23" for 127.0.0.1 at 2017-02-21 20:53:02 +0000
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"23"}
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 23], ["LIMIT", 1]]
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 23], ["LIMIT", 1]]
+[active_model_serializers]   [1m[36mIssue Load (1.1ms)[0m  [1m[34mSELECT "issues".* FROM "issues" WHERE "issues"."user_id" = $1[0m  [["user_id", 23]]
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (5.74ms)
+Completed 200 OK in 11ms (Views: 6.4ms | ActiveRecord: 1.9ms)
+
+
+Started GET "/users/23" for 127.0.0.1 at 2017-02-21 20:53:02 +0000
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"23"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 23], ["LIMIT", 1]]
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 23], ["LIMIT", 1]]
+[active_model_serializers]   [1m[36mIssue Load (0.4ms)[0m  [1m[34mSELECT "issues".* FROM "issues" WHERE "issues"."user_id" = $1[0m  [["user_id", 23]]
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (3.67ms)
+Completed 200 OK in 7ms (Views: 3.9ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/issues/18" for 127.0.0.1 at 2017-02-21 20:53:04 +0000
+Processing by IssuesController#show as HTML
+  Parameters: {"id"=>"18"}
+  [1m[36mUser Load (2.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 23], ["LIMIT", 1]]
+  [1m[36mIssue Load (0.6ms)[0m  [1m[34mSELECT  "issues".* FROM "issues" WHERE "issues"."id" = $1 LIMIT $2[0m  [["id", 18], ["LIMIT", 1]]
+[active_model_serializers]   [1m[36mMessage Load (0.8ms)[0m  [1m[34mSELECT "messages".* FROM "messages" WHERE "messages"."issue_id" = $1[0m  [["issue_id", 18]]
+[active_model_serializers]   [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 23], ["LIMIT", 1]]
+[active_model_serializers] Rendered IssueSerializer with ActiveModelSerializers::Adapter::Attributes (30.84ms)
+Completed 200 OK in 40ms (Views: 27.2ms | ActiveRecord: 7.3ms)
+
+
+Started POST "/messages" for 127.0.0.1 at 2017-02-21 20:53:12 +0000
+Processing by MessagesController#create as HTML
+  Parameters: {"msg_text"=>"8 - adding stuff", "issue_id"=>18, "sender_id"=>23, "receiver_id"=>23, "message"=>{"sender_id"=>23, "receiver_id"=>23, "msg_text"=>"8 - adding stuff", "issue_id"=>18}}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 23], ["LIMIT", 1]]
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mIssue Load (0.3ms)[0m  [1m[34mSELECT  "issues".* FROM "issues" WHERE "issues"."id" = $1 LIMIT $2[0m  [["id", 18], ["LIMIT", 1]]
+  [1m[35mSQL (0.6ms)[0m  [1m[32mINSERT INTO "messages" ("sender_id", "receiver_id", "msg_text", "created_at", "updated_at", "issue_id") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["sender_id", 23], ["receiver_id", 23], ["msg_text", "8 - adding stuff"], ["created_at", 2017-02-21 20:53:12 UTC], ["updated_at", 2017-02-21 20:53:12 UTC], ["issue_id", 18]]
+  [1m[35m (1.6ms)[0m  [1m[35mCOMMIT[0m
+[active_model_serializers] Rendered MessageSerializer with ActiveModelSerializers::Adapter::Attributes (0.99ms)
+Completed 201 Created in 15ms (Views: 3.0ms | ActiveRecord: 3.0ms)
+
+
+Started GET "/issues/18" for 127.0.0.1 at 2017-02-21 20:53:12 +0000
+Processing by IssuesController#show as HTML
+  Parameters: {"id"=>"18"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 23], ["LIMIT", 1]]
+  [1m[36mIssue Load (0.4ms)[0m  [1m[34mSELECT  "issues".* FROM "issues" WHERE "issues"."id" = $1 LIMIT $2[0m  [["id", 18], ["LIMIT", 1]]
+[active_model_serializers]   [1m[36mMessage Load (0.4ms)[0m  [1m[34mSELECT "messages".* FROM "messages" WHERE "messages"."issue_id" = $1[0m  [["issue_id", 18]]
+[active_model_serializers]   [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 23], ["LIMIT", 1]]
+[active_model_serializers] Rendered IssueSerializer with ActiveModelSerializers::Adapter::Attributes (5.86ms)
+Completed 200 OK in 9ms (Views: 6.0ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/users/23" for 127.0.0.1 at 2017-02-21 20:54:10 +0000
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"23"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 23], ["LIMIT", 1]]
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 23], ["LIMIT", 1]]
+[active_model_serializers]   [1m[36mIssue Load (1.9ms)[0m  [1m[34mSELECT "issues".* FROM "issues" WHERE "issues"."user_id" = $1[0m  [["user_id", 23]]
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (8.29ms)
+Completed 200 OK in 12ms (Views: 7.0ms | ActiveRecord: 2.5ms)
+
+
+Started GET "/issues/18" for 127.0.0.1 at 2017-02-21 20:54:10 +0000
+Processing by IssuesController#show as HTML
+  Parameters: {"id"=>"18"}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 23], ["LIMIT", 1]]
+  [1m[36mIssue Load (0.5ms)[0m  [1m[34mSELECT  "issues".* FROM "issues" WHERE "issues"."id" = $1 LIMIT $2[0m  [["id", 18], ["LIMIT", 1]]
+[active_model_serializers]   [1m[36mMessage Load (0.4ms)[0m  [1m[34mSELECT "messages".* FROM "messages" WHERE "messages"."issue_id" = $1[0m  [["issue_id", 18]]
+[active_model_serializers]   [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 23], ["LIMIT", 1]]
+[active_model_serializers] Rendered IssueSerializer with ActiveModelSerializers::Adapter::Attributes (9.28ms)
+Completed 200 OK in 14ms (Views: 9.7ms | ActiveRecord: 1.4ms)
+
+
+Started POST "/messages" for 127.0.0.1 at 2017-02-21 20:54:17 +0000
+Processing by MessagesController#create as HTML
+  Parameters: {"msg_text"=>nil, "issue_id"=>18, "sender_id"=>23, "receiver_id"=>23, "message"=>{"sender_id"=>23, "receiver_id"=>23, "msg_text"=>nil, "issue_id"=>18}}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 23], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mIssue Load (0.3ms)[0m  [1m[34mSELECT  "issues".* FROM "issues" WHERE "issues"."id" = $1 LIMIT $2[0m  [["id", 18], ["LIMIT", 1]]
+  [1m[35mSQL (0.6ms)[0m  [1m[32mINSERT INTO "messages" ("sender_id", "receiver_id", "created_at", "updated_at", "issue_id") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["sender_id", 23], ["receiver_id", 23], ["created_at", 2017-02-21 20:54:17 UTC], ["updated_at", 2017-02-21 20:54:17 UTC], ["issue_id", 18]]
+  [1m[35m (1.2ms)[0m  [1m[35mCOMMIT[0m
+[active_model_serializers] Rendered MessageSerializer with ActiveModelSerializers::Adapter::Attributes (0.63ms)
+Completed 201 Created in 10ms (Views: 2.2ms | ActiveRecord: 2.5ms)
+
+
+Started GET "/issues/18" for 127.0.0.1 at 2017-02-21 20:54:17 +0000
+Processing by IssuesController#show as HTML
+  Parameters: {"id"=>"18"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 23], ["LIMIT", 1]]
+  [1m[36mIssue Load (0.3ms)[0m  [1m[34mSELECT  "issues".* FROM "issues" WHERE "issues"."id" = $1 LIMIT $2[0m  [["id", 18], ["LIMIT", 1]]
+[active_model_serializers]   [1m[36mMessage Load (0.4ms)[0m  [1m[34mSELECT "messages".* FROM "messages" WHERE "messages"."issue_id" = $1[0m  [["issue_id", 18]]
+[active_model_serializers]   [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 23], ["LIMIT", 1]]
+[active_model_serializers] Rendered IssueSerializer with ActiveModelSerializers::Adapter::Attributes (18.15ms)
+Completed 200 OK in 21ms (Views: 18.4ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/users/23" for 127.0.0.1 at 2017-02-21 20:54:22 +0000
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"23"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 23], ["LIMIT", 1]]
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 23], ["LIMIT", 1]]
+[active_model_serializers]   [1m[36mIssue Load (0.3ms)[0m  [1m[34mSELECT "issues".* FROM "issues" WHERE "issues"."user_id" = $1[0m  [["user_id", 23]]
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (3.36ms)
+Completed 200 OK in 6ms (Views: 3.7ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/issues/18" for 127.0.0.1 at 2017-02-21 20:54:22 +0000
+Processing by IssuesController#show as HTML
+  Parameters: {"id"=>"18"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 23], ["LIMIT", 1]]
+  [1m[36mIssue Load (0.2ms)[0m  [1m[34mSELECT  "issues".* FROM "issues" WHERE "issues"."id" = $1 LIMIT $2[0m  [["id", 18], ["LIMIT", 1]]
+[active_model_serializers]   [1m[36mMessage Load (2.1ms)[0m  [1m[34mSELECT "messages".* FROM "messages" WHERE "messages"."issue_id" = $1[0m  [["issue_id", 18]]
+[active_model_serializers]   [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 23], ["LIMIT", 1]]
+[active_model_serializers] Rendered IssueSerializer with ActiveModelSerializers::Adapter::Attributes (12.61ms)
+Completed 200 OK in 16ms (Views: 11.3ms | ActiveRecord: 2.6ms)
+
+
+Started GET "/users/23" for 127.0.0.1 at 2017-02-21 20:54:34 +0000
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"23"}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 23], ["LIMIT", 1]]
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 23], ["LIMIT", 1]]
+[active_model_serializers]   [1m[36mIssue Load (1.0ms)[0m  [1m[34mSELECT "issues".* FROM "issues" WHERE "issues"."user_id" = $1[0m  [["user_id", 23]]
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (8.48ms)
+Completed 200 OK in 15ms (Views: 10.9ms | ActiveRecord: 1.8ms)
+
+
+Started GET "/issues/18" for 127.0.0.1 at 2017-02-21 20:54:34 +0000
+Processing by IssuesController#show as HTML
+  Parameters: {"id"=>"18"}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 23], ["LIMIT", 1]]
+  [1m[36mIssue Load (0.4ms)[0m  [1m[34mSELECT  "issues".* FROM "issues" WHERE "issues"."id" = $1 LIMIT $2[0m  [["id", 18], ["LIMIT", 1]]
+[active_model_serializers]   [1m[36mMessage Load (0.5ms)[0m  [1m[34mSELECT "messages".* FROM "messages" WHERE "messages"."issue_id" = $1[0m  [["issue_id", 18]]
+[active_model_serializers]   [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 23], ["LIMIT", 1]]
+[active_model_serializers] Rendered IssueSerializer with ActiveModelSerializers::Adapter::Attributes (10.45ms)
+Completed 200 OK in 15ms (Views: 10.7ms | ActiveRecord: 1.3ms)
+
+
+Started GET "/users/23" for 127.0.0.1 at 2017-02-21 20:55:11 +0000
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"23"}
+  [1m[36mUser Load (1.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 23], ["LIMIT", 1]]
+  [1m[36mUser Load (0.9ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 23], ["LIMIT", 1]]
+[active_model_serializers]   [1m[36mIssue Load (0.8ms)[0m  [1m[34mSELECT "issues".* FROM "issues" WHERE "issues"."user_id" = $1[0m  [["user_id", 23]]
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (7.25ms)
+Completed 200 OK in 13ms (Views: 7.3ms | ActiveRecord: 2.9ms)
+
+
+Started GET "/issues/18" for 127.0.0.1 at 2017-02-21 20:55:11 +0000
+Processing by IssuesController#show as HTML
+  Parameters: {"id"=>"18"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 23], ["LIMIT", 1]]
+  [1m[36mIssue Load (0.3ms)[0m  [1m[34mSELECT  "issues".* FROM "issues" WHERE "issues"."id" = $1 LIMIT $2[0m  [["id", 18], ["LIMIT", 1]]
+[active_model_serializers]   [1m[36mMessage Load (0.4ms)[0m  [1m[34mSELECT "messages".* FROM "messages" WHERE "messages"."issue_id" = $1[0m  [["issue_id", 18]]
+[active_model_serializers]   [1m[36mCACHE (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 23], ["LIMIT", 1]]
+[active_model_serializers] Rendered IssueSerializer with ActiveModelSerializers::Adapter::Attributes (10.78ms)
+Completed 200 OK in 15ms (Views: 11.1ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/users/23" for 127.0.0.1 at 2017-02-21 20:55:11 +0000
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"23"}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 23], ["LIMIT", 1]]
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 23], ["LIMIT", 1]]
+[active_model_serializers]   [1m[36mIssue Load (0.4ms)[0m  [1m[34mSELECT "issues".* FROM "issues" WHERE "issues"."user_id" = $1[0m  [["user_id", 23]]
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (5.62ms)
+Completed 200 OK in 10ms (Views: 6.3ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/issues/18" for 127.0.0.1 at 2017-02-21 20:55:12 +0000
+Processing by IssuesController#show as HTML
+  Parameters: {"id"=>"18"}
+  [1m[36mUser Load (1.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 23], ["LIMIT", 1]]
+  [1m[36mIssue Load (0.4ms)[0m  [1m[34mSELECT  "issues".* FROM "issues" WHERE "issues"."id" = $1 LIMIT $2[0m  [["id", 18], ["LIMIT", 1]]
+[active_model_serializers]   [1m[36mMessage Load (0.3ms)[0m  [1m[34mSELECT "messages".* FROM "messages" WHERE "messages"."issue_id" = $1[0m  [["issue_id", 18]]
+[active_model_serializers]   [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 23], ["LIMIT", 1]]
+[active_model_serializers] Rendered IssueSerializer with ActiveModelSerializers::Adapter::Attributes (8.54ms)
+Completed 200 OK in 15ms (Views: 9.2ms | ActiveRecord: 1.7ms)
+
+
+Started GET "/users/23" for 127.0.0.1 at 2017-02-21 20:56:12 +0000
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"23"}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 23], ["LIMIT", 1]]
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 23], ["LIMIT", 1]]
+[active_model_serializers]   [1m[36mIssue Load (1.1ms)[0m  [1m[34mSELECT "issues".* FROM "issues" WHERE "issues"."user_id" = $1[0m  [["user_id", 23]]
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (5.4ms)
+Completed 200 OK in 10ms (Views: 5.2ms | ActiveRecord: 1.8ms)
+
+
+  [1m[36mActiveRecord::SchemaMigration Load (0.9ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.7ms)[0m  [1m[31mDELETE FROM "users" WHERE "users"."id" = $1[0m  [["id", 23]]
+  [1m[35m (1.0ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[31mDELETE FROM "users" WHERE "users"."id" = $1[0m  [["id", 24]]
+  [1m[35m (1.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mIssue Load (0.8ms)[0m  [1m[34mSELECT "issues".* FROM "issues"[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (1.9ms)[0m  [1m[31mDELETE FROM "issues" WHERE "issues"."id" = $1[0m  [["id", 18]]
+  [1m[35m (1.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[31mDELETE FROM "issues" WHERE "issues"."id" = $1[0m  [["id", 19]]
+  [1m[35m (1.1ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mMessage Load (0.7ms)[0m  [1m[34mSELECT "messages".* FROM "messages"[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[31mDELETE FROM "messages" WHERE "messages"."id" = $1[0m  [["id", 50]]
+  [1m[35m (1.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[31mDELETE FROM "messages" WHERE "messages"."id" = $1[0m  [["id", 51]]
+  [1m[35m (0.8ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[31mDELETE FROM "messages" WHERE "messages"."id" = $1[0m  [["id", 52]]
+  [1m[35m (1.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[31mDELETE FROM "messages" WHERE "messages"."id" = $1[0m  [["id", 53]]
+  [1m[35m (1.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[31mDELETE FROM "messages" WHERE "messages"."id" = $1[0m  [["id", 54]]
+  [1m[35m (1.5ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[31mDELETE FROM "messages" WHERE "messages"."id" = $1[0m  [["id", 55]]
+  [1m[35m (1.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[31mDELETE FROM "messages" WHERE "messages"."id" = $1[0m  [["id", 56]]
+  [1m[35m (1.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[31mDELETE FROM "messages" WHERE "messages"."id" = $1[0m  [["id", 40]]
+  [1m[35m (0.7ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[31mDELETE FROM "messages" WHERE "messages"."id" = $1[0m  [["id", 41]]
+  [1m[35m (1.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.5ms)[0m  [1m[31mDELETE FROM "messages" WHERE "messages"."id" = $1[0m  [["id", 42]]
+  [1m[35m (1.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[31mDELETE FROM "messages" WHERE "messages"."id" = $1[0m  [["id", 43]]
+  [1m[35m (1.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.5ms)[0m  [1m[31mDELETE FROM "messages" WHERE "messages"."id" = $1[0m  [["id", 45]]
+  [1m[35m (1.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[31mDELETE FROM "messages" WHERE "messages"."id" = $1[0m  [["id", 46]]
+  [1m[35m (1.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[31mDELETE FROM "messages" WHERE "messages"."id" = $1[0m  [["id", 44]]
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[31mDELETE FROM "messages" WHERE "messages"."id" = $1[0m  [["id", 48]]
+  [1m[35m (1.1ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[31mDELETE FROM "messages" WHERE "messages"."id" = $1[0m  [["id", 49]]
+  [1m[35m (1.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[31mDELETE FROM "messages" WHERE "messages"."id" = $1[0m  [["id", 47]]
+  [1m[35m (1.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUser Exists (0.9ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "davinder@kaur.com"], ["LIMIT", 1]]
+  [1m[36mUser Exists (0.5ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."alias" = $1 LIMIT $2[0m  [["alias", "MissDavinderKaur"], ["LIMIT", 1]]
+  [1m[35mSQL (1.8ms)[0m  [1m[32mINSERT INTO "users" ("email", "password_digest", "created_at", "updated_at", "alias", "sector", "city") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["email", "davinder@kaur.com"], ["password_digest", "$2a$10$9ElCoNDsHSZswrMGfw8KaemQ5P7w7IELSFtJXJPP/56mXBamXQHw."], ["created_at", 2017-02-21 20:57:20 UTC], ["updated_at", 2017-02-21 20:57:20 UTC], ["alias", "MissDavinderKaur"], ["sector", "Financial Services"], ["city", "London"]]
+  [1m[35m (1.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUser Exists (0.4ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "harpreet@kaur.com"], ["LIMIT", 1]]
+  [1m[36mUser Exists (0.3ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."alias" = $1 LIMIT $2[0m  [["alias", "MissHarpreetKaur"], ["LIMIT", 1]]
+  [1m[35mSQL (0.4ms)[0m  [1m[32mINSERT INTO "users" ("email", "password_digest", "created_at", "updated_at", "alias", "sector", "city") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["email", "harpreet@kaur.com"], ["password_digest", "$2a$10$18YoSNOAJtBAnv42qcUDveFFWYpIGkMmdC4l5L2M1ZrPAb1WzeTNa"], ["created_at", 2017-02-21 20:57:20 UTC], ["updated_at", 2017-02-21 20:57:20 UTC], ["alias", "MissHarpreetKaur"], ["sector", "Consulting Services"], ["city", "London"]]
+  [1m[35m (1.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.7ms)[0m  [1m[32mINSERT INTO "issues" ("user_id", "title", "category", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["user_id", 25], ["title", "My super serious sexism issue"], ["category", "sexism"], ["created_at", 2017-02-21 20:57:20 UTC], ["updated_at", 2017-02-21 20:57:20 UTC]]
+  [1m[35m (1.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.5ms)[0m  [1m[32mINSERT INTO "messages" ("sender_id", "receiver_id", "msg_text", "created_at", "updated_at", "issue_id") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["sender_id", 26], ["receiver_id", 25], ["msg_text", "Some advice"], ["created_at", 2017-02-21 20:57:20 UTC], ["updated_at", 2017-02-21 20:57:20 UTC], ["issue_id", 20]]
+  [1m[35m (1.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.5ms)[0m  [1m[32mINSERT INTO "messages" ("sender_id", "receiver_id", "msg_text", "created_at", "updated_at", "issue_id") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["sender_id", 25], ["receiver_id", 25], ["msg_text", "Thank you for the advice"], ["created_at", 2017-02-21 20:57:20 UTC], ["updated_at", 2017-02-21 20:57:20 UTC], ["issue_id", 20]]
+  [1m[35m (1.1ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[32mINSERT INTO "issues" ("user_id", "title", "category", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["user_id", 25], ["title", "Another super serious issue"], ["category", "racism"], ["created_at", 2017-02-21 20:57:20 UTC], ["updated_at", 2017-02-21 20:57:20 UTC]]
+  [1m[35m (1.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.7ms)[0m  [1m[32mINSERT INTO "messages" ("sender_id", "receiver_id", "msg_text", "created_at", "updated_at", "issue_id") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["sender_id", 26], ["receiver_id", 25], ["msg_text", "Some good advice"], ["created_at", 2017-02-21 20:57:20 UTC], ["updated_at", 2017-02-21 20:57:20 UTC], ["issue_id", 21]]
+  [1m[35m (1.5ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[32mINSERT INTO "messages" ("sender_id", "receiver_id", "msg_text", "created_at", "updated_at", "issue_id") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["sender_id", 25], ["receiver_id", 25], ["msg_text", "Thank you for the good advice"], ["created_at", 2017-02-21 20:57:20 UTC], ["updated_at", 2017-02-21 20:57:20 UTC], ["issue_id", 21]]
+  [1m[35m (1.4ms)[0m  [1m[35mCOMMIT[0m
+Started POST "/login" for 127.0.0.1 at 2017-02-21 20:59:40 +0000
+  [1m[36mActiveRecord::SchemaMigration Load (0.9ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by AuthenticationsController#login as HTML
+  Parameters: {"email"=>"davinder@kaur.com", "password"=>"[FILTERED]", "authentication"=>{"email"=>"davinder@kaur.com", "password"=>"[FILTERED]"}}
+  [1m[36mUser Load (2.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "davinder@kaur.com"], ["LIMIT", 1]]
+[active_model_serializers]   [1m[36mIssue Load (0.6ms)[0m  [1m[34mSELECT "issues".* FROM "issues" WHERE "issues"."user_id" = $1[0m  [["user_id", 25]]
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (77.85ms)
+Completed 200 OK in 222ms (Views: 79.0ms | ActiveRecord: 14.4ms)
+
+
+Started GET "/users/25" for 127.0.0.1 at 2017-02-21 20:59:41 +0000
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"25"}
+  [1m[36mUser Load (1.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 25], ["LIMIT", 1]]
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 25], ["LIMIT", 1]]
+[active_model_serializers]   [1m[36mIssue Load (0.6ms)[0m  [1m[34mSELECT "issues".* FROM "issues" WHERE "issues"."user_id" = $1[0m  [["user_id", 25]]
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (10.31ms)
+Completed 200 OK in 31ms (Views: 11.1ms | ActiveRecord: 2.5ms)
+
+
+Started GET "/users/25" for 127.0.0.1 at 2017-02-21 20:59:41 +0000
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"25"}
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 25], ["LIMIT", 1]]
+  [1m[36mUser Load (0.9ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 25], ["LIMIT", 1]]
+[active_model_serializers]   [1m[36mIssue Load (0.5ms)[0m  [1m[34mSELECT "issues".* FROM "issues" WHERE "issues"."user_id" = $1[0m  [["user_id", 25]]
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (18.92ms)
+Completed 200 OK in 27ms (Views: 20.9ms | ActiveRecord: 1.9ms)
+
+
+Started GET "/issues/20" for 127.0.0.1 at 2017-02-21 20:59:46 +0000
+Processing by IssuesController#show as HTML
+  Parameters: {"id"=>"20"}
+  [1m[36mUser Load (1.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 25], ["LIMIT", 1]]
+  [1m[36mIssue Load (0.5ms)[0m  [1m[34mSELECT  "issues".* FROM "issues" WHERE "issues"."id" = $1 LIMIT $2[0m  [["id", 20], ["LIMIT", 1]]
+[active_model_serializers]   [1m[36mMessage Load (0.4ms)[0m  [1m[34mSELECT "messages".* FROM "messages" WHERE "messages"."issue_id" = $1[0m  [["issue_id", 20]]
+[active_model_serializers]   [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 25], ["LIMIT", 1]]
+[active_model_serializers] Rendered IssueSerializer with ActiveModelSerializers::Adapter::Attributes (32.46ms)
+Completed 200 OK in 42ms (Views: 29.5ms | ActiveRecord: 5.9ms)
+
+
+Started GET "/users/25" for 127.0.0.1 at 2017-02-21 20:59:54 +0000
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"25"}
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 25], ["LIMIT", 1]]
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 25], ["LIMIT", 1]]
+[active_model_serializers]   [1m[36mIssue Load (0.9ms)[0m  [1m[34mSELECT "issues".* FROM "issues" WHERE "issues"."user_id" = $1[0m  [["user_id", 25]]
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (6.04ms)
+Completed 200 OK in 11ms (Views: 6.3ms | ActiveRecord: 1.8ms)
+
+
+Started GET "/issues/20" for 127.0.0.1 at 2017-02-21 20:59:54 +0000
+Processing by IssuesController#show as HTML
+  Parameters: {"id"=>"20"}
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 25], ["LIMIT", 1]]
+  [1m[36mIssue Load (0.5ms)[0m  [1m[34mSELECT  "issues".* FROM "issues" WHERE "issues"."id" = $1 LIMIT $2[0m  [["id", 20], ["LIMIT", 1]]
+[active_model_serializers]   [1m[36mMessage Load (0.5ms)[0m  [1m[34mSELECT "messages".* FROM "messages" WHERE "messages"."issue_id" = $1[0m  [["issue_id", 20]]
+[active_model_serializers]   [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 25], ["LIMIT", 1]]
+[active_model_serializers] Rendered IssueSerializer with ActiveModelSerializers::Adapter::Attributes (10.77ms)
+Completed 200 OK in 16ms (Views: 11.0ms | ActiveRecord: 1.6ms)
+
+
+Started GET "/users/25" for 127.0.0.1 at 2017-02-21 20:59:59 +0000
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"25"}
+  [1m[36mUser Load (18.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 25], ["LIMIT", 1]]
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 25], ["LIMIT", 1]]
+[active_model_serializers]   [1m[36mIssue Load (0.5ms)[0m  [1m[34mSELECT "issues".* FROM "issues" WHERE "issues"."user_id" = $1[0m  [["user_id", 25]]
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (5.25ms)
+Completed 200 OK in 29ms (Views: 5.5ms | ActiveRecord: 19.4ms)
+
+
+Started GET "/issues/20" for 127.0.0.1 at 2017-02-21 20:59:59 +0000
+Processing by IssuesController#show as HTML
+  Parameters: {"id"=>"20"}
+  [1m[36mUser Load (4.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 25], ["LIMIT", 1]]
+  [1m[36mIssue Load (2.2ms)[0m  [1m[34mSELECT  "issues".* FROM "issues" WHERE "issues"."id" = $1 LIMIT $2[0m  [["id", 20], ["LIMIT", 1]]
+[active_model_serializers]   [1m[36mMessage Load (3.0ms)[0m  [1m[34mSELECT "messages".* FROM "messages" WHERE "messages"."issue_id" = $1[0m  [["issue_id", 20]]
+[active_model_serializers]   [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 25], ["LIMIT", 1]]
+[active_model_serializers] Rendered IssueSerializer with ActiveModelSerializers::Adapter::Attributes (12.74ms)
+Completed 200 OK in 25ms (Views: 11.5ms | ActiveRecord: 9.8ms)
+
+
+Started GET "/users/25" for 127.0.0.1 at 2017-02-21 21:00:04 +0000
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"25"}
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 25], ["LIMIT", 1]]
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 25], ["LIMIT", 1]]
+[active_model_serializers]   [1m[36mIssue Load (0.5ms)[0m  [1m[34mSELECT "issues".* FROM "issues" WHERE "issues"."user_id" = $1[0m  [["user_id", 25]]
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (5.15ms)
+Completed 200 OK in 11ms (Views: 5.4ms | ActiveRecord: 1.6ms)
+
+
+Started GET "/issues/20" for 127.0.0.1 at 2017-02-21 21:00:04 +0000
+Processing by IssuesController#show as HTML
+  Parameters: {"id"=>"20"}
+  [1m[36mUser Load (5.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 25], ["LIMIT", 1]]
+  [1m[36mIssue Load (0.6ms)[0m  [1m[34mSELECT  "issues".* FROM "issues" WHERE "issues"."id" = $1 LIMIT $2[0m  [["id", 20], ["LIMIT", 1]]
+[active_model_serializers]   [1m[36mMessage Load (0.6ms)[0m  [1m[34mSELECT "messages".* FROM "messages" WHERE "messages"."issue_id" = $1[0m  [["issue_id", 20]]
+[active_model_serializers]   [1m[36mCACHE (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 25], ["LIMIT", 1]]
+[active_model_serializers] Rendered IssueSerializer with ActiveModelSerializers::Adapter::Attributes (10.12ms)
+Completed 200 OK in 22ms (Views: 10.4ms | ActiveRecord: 6.4ms)
+
+
+Started GET "/users/25" for 127.0.0.1 at 2017-02-21 21:04:10 +0000
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"25"}
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 25], ["LIMIT", 1]]
+  [1m[36mUser Load (1.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 25], ["LIMIT", 1]]
+[active_model_serializers]   [1m[36mIssue Load (0.4ms)[0m  [1m[34mSELECT "issues".* FROM "issues" WHERE "issues"."user_id" = $1[0m  [["user_id", 25]]
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (6.91ms)
+Completed 200 OK in 14ms (Views: 8.1ms | ActiveRecord: 2.3ms)
+
+
+Started GET "/users/25" for 127.0.0.1 at 2017-02-21 21:04:11 +0000
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"25"}
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 25], ["LIMIT", 1]]
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 25], ["LIMIT", 1]]
+[active_model_serializers]   [1m[36mIssue Load (0.3ms)[0m  [1m[34mSELECT "issues".* FROM "issues" WHERE "issues"."user_id" = $1[0m  [["user_id", 25]]
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (5.7ms)
+Completed 200 OK in 17ms (Views: 7.3ms | ActiveRecord: 1.5ms)
+
+
+Started GET "/users/25" for 127.0.0.1 at 2017-02-21 21:04:11 +0000
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"25"}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 25], ["LIMIT", 1]]
+Started GET "/issues/20" for 127.0.0.1 at 2017-02-21 21:04:11 +0000
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 25], ["LIMIT", 1]]
+[active_model_serializers]   [1m[36mIssue Load (0.4ms)[0m  [1m[34mSELECT "issues".* FROM "issues" WHERE "issues"."user_id" = $1[0m  [["user_id", 25]]
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (5.17ms)
+Completed 200 OK in 116ms (Views: 5.4ms | ActiveRecord: 1.3ms)
+
+
+Processing by IssuesController#show as HTML
+  Parameters: {"id"=>"20"}
+  [1m[36mUser Load (1.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 25], ["LIMIT", 1]]
+  [1m[36mIssue Load (3.1ms)[0m  [1m[34mSELECT  "issues".* FROM "issues" WHERE "issues"."id" = $1 LIMIT $2[0m  [["id", 20], ["LIMIT", 1]]
+[active_model_serializers]   [1m[36mMessage Load (1.7ms)[0m  [1m[34mSELECT "messages".* FROM "messages" WHERE "messages"."issue_id" = $1[0m  [["issue_id", 20]]
+[active_model_serializers]   [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 25], ["LIMIT", 1]]
+[active_model_serializers] Rendered IssueSerializer with ActiveModelSerializers::Adapter::Attributes (8.79ms)
+Completed 200 OK in 18ms (Views: 7.9ms | ActiveRecord: 6.4ms)
+
+
+Started GET "/issues/20" for 127.0.0.1 at 2017-02-21 21:04:11 +0000
+Processing by IssuesController#show as HTML
+  Parameters: {"id"=>"20"}
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 25], ["LIMIT", 1]]
+  [1m[36mIssue Load (0.8ms)[0m  [1m[34mSELECT  "issues".* FROM "issues" WHERE "issues"."id" = $1 LIMIT $2[0m  [["id", 20], ["LIMIT", 1]]
+[active_model_serializers]   [1m[36mMessage Load (0.4ms)[0m  [1m[34mSELECT "messages".* FROM "messages" WHERE "messages"."issue_id" = $1[0m  [["issue_id", 20]]
+[active_model_serializers]   [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 25], ["LIMIT", 1]]
+[active_model_serializers] Rendered IssueSerializer with ActiveModelSerializers::Adapter::Attributes (17.96ms)
+Completed 200 OK in 43ms (Views: 21.0ms | ActiveRecord: 1.8ms)
+
+
+Started GET "/issues/20" for 127.0.0.1 at 2017-02-21 21:04:11 +0000
+Processing by IssuesController#show as HTML
+  Parameters: {"id"=>"20"}
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 25], ["LIMIT", 1]]
+  [1m[36mIssue Load (0.5ms)[0m  [1m[34mSELECT  "issues".* FROM "issues" WHERE "issues"."id" = $1 LIMIT $2[0m  [["id", 20], ["LIMIT", 1]]
+[active_model_serializers]   [1m[36mMessage Load (0.5ms)[0m  [1m[34mSELECT "messages".* FROM "messages" WHERE "messages"."issue_id" = $1[0m  [["issue_id", 20]]
+[active_model_serializers]   [1m[36mCACHE (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 25], ["LIMIT", 1]]
+[active_model_serializers] Rendered IssueSerializer with ActiveModelSerializers::Adapter::Attributes (7.89ms)
+Completed 200 OK in 17ms (Views: 8.2ms | ActiveRecord: 1.8ms)
+
+
+Started GET "/users/25" for 127.0.0.1 at 2017-02-21 21:04:35 +0000
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"25"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 25], ["LIMIT", 1]]
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 25], ["LIMIT", 1]]
+[active_model_serializers]   [1m[36mIssue Load (0.4ms)[0m  [1m[34mSELECT "issues".* FROM "issues" WHERE "issues"."user_id" = $1[0m  [["user_id", 25]]
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (6.06ms)
+Completed 200 OK in 10ms (Views: 6.5ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/issues/21" for 127.0.0.1 at 2017-02-21 21:04:35 +0000
+Processing by IssuesController#show as HTML
+  Parameters: {"id"=>"21"}
+  [1m[36mUser Load (5.9ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 25], ["LIMIT", 1]]
+  [1m[36mIssue Load (2.2ms)[0m  [1m[34mSELECT  "issues".* FROM "issues" WHERE "issues"."id" = $1 LIMIT $2[0m  [["id", 21], ["LIMIT", 1]]
+[active_model_serializers]   [1m[36mMessage Load (2.4ms)[0m  [1m[34mSELECT "messages".* FROM "messages" WHERE "messages"."issue_id" = $1[0m  [["issue_id", 21]]
+[active_model_serializers]   [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 25], ["LIMIT", 1]]
+[active_model_serializers] Rendered IssueSerializer with ActiveModelSerializers::Adapter::Attributes (14.32ms)
+Completed 200 OK in 27ms (Views: 13.0ms | ActiveRecord: 10.5ms)
+
+
+Started POST "/messages" for 127.0.0.1 at 2017-02-21 21:04:55 +0000
+Processing by MessagesController#create as HTML
+  Parameters: {"msg_text"=>"is iit defined?", "issue_id"=>21, "sender_id"=>25, "receiver_id"=>25, "message"=>{"sender_id"=>25, "receiver_id"=>25, "msg_text"=>"is iit defined?", "issue_id"=>21}}
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 25], ["LIMIT", 1]]
+  [1m[35m (1.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mIssue Load (0.4ms)[0m  [1m[34mSELECT  "issues".* FROM "issues" WHERE "issues"."id" = $1 LIMIT $2[0m  [["id", 21], ["LIMIT", 1]]
+  [1m[35mSQL (1.1ms)[0m  [1m[32mINSERT INTO "messages" ("sender_id", "receiver_id", "msg_text", "created_at", "updated_at", "issue_id") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["sender_id", 25], ["receiver_id", 25], ["msg_text", "is iit defined?"], ["created_at", 2017-02-21 21:04:55 UTC], ["updated_at", 2017-02-21 21:04:55 UTC], ["issue_id", 21]]
+  [1m[35m (1.9ms)[0m  [1m[35mCOMMIT[0m
+[active_model_serializers] Rendered MessageSerializer with ActiveModelSerializers::Adapter::Attributes (2.43ms)
+Completed 201 Created in 24ms (Views: 5.6ms | ActiveRecord: 5.1ms)
+
+
+Started GET "/issues/21" for 127.0.0.1 at 2017-02-21 21:04:55 +0000
+Processing by IssuesController#show as HTML
+  Parameters: {"id"=>"21"}
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 25], ["LIMIT", 1]]
+  [1m[36mIssue Load (0.5ms)[0m  [1m[34mSELECT  "issues".* FROM "issues" WHERE "issues"."id" = $1 LIMIT $2[0m  [["id", 21], ["LIMIT", 1]]
+[active_model_serializers]   [1m[36mMessage Load (0.5ms)[0m  [1m[34mSELECT "messages".* FROM "messages" WHERE "messages"."issue_id" = $1[0m  [["issue_id", 21]]
+[active_model_serializers]   [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 25], ["LIMIT", 1]]
+[active_model_serializers] Rendered IssueSerializer with ActiveModelSerializers::Adapter::Attributes (7.12ms)
+Completed 200 OK in 15ms (Views: 7.5ms | ActiveRecord: 1.6ms)
+
+
+Started GET "/users/25" for 127.0.0.1 at 2017-02-21 21:08:12 +0000
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"25"}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 25], ["LIMIT", 1]]
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 25], ["LIMIT", 1]]
+[active_model_serializers]   [1m[36mIssue Load (0.4ms)[0m  [1m[34mSELECT "issues".* FROM "issues" WHERE "issues"."user_id" = $1[0m  [["user_id", 25]]
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (5.91ms)
+Completed 200 OK in 10ms (Views: 6.5ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/users/25" for 127.0.0.1 at 2017-02-21 21:08:12 +0000
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"25"}
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 25], ["LIMIT", 1]]
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 25], ["LIMIT", 1]]
+[active_model_serializers]   [1m[36mIssue Load (0.6ms)[0m  [1m[34mSELECT "issues".* FROM "issues" WHERE "issues"."user_id" = $1[0m  [["user_id", 25]]
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (5.04ms)
+Completed 200 OK in 10ms (Views: 5.3ms | ActiveRecord: 1.9ms)
+
+
+Started GET "/issues/20" for 127.0.0.1 at 2017-02-21 21:08:12 +0000
+Processing by IssuesController#show as HTML
+  Parameters: {"id"=>"20"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 25], ["LIMIT", 1]]
+  [1m[36mIssue Load (0.3ms)[0m  [1m[34mSELECT  "issues".* FROM "issues" WHERE "issues"."id" = $1 LIMIT $2[0m  [["id", 20], ["LIMIT", 1]]
+Started GET "/users/25" for 127.0.0.1 at 2017-02-21 21:08:13 +0000
+[active_model_serializers]   [1m[36mMessage Load (0.6ms)[0m  [1m[34mSELECT "messages".* FROM "messages" WHERE "messages"."issue_id" = $1[0m  [["issue_id", 20]]
+Processing by UsersController#show as HTML
+[active_model_serializers]   [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 25], ["LIMIT", 1]]
+  Parameters: {"id"=>"25"}
+[active_model_serializers] Rendered IssueSerializer with ActiveModelSerializers::Adapter::Attributes (9.53ms)
+Completed 200 OK in 396ms (Views: 10.6ms | ActiveRecord: 1.2ms)
+
+
+  [1m[36mUser Load (1.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 25], ["LIMIT", 1]]
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 25], ["LIMIT", 1]]
+[active_model_serializers]   [1m[36mIssue Load (0.7ms)[0m  [1m[34mSELECT "issues".* FROM "issues" WHERE "issues"."user_id" = $1[0m  [["user_id", 25]]
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (6.51ms)
+Completed 200 OK in 12ms (Views: 6.6ms | ActiveRecord: 2.5ms)
+
+
+Started GET "/issues/21" for 127.0.0.1 at 2017-02-21 21:08:13 +0000
+Processing by IssuesController#show as HTML
+  Parameters: {"id"=>"21"}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 25], ["LIMIT", 1]]
+  [1m[36mIssue Load (0.3ms)[0m  [1m[34mSELECT  "issues".* FROM "issues" WHERE "issues"."id" = $1 LIMIT $2[0m  [["id", 21], ["LIMIT", 1]]
+[active_model_serializers]   [1m[36mMessage Load (0.3ms)[0m  [1m[34mSELECT "messages".* FROM "messages" WHERE "messages"."issue_id" = $1[0m  [["issue_id", 21]]
+[active_model_serializers]   [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 25], ["LIMIT", 1]]
+[active_model_serializers] Rendered IssueSerializer with ActiveModelSerializers::Adapter::Attributes (13.95ms)
+Completed 200 OK in 18ms (Views: 14.3ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/issues/20" for 127.0.0.1 at 2017-02-21 21:08:13 +0000
+Processing by IssuesController#show as HTML
+  Parameters: {"id"=>"20"}
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 25], ["LIMIT", 1]]
+  [1m[36mIssue Load (0.6ms)[0m  [1m[34mSELECT  "issues".* FROM "issues" WHERE "issues"."id" = $1 LIMIT $2[0m  [["id", 20], ["LIMIT", 1]]
+[active_model_serializers]   [1m[36mMessage Load (0.6ms)[0m  [1m[34mSELECT "messages".* FROM "messages" WHERE "messages"."issue_id" = $1[0m  [["issue_id", 20]]
+[active_model_serializers]   [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 25], ["LIMIT", 1]]
+[active_model_serializers] Rendered IssueSerializer with ActiveModelSerializers::Adapter::Attributes (8.9ms)
+Completed 200 OK in 14ms (Views: 9.6ms | ActiveRecord: 2.0ms)
+
+
+Started GET "/users/25" for 127.0.0.1 at 2017-02-21 21:08:21 +0000
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"25"}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 25], ["LIMIT", 1]]
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 25], ["LIMIT", 1]]
+[active_model_serializers]   [1m[36mIssue Load (0.6ms)[0m  [1m[34mSELECT "issues".* FROM "issues" WHERE "issues"."user_id" = $1[0m  [["user_id", 25]]
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (7.45ms)
+Completed 200 OK in 13ms (Views: 8.6ms | ActiveRecord: 1.3ms)
+
+
+Started GET "/issues/20" for 127.0.0.1 at 2017-02-21 21:08:21 +0000
+Processing by IssuesController#show as HTML
+  Parameters: {"id"=>"20"}
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 25], ["LIMIT", 1]]
+  [1m[36mIssue Load (0.8ms)[0m  [1m[34mSELECT  "issues".* FROM "issues" WHERE "issues"."id" = $1 LIMIT $2[0m  [["id", 20], ["LIMIT", 1]]
+[active_model_serializers]   [1m[36mMessage Load (0.7ms)[0m  [1m[34mSELECT "messages".* FROM "messages" WHERE "messages"."issue_id" = $1[0m  [["issue_id", 20]]
+[active_model_serializers]   [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 25], ["LIMIT", 1]]
+[active_model_serializers] Rendered IssueSerializer with ActiveModelSerializers::Adapter::Attributes (12.7ms)
+Completed 200 OK in 21ms (Views: 13.7ms | ActiveRecord: 2.3ms)
+
+
+Started GET "/users/25" for 127.0.0.1 at 2017-02-21 21:08:21 +0000
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"25"}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 25], ["LIMIT", 1]]
+  [1m[36mUser Load (1.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 25], ["LIMIT", 1]]
+[active_model_serializers]   [1m[36mIssue Load (0.4ms)[0m  [1m[34mSELECT "issues".* FROM "issues" WHERE "issues"."user_id" = $1[0m  [["user_id", 25]]
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (8.87ms)
+Completed 200 OK in 17ms (Views: 9.9ms | ActiveRecord: 2.3ms)
+
+
+Started GET "/users/25" for 127.0.0.1 at 2017-02-21 21:08:21 +0000
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"25"}
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 25], ["LIMIT", 1]]
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 25], ["LIMIT", 1]]
+[active_model_serializers]   [1m[36mIssue Load (0.9ms)[0m  [1m[34mSELECT "issues".* FROM "issues" WHERE "issues"."user_id" = $1[0m  [["user_id", 25]]
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (9.7ms)
+Completed 200 OK in 21ms (Views: 14.0ms | ActiveRecord: 2.4ms)
+
+
+Started GET "/issues/21" for 127.0.0.1 at 2017-02-21 21:08:21 +0000
+Processing by IssuesController#show as HTML
+  Parameters: {"id"=>"21"}
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 25], ["LIMIT", 1]]
+  [1m[36mIssue Load (0.6ms)[0m  [1m[34mSELECT  "issues".* FROM "issues" WHERE "issues"."id" = $1 LIMIT $2[0m  [["id", 21], ["LIMIT", 1]]
+[active_model_serializers]   [1m[36mMessage Load (0.4ms)[0m  [1m[34mSELECT "messages".* FROM "messages" WHERE "messages"."issue_id" = $1[0m  [["issue_id", 21]]
+[active_model_serializers]   [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 25], ["LIMIT", 1]]
+[active_model_serializers] Rendered IssueSerializer with ActiveModelSerializers::Adapter::Attributes (11.68ms)
+Completed 200 OK in 19ms (Views: 12.5ms | ActiveRecord: 1.9ms)
+
+
+Started GET "/issues/20" for 127.0.0.1 at 2017-02-21 21:08:21 +0000
+Processing by IssuesController#show as HTML
+  Parameters: {"id"=>"20"}
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 25], ["LIMIT", 1]]
+  [1m[36mIssue Load (0.6ms)[0m  [1m[34mSELECT  "issues".* FROM "issues" WHERE "issues"."id" = $1 LIMIT $2[0m  [["id", 20], ["LIMIT", 1]]
+[active_model_serializers]   [1m[36mMessage Load (0.7ms)[0m  [1m[34mSELECT "messages".* FROM "messages" WHERE "messages"."issue_id" = $1[0m  [["issue_id", 20]]
+[active_model_serializers]   [1m[36mCACHE (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 25], ["LIMIT", 1]]
+[active_model_serializers] Rendered IssueSerializer with ActiveModelSerializers::Adapter::Attributes (21.87ms)
+Completed 200 OK in 30ms (Views: 22.4ms | ActiveRecord: 2.0ms)
+
+
+Started POST "/messages" for 127.0.0.1 at 2017-02-21 21:08:25 +0000
+Processing by MessagesController#create as HTML
+  Parameters: {"msg_text"=>"message", "issue_id"=>20, "sender_id"=>25, "receiver_id"=>25, "message"=>{"sender_id"=>25, "receiver_id"=>25, "msg_text"=>"message", "issue_id"=>20}}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 25], ["LIMIT", 1]]
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mIssue Load (0.3ms)[0m  [1m[34mSELECT  "issues".* FROM "issues" WHERE "issues"."id" = $1 LIMIT $2[0m  [["id", 20], ["LIMIT", 1]]
+  [1m[35mSQL (2.4ms)[0m  [1m[32mINSERT INTO "messages" ("sender_id", "receiver_id", "msg_text", "created_at", "updated_at", "issue_id") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["sender_id", 25], ["receiver_id", 25], ["msg_text", "message"], ["created_at", 2017-02-21 21:08:25 UTC], ["updated_at", 2017-02-21 21:08:25 UTC], ["issue_id", 20]]
+  [1m[35m (1.2ms)[0m  [1m[35mCOMMIT[0m
+[active_model_serializers] Rendered MessageSerializer with ActiveModelSerializers::Adapter::Attributes (1.57ms)
+Completed 201 Created in 22ms (Views: 4.0ms | ActiveRecord: 4.4ms)
+
+
+Started GET "/issues/20" for 127.0.0.1 at 2017-02-21 21:08:25 +0000
+Processing by IssuesController#show as HTML
+  Parameters: {"id"=>"20"}
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 25], ["LIMIT", 1]]
+  [1m[36mIssue Load (0.6ms)[0m  [1m[34mSELECT  "issues".* FROM "issues" WHERE "issues"."id" = $1 LIMIT $2[0m  [["id", 20], ["LIMIT", 1]]
+[active_model_serializers]   [1m[36mMessage Load (0.4ms)[0m  [1m[34mSELECT "messages".* FROM "messages" WHERE "messages"."issue_id" = $1[0m  [["issue_id", 20]]
+[active_model_serializers]   [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 25], ["LIMIT", 1]]
+[active_model_serializers] Rendered IssueSerializer with ActiveModelSerializers::Adapter::Attributes (8.04ms)
+Completed 200 OK in 14ms (Views: 8.4ms | ActiveRecord: 1.7ms)
+
+
+Started GET "/users/25" for 127.0.0.1 at 2017-02-21 21:08:32 +0000
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"25"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 25], ["LIMIT", 1]]
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 25], ["LIMIT", 1]]
+[active_model_serializers]   [1m[36mIssue Load (1.6ms)[0m  [1m[34mSELECT "issues".* FROM "issues" WHERE "issues"."user_id" = $1[0m  [["user_id", 25]]
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (7.64ms)
+Completed 200 OK in 11ms (Views: 6.7ms | ActiveRecord: 2.1ms)
+
+
+Started GET "/issues/20" for 127.0.0.1 at 2017-02-21 21:08:32 +0000
+Processing by IssuesController#show as HTML
+  Parameters: {"id"=>"20"}
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 25], ["LIMIT", 1]]
+  [1m[36mIssue Load (0.5ms)[0m  [1m[34mSELECT  "issues".* FROM "issues" WHERE "issues"."id" = $1 LIMIT $2[0m  [["id", 20], ["LIMIT", 1]]
+[active_model_serializers]   [1m[36mMessage Load (0.7ms)[0m  [1m[34mSELECT "messages".* FROM "messages" WHERE "messages"."issue_id" = $1[0m  [["issue_id", 20]]
+[active_model_serializers]   [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 25], ["LIMIT", 1]]
+[active_model_serializers] Rendered IssueSerializer with ActiveModelSerializers::Adapter::Attributes (54.89ms)
+Completed 200 OK in 61ms (Views: 55.9ms | ActiveRecord: 1.9ms)
+
+
+Started POST "/messages" for 127.0.0.1 at 2017-02-21 21:08:37 +0000
+Processing by MessagesController#create as HTML
+  Parameters: {"msg_text"=>"another message", "issue_id"=>20, "sender_id"=>25, "receiver_id"=>25, "message"=>{"sender_id"=>25, "receiver_id"=>25, "msg_text"=>"another message", "issue_id"=>20}}
+Started POST "/messages" for 127.0.0.1 at 2017-02-21 21:08:37 +0000
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 25], ["LIMIT", 1]]
+Processing by MessagesController#create as HTML
+  [1m[35m (1.3ms)[0m  [1m[35mBEGIN[0m
+  Parameters: {"msg_text"=>nil, "issue_id"=>20, "sender_id"=>25, "receiver_id"=>25, "message"=>{"sender_id"=>25, "receiver_id"=>25, "msg_text"=>nil, "issue_id"=>20}}
+  [1m[36mIssue Load (0.5ms)[0m  [1m[34mSELECT  "issues".* FROM "issues" WHERE "issues"."id" = $1 LIMIT $2[0m  [["id", 20], ["LIMIT", 1]]
+  [1m[36mUser Load (2.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 25], ["LIMIT", 1]]
+  [1m[35mSQL (1.5ms)[0m  [1m[32mINSERT INTO "messages" ("sender_id", "receiver_id", "msg_text", "created_at", "updated_at", "issue_id") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["sender_id", 25], ["receiver_id", 25], ["msg_text", "another message"], ["created_at", 2017-02-21 21:08:37 UTC], ["updated_at", 2017-02-21 21:08:37 UTC], ["issue_id", 20]]
+  [1m[35m (0.4ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (1.7ms)[0m  [1m[35mCOMMIT[0m
+[active_model_serializers] Rendered MessageSerializer with ActiveModelSerializers::Adapter::Attributes (0.99ms)
+Completed 201 Created in 16ms (Views: 1.8ms | ActiveRecord: 5.8ms)
+
+
+  [1m[36mIssue Load (2.4ms)[0m  [1m[34mSELECT  "issues".* FROM "issues" WHERE "issues"."id" = $1 LIMIT $2[0m  [["id", 20], ["LIMIT", 1]]
+  [1m[35mSQL (1.2ms)[0m  [1m[32mINSERT INTO "messages" ("sender_id", "receiver_id", "created_at", "updated_at", "issue_id") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["sender_id", 25], ["receiver_id", 25], ["created_at", 2017-02-21 21:08:38 UTC], ["updated_at", 2017-02-21 21:08:38 UTC], ["issue_id", 20]]
+  [1m[35m (1.6ms)[0m  [1m[35mCOMMIT[0m
+[active_model_serializers] Rendered MessageSerializer with ActiveModelSerializers::Adapter::Attributes (0.74ms)
+Started GET "/issues/20" for 127.0.0.1 at 2017-02-21 21:08:38 +0000
+Completed 201 Created in 19ms (Views: 3.6ms | ActiveRecord: 7.9ms)
+
+
+Processing by IssuesController#show as HTML
+  Parameters: {"id"=>"20"}
+  [1m[36mUser Load (5.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 25], ["LIMIT", 1]]
+  [1m[36mIssue Load (0.3ms)[0m  [1m[34mSELECT  "issues".* FROM "issues" WHERE "issues"."id" = $1 LIMIT $2[0m  [["id", 20], ["LIMIT", 1]]
+[active_model_serializers]   [1m[36mMessage Load (0.3ms)[0m  [1m[34mSELECT "messages".* FROM "messages" WHERE "messages"."issue_id" = $1[0m  [["issue_id", 20]]
+[active_model_serializers]   [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 25], ["LIMIT", 1]]
+[active_model_serializers] Rendered IssueSerializer with ActiveModelSerializers::Adapter::Attributes (8.61ms)
+Completed 200 OK in 20ms (Views: 9.2ms | ActiveRecord: 5.8ms)
+
+
+Started GET "/issues/20" for 127.0.0.1 at 2017-02-21 21:08:38 +0000
+Processing by IssuesController#show as HTML
+  Parameters: {"id"=>"20"}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 25], ["LIMIT", 1]]
+  [1m[36mIssue Load (0.4ms)[0m  [1m[34mSELECT  "issues".* FROM "issues" WHERE "issues"."id" = $1 LIMIT $2[0m  [["id", 20], ["LIMIT", 1]]
+[active_model_serializers]   [1m[36mMessage Load (0.3ms)[0m  [1m[34mSELECT "messages".* FROM "messages" WHERE "messages"."issue_id" = $1[0m  [["issue_id", 20]]
+[active_model_serializers]   [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 25], ["LIMIT", 1]]
+[active_model_serializers] Rendered IssueSerializer with ActiveModelSerializers::Adapter::Attributes (6.57ms)
+Completed 200 OK in 13ms (Views: 7.0ms | ActiveRecord: 1.4ms)
+
+
+Started GET "/users/25" for 127.0.0.1 at 2017-02-21 21:08:42 +0000
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"25"}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 25], ["LIMIT", 1]]
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 25], ["LIMIT", 1]]
+[active_model_serializers]   [1m[36mIssue Load (0.3ms)[0m  [1m[34mSELECT "issues".* FROM "issues" WHERE "issues"."user_id" = $1[0m  [["user_id", 25]]
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (5.38ms)
+Completed 200 OK in 11ms (Views: 7.0ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/issues/20" for 127.0.0.1 at 2017-02-21 21:08:42 +0000
+Processing by IssuesController#show as HTML
+  Parameters: {"id"=>"20"}
+  [1m[36mUser Load (2.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 25], ["LIMIT", 1]]
+  [1m[36mIssue Load (0.4ms)[0m  [1m[34mSELECT  "issues".* FROM "issues" WHERE "issues"."id" = $1 LIMIT $2[0m  [["id", 20], ["LIMIT", 1]]
+[active_model_serializers]   [1m[36mMessage Load (0.5ms)[0m  [1m[34mSELECT "messages".* FROM "messages" WHERE "messages"."issue_id" = $1[0m  [["issue_id", 20]]
+[active_model_serializers]   [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 25], ["LIMIT", 1]]
+[active_model_serializers] Rendered IssueSerializer with ActiveModelSerializers::Adapter::Attributes (9.11ms)
+Completed 200 OK in 17ms (Views: 9.5ms | ActiveRecord: 3.4ms)
+
+
+Started GET "/users/25" for 127.0.0.1 at 2017-02-21 21:08:44 +0000
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"25"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 25], ["LIMIT", 1]]
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 25], ["LIMIT", 1]]
+[active_model_serializers]   [1m[36mIssue Load (0.4ms)[0m  [1m[34mSELECT "issues".* FROM "issues" WHERE "issues"."user_id" = $1[0m  [["user_id", 25]]
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (8.38ms)
+Completed 200 OK in 13ms (Views: 9.0ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/issues/20" for 127.0.0.1 at 2017-02-21 21:08:44 +0000
+Processing by IssuesController#show as HTML
+  Parameters: {"id"=>"20"}
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 25], ["LIMIT", 1]]
+  [1m[36mIssue Load (0.6ms)[0m  [1m[34mSELECT  "issues".* FROM "issues" WHERE "issues"."id" = $1 LIMIT $2[0m  [["id", 20], ["LIMIT", 1]]
+[active_model_serializers]   [1m[36mMessage Load (0.5ms)[0m  [1m[34mSELECT "messages".* FROM "messages" WHERE "messages"."issue_id" = $1[0m  [["issue_id", 20]]
+[active_model_serializers]   [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 25], ["LIMIT", 1]]
+[active_model_serializers] Rendered IssueSerializer with ActiveModelSerializers::Adapter::Attributes (9.32ms)
+Completed 200 OK in 15ms (Views: 9.7ms | ActiveRecord: 1.7ms)
+
+
+Started POST "/messages" for 127.0.0.1 at 2017-02-21 21:08:52 +0000
+Processing by MessagesController#create as HTML
+  Parameters: {"msg_text"=>"hello", "issue_id"=>20, "sender_id"=>25, "receiver_id"=>25, "message"=>{"sender_id"=>25, "receiver_id"=>25, "msg_text"=>"hello", "issue_id"=>20}}
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 25], ["LIMIT", 1]]
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mIssue Load (0.3ms)[0m  [1m[34mSELECT  "issues".* FROM "issues" WHERE "issues"."id" = $1 LIMIT $2[0m  [["id", 20], ["LIMIT", 1]]
+  [1m[35mSQL (0.5ms)[0m  [1m[32mINSERT INTO "messages" ("sender_id", "receiver_id", "msg_text", "created_at", "updated_at", "issue_id") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["sender_id", 25], ["receiver_id", 25], ["msg_text", "hello"], ["created_at", 2017-02-21 21:08:52 UTC], ["updated_at", 2017-02-21 21:08:52 UTC], ["issue_id", 20]]
+  [1m[35m (1.3ms)[0m  [1m[35mCOMMIT[0m
+[active_model_serializers] Rendered MessageSerializer with ActiveModelSerializers::Adapter::Attributes (1.01ms)
+Completed 201 Created in 14ms (Views: 3.1ms | ActiveRecord: 2.9ms)
+
+
+Started GET "/issues/20" for 127.0.0.1 at 2017-02-21 21:08:52 +0000
+Processing by IssuesController#show as HTML
+  Parameters: {"id"=>"20"}
+  [1m[36mUser Load (1.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 25], ["LIMIT", 1]]
+  [1m[36mIssue Load (1.7ms)[0m  [1m[34mSELECT  "issues".* FROM "issues" WHERE "issues"."id" = $1 LIMIT $2[0m  [["id", 20], ["LIMIT", 1]]
+[active_model_serializers]   [1m[36mMessage Load (0.9ms)[0m  [1m[34mSELECT "messages".* FROM "messages" WHERE "messages"."issue_id" = $1[0m  [["issue_id", 20]]
+[active_model_serializers]   [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 25], ["LIMIT", 1]]
+[active_model_serializers] Rendered IssueSerializer with ActiveModelSerializers::Adapter::Attributes (11.67ms)
+Completed 200 OK in 23ms (Views: 11.4ms | ActiveRecord: 3.7ms)
+
+
+Started GET "/users/25" for 127.0.0.1 at 2017-02-21 21:09:04 +0000
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"25"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 25], ["LIMIT", 1]]
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 25], ["LIMIT", 1]]
+[active_model_serializers]   [1m[36mIssue Load (0.3ms)[0m  [1m[34mSELECT "issues".* FROM "issues" WHERE "issues"."user_id" = $1[0m  [["user_id", 25]]
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (6.06ms)
+Completed 200 OK in 10ms (Views: 6.4ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/issues/20" for 127.0.0.1 at 2017-02-21 21:09:05 +0000
+Processing by IssuesController#show as HTML
+  Parameters: {"id"=>"20"}
+  [1m[36mUser Load (1.8ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 25], ["LIMIT", 1]]
+  [1m[36mIssue Load (0.4ms)[0m  [1m[34mSELECT  "issues".* FROM "issues" WHERE "issues"."id" = $1 LIMIT $2[0m  [["id", 20], ["LIMIT", 1]]
+[active_model_serializers]   [1m[36mMessage Load (0.6ms)[0m  [1m[34mSELECT "messages".* FROM "messages" WHERE "messages"."issue_id" = $1[0m  [["issue_id", 20]]
+[active_model_serializers]   [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 25], ["LIMIT", 1]]
+[active_model_serializers] Rendered IssueSerializer with ActiveModelSerializers::Adapter::Attributes (9.68ms)
+Completed 200 OK in 17ms (Views: 11.2ms | ActiveRecord: 2.8ms)
+
+
+Started GET "/users/25" for 127.0.0.1 at 2017-02-21 21:09:15 +0000
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"25"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 25], ["LIMIT", 1]]
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 25], ["LIMIT", 1]]
+[active_model_serializers]   [1m[36mIssue Load (0.3ms)[0m  [1m[34mSELECT "issues".* FROM "issues" WHERE "issues"."user_id" = $1[0m  [["user_id", 25]]
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (5.48ms)
+Completed 200 OK in 10ms (Views: 5.7ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/issues/20" for 127.0.0.1 at 2017-02-21 21:09:15 +0000
+Processing by IssuesController#show as HTML
+  Parameters: {"id"=>"20"}
+  [1m[36mUser Load (1.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 25], ["LIMIT", 1]]
+  [1m[36mIssue Load (1.5ms)[0m  [1m[34mSELECT  "issues".* FROM "issues" WHERE "issues"."id" = $1 LIMIT $2[0m  [["id", 20], ["LIMIT", 1]]
+[active_model_serializers]   [1m[36mMessage Load (0.6ms)[0m  [1m[34mSELECT "messages".* FROM "messages" WHERE "messages"."issue_id" = $1[0m  [["issue_id", 20]]
+[active_model_serializers]   [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 25], ["LIMIT", 1]]
+[active_model_serializers] Rendered IssueSerializer with ActiveModelSerializers::Adapter::Attributes (9.8ms)
+Completed 200 OK in 18ms (Views: 10.0ms | ActiveRecord: 3.5ms)
+
+
+Started GET "/users/25" for 127.0.0.1 at 2017-02-21 21:09:21 +0000
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"25"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 25], ["LIMIT", 1]]
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 25], ["LIMIT", 1]]
+[active_model_serializers]   [1m[36mIssue Load (0.3ms)[0m  [1m[34mSELECT "issues".* FROM "issues" WHERE "issues"."user_id" = $1[0m  [["user_id", 25]]
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (4.29ms)
+Completed 200 OK in 9ms (Views: 5.1ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/issues/20" for 127.0.0.1 at 2017-02-21 21:09:21 +0000
+Processing by IssuesController#show as HTML
+  Parameters: {"id"=>"20"}
+  [1m[36mUser Load (0.9ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 25], ["LIMIT", 1]]
+  [1m[36mIssue Load (0.4ms)[0m  [1m[34mSELECT  "issues".* FROM "issues" WHERE "issues"."id" = $1 LIMIT $2[0m  [["id", 20], ["LIMIT", 1]]
+[active_model_serializers]   [1m[36mMessage Load (0.5ms)[0m  [1m[34mSELECT "messages".* FROM "messages" WHERE "messages"."issue_id" = $1[0m  [["issue_id", 20]]
+[active_model_serializers]   [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 25], ["LIMIT", 1]]
+[active_model_serializers] Rendered IssueSerializer with ActiveModelSerializers::Adapter::Attributes (13.97ms)
+Completed 200 OK in 20ms (Views: 14.4ms | ActiveRecord: 1.9ms)
+
+
+  [1m[36mActiveRecord::SchemaMigration Load (0.6ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[36mUser Load (0.9ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.6ms)[0m  [1m[31mDELETE FROM "users" WHERE "users"."id" = $1[0m  [["id", 25]]
+  [1m[35m (1.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[31mDELETE FROM "users" WHERE "users"."id" = $1[0m  [["id", 26]]
+  [1m[35m (1.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mIssue Load (0.6ms)[0m  [1m[34mSELECT "issues".* FROM "issues"[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[31mDELETE FROM "issues" WHERE "issues"."id" = $1[0m  [["id", 20]]
+  [1m[35m (1.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[31mDELETE FROM "issues" WHERE "issues"."id" = $1[0m  [["id", 21]]
+  [1m[35m (1.1ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mMessage Load (0.6ms)[0m  [1m[34mSELECT "messages".* FROM "messages"[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.6ms)[0m  [1m[31mDELETE FROM "messages" WHERE "messages"."id" = $1[0m  [["id", 57]]
+  [1m[35m (1.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[31mDELETE FROM "messages" WHERE "messages"."id" = $1[0m  [["id", 58]]
+  [1m[35m (1.1ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[31mDELETE FROM "messages" WHERE "messages"."id" = $1[0m  [["id", 59]]
+  [1m[35m (1.1ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[31mDELETE FROM "messages" WHERE "messages"."id" = $1[0m  [["id", 60]]
+  [1m[35m (1.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[31mDELETE FROM "messages" WHERE "messages"."id" = $1[0m  [["id", 61]]
+  [1m[35m (1.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[31mDELETE FROM "messages" WHERE "messages"."id" = $1[0m  [["id", 62]]
+  [1m[35m (1.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.6ms)[0m  [1m[31mDELETE FROM "messages" WHERE "messages"."id" = $1[0m  [["id", 63]]
+  [1m[35m (1.1ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[31mDELETE FROM "messages" WHERE "messages"."id" = $1[0m  [["id", 64]]
+  [1m[35m (1.0ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[31mDELETE FROM "messages" WHERE "messages"."id" = $1[0m  [["id", 65]]
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUser Exists (0.8ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "davinder@kaur.com"], ["LIMIT", 1]]
+  [1m[36mUser Exists (0.3ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."alias" = $1 LIMIT $2[0m  [["alias", "MissDavinderKaur"], ["LIMIT", 1]]
+  [1m[35mSQL (0.6ms)[0m  [1m[32mINSERT INTO "users" ("email", "password_digest", "created_at", "updated_at", "alias", "sector", "city") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["email", "davinder@kaur.com"], ["password_digest", "$2a$10$iGkW/7tnZ1QJrAajQc5/3OlYRI0buxYSg2GA/a3oENFxvYz5iDc5m"], ["created_at", 2017-02-21 21:09:39 UTC], ["updated_at", 2017-02-21 21:09:39 UTC], ["alias", "MissDavinderKaur"], ["sector", "Financial Services"], ["city", "London"]]
+  [1m[35m (1.0ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUser Exists (0.5ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "harpreet@kaur.com"], ["LIMIT", 1]]
+  [1m[36mUser Exists (0.3ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."alias" = $1 LIMIT $2[0m  [["alias", "MissHarpreetKaur"], ["LIMIT", 1]]
+  [1m[35mSQL (0.4ms)[0m  [1m[32mINSERT INTO "users" ("email", "password_digest", "created_at", "updated_at", "alias", "sector", "city") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["email", "harpreet@kaur.com"], ["password_digest", "$2a$10$sm5XEJq4r4A5g7MEn72vK.FMzczVnVqARMPXGQ6ElDofu7mMnpQKG"], ["created_at", 2017-02-21 21:09:39 UTC], ["updated_at", 2017-02-21 21:09:39 UTC], ["alias", "MissHarpreetKaur"], ["sector", "Consulting Services"], ["city", "London"]]
+  [1m[35m (1.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.8ms)[0m  [1m[32mINSERT INTO "issues" ("user_id", "title", "category", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["user_id", 27], ["title", "My super serious sexism issue"], ["category", "sexism"], ["created_at", 2017-02-21 21:09:39 UTC], ["updated_at", 2017-02-21 21:09:39 UTC]]
+  [1m[35m (1.8ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.6ms)[0m  [1m[32mINSERT INTO "messages" ("sender_id", "receiver_id", "msg_text", "created_at", "updated_at", "issue_id") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["sender_id", 28], ["receiver_id", 27], ["msg_text", "Some advice"], ["created_at", 2017-02-21 21:09:39 UTC], ["updated_at", 2017-02-21 21:09:39 UTC], ["issue_id", 22]]
+  [1m[35m (1.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[32mINSERT INTO "messages" ("sender_id", "receiver_id", "msg_text", "created_at", "updated_at", "issue_id") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["sender_id", 27], ["receiver_id", 27], ["msg_text", "Thank you for the advice"], ["created_at", 2017-02-21 21:09:39 UTC], ["updated_at", 2017-02-21 21:09:39 UTC], ["issue_id", 22]]
+  [1m[35m (1.0ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[32mINSERT INTO "issues" ("user_id", "title", "category", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["user_id", 27], ["title", "Another super serious issue"], ["category", "racism"], ["created_at", 2017-02-21 21:09:39 UTC], ["updated_at", 2017-02-21 21:09:39 UTC]]
+  [1m[35m (1.1ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.5ms)[0m  [1m[32mINSERT INTO "messages" ("sender_id", "receiver_id", "msg_text", "created_at", "updated_at", "issue_id") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["sender_id", 28], ["receiver_id", 27], ["msg_text", "Some good advice"], ["created_at", 2017-02-21 21:09:39 UTC], ["updated_at", 2017-02-21 21:09:39 UTC], ["issue_id", 23]]
+  [1m[35m (1.0ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[32mINSERT INTO "messages" ("sender_id", "receiver_id", "msg_text", "created_at", "updated_at", "issue_id") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["sender_id", 27], ["receiver_id", 27], ["msg_text", "Thank you for the good advice"], ["created_at", 2017-02-21 21:09:39 UTC], ["updated_at", 2017-02-21 21:09:39 UTC], ["issue_id", 23]]
+  [1m[35m (1.2ms)[0m  [1m[35mCOMMIT[0m
+Started GET "/issues/20" for 127.0.0.1 at 2017-02-21 21:10:29 +0000
+  [1m[36mActiveRecord::SchemaMigration Load (1.0ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by IssuesController#show as HTML
+  Parameters: {"id"=>"20"}
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (0.23ms)
+Filter chain halted as :authenticate_user! rendered or redirected
+Completed 401 Unauthorized in 6ms (Views: 5.4ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/login" for 127.0.0.1 at 2017-02-21 21:11:15 +0000
+Processing by AuthenticationsController#login as HTML
+  Parameters: {"email"=>"davinder@kaur.com", "password"=>"[FILTERED]", "authentication"=>{"email"=>"davinder@kaur.com", "password"=>"[FILTERED]"}}
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "davinder@kaur.com"], ["LIMIT", 1]]
+[active_model_serializers]   [1m[36mIssue Load (0.7ms)[0m  [1m[34mSELECT "issues".* FROM "issues" WHERE "issues"."user_id" = $1[0m  [["user_id", 27]]
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (81.6ms)
+Completed 200 OK in 217ms (Views: 77.0ms | ActiveRecord: 15.0ms)
+
+
+Started GET "/users/27" for 127.0.0.1 at 2017-02-21 21:11:16 +0000
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"27"}
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 27], ["LIMIT", 1]]
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 27], ["LIMIT", 1]]
+[active_model_serializers]   [1m[36mIssue Load (0.8ms)[0m  [1m[34mSELECT "issues".* FROM "issues" WHERE "issues"."user_id" = $1[0m  [["user_id", 27]]
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (4.74ms)
+Completed 200 OK in 10ms (Views: 4.9ms | ActiveRecord: 1.8ms)
+
+
+Started GET "/users/27" for 127.0.0.1 at 2017-02-21 21:11:16 +0000
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"27"}
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 27], ["LIMIT", 1]]
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 27], ["LIMIT", 1]]
+[active_model_serializers]   [1m[36mIssue Load (0.8ms)[0m  [1m[34mSELECT "issues".* FROM "issues" WHERE "issues"."user_id" = $1[0m  [["user_id", 27]]
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (5.06ms)
+Completed 200 OK in 11ms (Views: 5.1ms | ActiveRecord: 2.3ms)
+
+
+Started GET "/issues/22" for 127.0.0.1 at 2017-02-21 21:11:17 +0000
+Processing by IssuesController#show as HTML
+  Parameters: {"id"=>"22"}
+  [1m[36mUser Load (5.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 27], ["LIMIT", 1]]
+  [1m[36mIssue Load (0.6ms)[0m  [1m[34mSELECT  "issues".* FROM "issues" WHERE "issues"."id" = $1 LIMIT $2[0m  [["id", 22], ["LIMIT", 1]]
+[active_model_serializers]   [1m[36mMessage Load (0.7ms)[0m  [1m[34mSELECT "messages".* FROM "messages" WHERE "messages"."issue_id" = $1[0m  [["issue_id", 22]]
+[active_model_serializers]   [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 27], ["LIMIT", 1]]
+[active_model_serializers] Rendered IssueSerializer with ActiveModelSerializers::Adapter::Attributes (39.05ms)
+Completed 200 OK in 52ms (Views: 34.0ms | ActiveRecord: 12.2ms)
+
+
+Started GET "/users/27" for 127.0.0.1 at 2017-02-21 21:14:58 +0000
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"27"}
+  [1m[36mUser Load (3.9ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 27], ["LIMIT", 1]]
+  [1m[36mUser Load (1.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 27], ["LIMIT", 1]]
+[active_model_serializers]   [1m[36mIssue Load (0.5ms)[0m  [1m[34mSELECT "issues".* FROM "issues" WHERE "issues"."user_id" = $1[0m  [["user_id", 27]]
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (5.88ms)
+Completed 200 OK in 15ms (Views: 6.5ms | ActiveRecord: 5.7ms)
+
+
+Started GET "/issues/22" for 127.0.0.1 at 2017-02-21 21:14:59 +0000
+Processing by IssuesController#show as HTML
+  Parameters: {"id"=>"22"}
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 27], ["LIMIT", 1]]
+  [1m[36mIssue Load (0.5ms)[0m  [1m[34mSELECT  "issues".* FROM "issues" WHERE "issues"."id" = $1 LIMIT $2[0m  [["id", 22], ["LIMIT", 1]]
+[active_model_serializers]   [1m[36mMessage Load (0.6ms)[0m  [1m[34mSELECT "messages".* FROM "messages" WHERE "messages"."issue_id" = $1[0m  [["issue_id", 22]]
+[active_model_serializers]   [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 27], ["LIMIT", 1]]
+[active_model_serializers] Rendered IssueSerializer with ActiveModelSerializers::Adapter::Attributes (7.78ms)
+Completed 200 OK in 13ms (Views: 8.1ms | ActiveRecord: 1.6ms)
+
+
+Started GET "/users/27" for 127.0.0.1 at 2017-02-21 21:15:17 +0000
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"27"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 27], ["LIMIT", 1]]
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 27], ["LIMIT", 1]]
+[active_model_serializers]   [1m[36mIssue Load (0.7ms)[0m  [1m[34mSELECT "issues".* FROM "issues" WHERE "issues"."user_id" = $1[0m  [["user_id", 27]]
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (6.58ms)
+Completed 200 OK in 10ms (Views: 6.6ms | ActiveRecord: 1.2ms)
+
+
+Started GET "/issues/22" for 127.0.0.1 at 2017-02-21 21:15:17 +0000
+Processing by IssuesController#show as HTML
+  Parameters: {"id"=>"22"}
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 27], ["LIMIT", 1]]
+  [1m[36mIssue Load (0.6ms)[0m  [1m[34mSELECT  "issues".* FROM "issues" WHERE "issues"."id" = $1 LIMIT $2[0m  [["id", 22], ["LIMIT", 1]]
+[active_model_serializers]   [1m[36mMessage Load (0.6ms)[0m  [1m[34mSELECT "messages".* FROM "messages" WHERE "messages"."issue_id" = $1[0m  [["issue_id", 22]]
+[active_model_serializers]   [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 27], ["LIMIT", 1]]
+[active_model_serializers] Rendered IssueSerializer with ActiveModelSerializers::Adapter::Attributes (8.97ms)
+Completed 200 OK in 15ms (Views: 9.4ms | ActiveRecord: 2.0ms)
+
+
+Started GET "/users/27" for 127.0.0.1 at 2017-02-21 21:15:20 +0000
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"27"}
+  [1m[36mUser Load (10.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 27], ["LIMIT", 1]]
+  [1m[36mUser Load (1.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 27], ["LIMIT", 1]]
+[active_model_serializers]   [1m[36mIssue Load (7.0ms)[0m  [1m[34mSELECT "issues".* FROM "issues" WHERE "issues"."user_id" = $1[0m  [["user_id", 27]]
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (11.76ms)
+Completed 200 OK in 32ms (Views: 5.6ms | ActiveRecord: 19.0ms)
+
+
+Started GET "/issues/22" for 127.0.0.1 at 2017-02-21 21:15:20 +0000
+Processing by IssuesController#show as HTML
+  Parameters: {"id"=>"22"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 27], ["LIMIT", 1]]
+  [1m[36mIssue Load (0.5ms)[0m  [1m[34mSELECT  "issues".* FROM "issues" WHERE "issues"."id" = $1 LIMIT $2[0m  [["id", 22], ["LIMIT", 1]]
+[active_model_serializers]   [1m[36mMessage Load (0.5ms)[0m  [1m[34mSELECT "messages".* FROM "messages" WHERE "messages"."issue_id" = $1[0m  [["issue_id", 22]]
+[active_model_serializers]   [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 27], ["LIMIT", 1]]
+[active_model_serializers] Rendered IssueSerializer with ActiveModelSerializers::Adapter::Attributes (6.48ms)
+Completed 200 OK in 11ms (Views: 6.7ms | ActiveRecord: 1.3ms)
+
+
+Started POST "/messages" for 127.0.0.1 at 2017-02-21 21:15:27 +0000
+Processing by MessagesController#create as HTML
+  Parameters: {"msg_text"=>"hello", "issue_id"=>22, "sender_id"=>27, "receiver_id"=>27, "message"=>{"sender_id"=>27, "receiver_id"=>27, "msg_text"=>"hello", "issue_id"=>22}}
+  [1m[36mUser Load (2.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 27], ["LIMIT", 1]]
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mIssue Load (0.7ms)[0m  [1m[34mSELECT  "issues".* FROM "issues" WHERE "issues"."id" = $1 LIMIT $2[0m  [["id", 22], ["LIMIT", 1]]
+  [1m[35mSQL (2.3ms)[0m  [1m[32mINSERT INTO "messages" ("sender_id", "receiver_id", "msg_text", "created_at", "updated_at", "issue_id") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["sender_id", 27], ["receiver_id", 27], ["msg_text", "hello"], ["created_at", 2017-02-21 21:15:27 UTC], ["updated_at", 2017-02-21 21:15:27 UTC], ["issue_id", 22]]
+  [1m[35m (2.0ms)[0m  [1m[35mCOMMIT[0m
+[active_model_serializers] Rendered MessageSerializer with ActiveModelSerializers::Adapter::Attributes (1.44ms)
+Completed 201 Created in 30ms (Views: 3.4ms | ActiveRecord: 8.2ms)
+
+
+Started GET "/issues/22" for 127.0.0.1 at 2017-02-21 21:15:27 +0000
+Processing by IssuesController#show as HTML
+  Parameters: {"id"=>"22"}
+  [1m[36mUser Load (11.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 27], ["LIMIT", 1]]
+  [1m[36mIssue Load (0.4ms)[0m  [1m[34mSELECT  "issues".* FROM "issues" WHERE "issues"."id" = $1 LIMIT $2[0m  [["id", 22], ["LIMIT", 1]]
+[active_model_serializers]   [1m[36mMessage Load (0.4ms)[0m  [1m[34mSELECT "messages".* FROM "messages" WHERE "messages"."issue_id" = $1[0m  [["issue_id", 22]]
+[active_model_serializers]   [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 27], ["LIMIT", 1]]
+[active_model_serializers] Rendered IssueSerializer with ActiveModelSerializers::Adapter::Attributes (6.17ms)
+Completed 200 OK in 21ms (Views: 6.2ms | ActiveRecord: 12.5ms)
+
+
+Started GET "/users/27" for 127.0.0.1 at 2017-02-21 21:15:36 +0000
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"27"}
+  [1m[36mUser Load (1.8ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 27], ["LIMIT", 1]]
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 27], ["LIMIT", 1]]
+[active_model_serializers]   [1m[36mIssue Load (2.1ms)[0m  [1m[34mSELECT "issues".* FROM "issues" WHERE "issues"."user_id" = $1[0m  [["user_id", 27]]
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (7.96ms)
+Completed 200 OK in 14ms (Views: 6.5ms | ActiveRecord: 4.4ms)
+
+
+Started GET "/issues/22" for 127.0.0.1 at 2017-02-21 21:15:36 +0000
+Processing by IssuesController#show as HTML
+  Parameters: {"id"=>"22"}
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 27], ["LIMIT", 1]]
+  [1m[36mIssue Load (0.5ms)[0m  [1m[34mSELECT  "issues".* FROM "issues" WHERE "issues"."id" = $1 LIMIT $2[0m  [["id", 22], ["LIMIT", 1]]
+[active_model_serializers]   [1m[36mMessage Load (0.3ms)[0m  [1m[34mSELECT "messages".* FROM "messages" WHERE "messages"."issue_id" = $1[0m  [["issue_id", 22]]
+[active_model_serializers]   [1m[36mCACHE (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 27], ["LIMIT", 1]]
+[active_model_serializers] Rendered IssueSerializer with ActiveModelSerializers::Adapter::Attributes (7.89ms)
+Completed 200 OK in 13ms (Views: 8.1ms | ActiveRecord: 1.8ms)
+
+
+Started GET "/users/27" for 127.0.0.1 at 2017-02-21 21:16:03 +0000
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"27"}
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 27], ["LIMIT", 1]]
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 27], ["LIMIT", 1]]
+[active_model_serializers]   [1m[36mIssue Load (0.7ms)[0m  [1m[34mSELECT "issues".* FROM "issues" WHERE "issues"."user_id" = $1[0m  [["user_id", 27]]
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (5.2ms)
+Completed 200 OK in 10ms (Views: 5.2ms | ActiveRecord: 2.0ms)
+
+
+Started POST "/login" for 127.0.0.1 at 2017-02-21 21:16:09 +0000
+Processing by AuthenticationsController#login as HTML
+  Parameters: {"email"=>"davinder@kaur.com", "password"=>"[FILTERED]", "authentication"=>{"email"=>"davinder@kaur.com", "password"=>"[FILTERED]"}}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "davinder@kaur.com"], ["LIMIT", 1]]
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 27], ["LIMIT", 1]]
+[active_model_serializers]   [1m[36mIssue Load (0.2ms)[0m  [1m[34mSELECT "issues".* FROM "issues" WHERE "issues"."user_id" = $1[0m  [["user_id", 27]]
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (2.91ms)
+Completed 200 OK in 89ms (Views: 3.9ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/users/27" for 127.0.0.1 at 2017-02-21 21:16:09 +0000
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"27"}
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 27], ["LIMIT", 1]]
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 27], ["LIMIT", 1]]
+[active_model_serializers]   [1m[36mIssue Load (2.0ms)[0m  [1m[34mSELECT "issues".* FROM "issues" WHERE "issues"."user_id" = $1[0m  [["user_id", 27]]
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (7.46ms)
+Completed 200 OK in 12ms (Views: 6.3ms | ActiveRecord: 3.0ms)
+
+
+Started GET "/users/27" for 127.0.0.1 at 2017-02-21 21:16:09 +0000
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"27"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 27], ["LIMIT", 1]]
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 27], ["LIMIT", 1]]
+[active_model_serializers]   [1m[36mIssue Load (0.2ms)[0m  [1m[34mSELECT "issues".* FROM "issues" WHERE "issues"."user_id" = $1[0m  [["user_id", 27]]
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (3.58ms)
+Completed 200 OK in 7ms (Views: 3.8ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/issues/22" for 127.0.0.1 at 2017-02-21 21:16:10 +0000
+Processing by IssuesController#show as HTML
+  Parameters: {"id"=>"22"}
+  [1m[36mUser Load (1.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 27], ["LIMIT", 1]]
+  [1m[36mIssue Load (2.3ms)[0m  [1m[34mSELECT  "issues".* FROM "issues" WHERE "issues"."id" = $1 LIMIT $2[0m  [["id", 22], ["LIMIT", 1]]
+[active_model_serializers]   [1m[36mMessage Load (0.4ms)[0m  [1m[34mSELECT "messages".* FROM "messages" WHERE "messages"."issue_id" = $1[0m  [["issue_id", 22]]
+[active_model_serializers]   [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 27], ["LIMIT", 1]]
+[active_model_serializers] Rendered IssueSerializer with ActiveModelSerializers::Adapter::Attributes (6.37ms)
+Completed 200 OK in 14ms (Views: 6.6ms | ActiveRecord: 3.7ms)
+
+
+Started GET "/users/27" for 127.0.0.1 at 2017-02-21 21:16:15 +0000
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"27"}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 27], ["LIMIT", 1]]
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 27], ["LIMIT", 1]]
+[active_model_serializers]   [1m[36mIssue Load (0.3ms)[0m  [1m[34mSELECT "issues".* FROM "issues" WHERE "issues"."user_id" = $1[0m  [["user_id", 27]]
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (3.27ms)
+Completed 200 OK in 7ms (Views: 3.6ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/users/27" for 127.0.0.1 at 2017-02-21 21:16:20 +0000
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"27"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 27], ["LIMIT", 1]]
+  [1m[36mUser Load (1.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 27], ["LIMIT", 1]]
+[active_model_serializers]   [1m[36mIssue Load (0.6ms)[0m  [1m[34mSELECT "issues".* FROM "issues" WHERE "issues"."user_id" = $1[0m  [["user_id", 27]]
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (5.35ms)
+Completed 200 OK in 10ms (Views: 5.4ms | ActiveRecord: 2.0ms)
+
+
+Started POST "/login" for 127.0.0.1 at 2017-02-21 21:16:28 +0000
+Processing by AuthenticationsController#login as HTML
+  Parameters: {"email"=>"davinder@kaur.com", "password"=>"[FILTERED]", "authentication"=>{"email"=>"davinder@kaur.com", "password"=>"[FILTERED]"}}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "davinder@kaur.com"], ["LIMIT", 1]]
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 27], ["LIMIT", 1]]
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (0.08ms)
+Completed 401 Unauthorized in 81ms (Views: 1.4ms | ActiveRecord: 0.6ms)
+
+
+Started POST "/login" for 127.0.0.1 at 2017-02-21 21:16:35 +0000
+Processing by AuthenticationsController#login as HTML
+  Parameters: {"email"=>"davinder@kaur.com", "password"=>"[FILTERED]", "authentication"=>{"email"=>"davinder@kaur.com", "password"=>"[FILTERED]"}}
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "davinder@kaur.com"], ["LIMIT", 1]]
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 27], ["LIMIT", 1]]
+[active_model_serializers]   [1m[36mIssue Load (0.4ms)[0m  [1m[34mSELECT "issues".* FROM "issues" WHERE "issues"."user_id" = $1[0m  [["user_id", 27]]
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (3.65ms)
+Completed 200 OK in 88ms (Views: 4.4ms | ActiveRecord: 1.4ms)
+
+
+Started GET "/users/27" for 127.0.0.1 at 2017-02-21 21:16:35 +0000
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"27"}
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 27], ["LIMIT", 1]]
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 27], ["LIMIT", 1]]
+[active_model_serializers]   [1m[36mIssue Load (0.4ms)[0m  [1m[34mSELECT "issues".* FROM "issues" WHERE "issues"."user_id" = $1[0m  [["user_id", 27]]
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (6.59ms)
+Completed 200 OK in 12ms (Views: 7.2ms | ActiveRecord: 1.8ms)
+
+
+Started GET "/users/27" for 127.0.0.1 at 2017-02-21 21:16:35 +0000
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"27"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 27], ["LIMIT", 1]]
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 27], ["LIMIT", 1]]
+[active_model_serializers]   [1m[36mIssue Load (0.4ms)[0m  [1m[34mSELECT "issues".* FROM "issues" WHERE "issues"."user_id" = $1[0m  [["user_id", 27]]
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (3.81ms)
+Completed 200 OK in 7ms (Views: 4.1ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/issues/22" for 127.0.0.1 at 2017-02-21 21:16:42 +0000
+Processing by IssuesController#show as HTML
+  Parameters: {"id"=>"22"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 27], ["LIMIT", 1]]
+  [1m[36mIssue Load (0.3ms)[0m  [1m[34mSELECT  "issues".* FROM "issues" WHERE "issues"."id" = $1 LIMIT $2[0m  [["id", 22], ["LIMIT", 1]]
+[active_model_serializers]   [1m[36mMessage Load (0.3ms)[0m  [1m[34mSELECT "messages".* FROM "messages" WHERE "messages"."issue_id" = $1[0m  [["issue_id", 22]]
+[active_model_serializers]   [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 27], ["LIMIT", 1]]
+[active_model_serializers] Rendered IssueSerializer with ActiveModelSerializers::Adapter::Attributes (8.31ms)
+Completed 200 OK in 12ms (Views: 9.0ms | ActiveRecord: 0.9ms)
+
+
+Started POST "/messages" for 127.0.0.1 at 2017-02-21 21:16:52 +0000
+Processing by MessagesController#create as HTML
+  Parameters: {"msg_text"=>"hellow agani", "issue_id"=>22, "sender_id"=>27, "receiver_id"=>27, "message"=>{"sender_id"=>27, "receiver_id"=>27, "msg_text"=>"hellow agani", "issue_id"=>22}}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 27], ["LIMIT", 1]]
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mIssue Load (0.5ms)[0m  [1m[34mSELECT  "issues".* FROM "issues" WHERE "issues"."id" = $1 LIMIT $2[0m  [["id", 22], ["LIMIT", 1]]
+  [1m[35mSQL (0.8ms)[0m  [1m[32mINSERT INTO "messages" ("sender_id", "receiver_id", "msg_text", "created_at", "updated_at", "issue_id") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["sender_id", 27], ["receiver_id", 27], ["msg_text", "hellow agani"], ["created_at", 2017-02-21 21:16:52 UTC], ["updated_at", 2017-02-21 21:16:52 UTC], ["issue_id", 22]]
+  [1m[35m (1.1ms)[0m  [1m[35mCOMMIT[0m
+[active_model_serializers] Rendered MessageSerializer with ActiveModelSerializers::Adapter::Attributes (0.84ms)
+Completed 201 Created in 13ms (Views: 2.0ms | ActiveRecord: 3.0ms)
+
+
+Started GET "/issues/22" for 127.0.0.1 at 2017-02-21 21:16:52 +0000
+Processing by IssuesController#show as HTML
+  Parameters: {"id"=>"22"}
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 27], ["LIMIT", 1]]
+  [1m[36mIssue Load (0.4ms)[0m  [1m[34mSELECT  "issues".* FROM "issues" WHERE "issues"."id" = $1 LIMIT $2[0m  [["id", 22], ["LIMIT", 1]]
+[active_model_serializers]   [1m[36mMessage Load (0.3ms)[0m  [1m[34mSELECT "messages".* FROM "messages" WHERE "messages"."issue_id" = $1[0m  [["issue_id", 22]]
+[active_model_serializers]   [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 27], ["LIMIT", 1]]
+[active_model_serializers] Rendered IssueSerializer with ActiveModelSerializers::Adapter::Attributes (5.63ms)
+Completed 200 OK in 11ms (Views: 6.0ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/users/27" for 127.0.0.1 at 2017-02-21 21:16:56 +0000
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"27"}
+  [1m[36mUser Load (2.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 27], ["LIMIT", 1]]
+  [1m[36mUser Load (0.9ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 27], ["LIMIT", 1]]
+[active_model_serializers]   [1m[36mIssue Load (1.4ms)[0m  [1m[34mSELECT "issues".* FROM "issues" WHERE "issues"."user_id" = $1[0m  [["user_id", 27]]
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (8.25ms)
+Completed 200 OK in 16ms (Views: 7.8ms | ActiveRecord: 4.9ms)
+
+
+Started GET "/issues/22" for 127.0.0.1 at 2017-02-21 21:16:57 +0000
+Processing by IssuesController#show as HTML
+  Parameters: {"id"=>"22"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 27], ["LIMIT", 1]]
+  [1m[36mIssue Load (0.5ms)[0m  [1m[34mSELECT  "issues".* FROM "issues" WHERE "issues"."id" = $1 LIMIT $2[0m  [["id", 22], ["LIMIT", 1]]
+[active_model_serializers]   [1m[36mMessage Load (4.0ms)[0m  [1m[34mSELECT "messages".* FROM "messages" WHERE "messages"."issue_id" = $1[0m  [["issue_id", 22]]
+[active_model_serializers]   [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 27], ["LIMIT", 1]]
+[active_model_serializers] Rendered IssueSerializer with ActiveModelSerializers::Adapter::Attributes (11.6ms)
+Completed 200 OK in 16ms (Views: 8.1ms | ActiveRecord: 4.9ms)
+
+
+Started GET "/issues/22" for 127.0.0.1 at 2017-02-21 21:19:27 +0000
+Processing by IssuesController#show as HTML
+  Parameters: {"id"=>"22"}
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (0.13ms)
+Filter chain halted as :authenticate_user! rendered or redirected
+Completed 401 Unauthorized in 2ms (Views: 1.4ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/login" for 127.0.0.1 at 2017-02-21 21:19:50 +0000
+Processing by AuthenticationsController#login as HTML
+  Parameters: {"email"=>"davinder@kaur.com", "password"=>"[FILTERED]", "authentication"=>{"email"=>"davinder@kaur.com", "password"=>"[FILTERED]"}}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "davinder@kaur.com"], ["LIMIT", 1]]
+[active_model_serializers]   [1m[36mIssue Load (0.3ms)[0m  [1m[34mSELECT "issues".* FROM "issues" WHERE "issues"."user_id" = $1[0m  [["user_id", 27]]
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (2.45ms)
+Completed 200 OK in 84ms (Views: 2.6ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/users/27" for 127.0.0.1 at 2017-02-21 21:19:50 +0000
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"27"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 27], ["LIMIT", 1]]
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 27], ["LIMIT", 1]]
+[active_model_serializers]   [1m[36mIssue Load (0.3ms)[0m  [1m[34mSELECT "issues".* FROM "issues" WHERE "issues"."user_id" = $1[0m  [["user_id", 27]]
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (4.87ms)
+Completed 200 OK in 9ms (Views: 5.2ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/users/27" for 127.0.0.1 at 2017-02-21 21:19:50 +0000
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"27"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 27], ["LIMIT", 1]]
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 27], ["LIMIT", 1]]
+[active_model_serializers]   [1m[36mIssue Load (0.4ms)[0m  [1m[34mSELECT "issues".* FROM "issues" WHERE "issues"."user_id" = $1[0m  [["user_id", 27]]
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (4.55ms)
+Completed 200 OK in 8ms (Views: 4.7ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/issues/22" for 127.0.0.1 at 2017-02-21 21:19:53 +0000
+Processing by IssuesController#show as HTML
+  Parameters: {"id"=>"22"}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 27], ["LIMIT", 1]]
+  [1m[36mIssue Load (0.7ms)[0m  [1m[34mSELECT  "issues".* FROM "issues" WHERE "issues"."id" = $1 LIMIT $2[0m  [["id", 22], ["LIMIT", 1]]
+[active_model_serializers]   [1m[36mMessage Load (0.6ms)[0m  [1m[34mSELECT "messages".* FROM "messages" WHERE "messages"."issue_id" = $1[0m  [["issue_id", 22]]
+[active_model_serializers]   [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 27], ["LIMIT", 1]]
+[active_model_serializers] Rendered IssueSerializer with ActiveModelSerializers::Adapter::Attributes (8.92ms)
+Completed 200 OK in 14ms (Views: 9.2ms | ActiveRecord: 1.8ms)
+
+
+Started POST "/messages" for 127.0.0.1 at 2017-02-21 21:20:04 +0000
+Processing by MessagesController#create as HTML
+  Parameters: {"msg_text"=>"ggg", "issue_id"=>22, "sender_id"=>27, "receiver_id"=>27, "message"=>{"sender_id"=>27, "receiver_id"=>27, "msg_text"=>"ggg", "issue_id"=>22}}
+Started POST "/messages" for 127.0.0.1 at 2017-02-21 21:20:04 +0000
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 27], ["LIMIT", 1]]
+Processing by MessagesController#create as HTML
+  Parameters: {"msg_text"=>nil, "issue_id"=>22, "sender_id"=>27, "receiver_id"=>27, "message"=>{"sender_id"=>27, "receiver_id"=>27, "msg_text"=>nil, "issue_id"=>22}}
+  [1m[35m (2.4ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUser Load (1.8ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 27], ["LIMIT", 1]]
+  [1m[36mIssue Load (1.3ms)[0m  [1m[34mSELECT  "issues".* FROM "issues" WHERE "issues"."id" = $1 LIMIT $2[0m  [["id", 22], ["LIMIT", 1]]
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (1.3ms)[0m  [1m[32mINSERT INTO "messages" ("sender_id", "receiver_id", "msg_text", "created_at", "updated_at", "issue_id") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["sender_id", 27], ["receiver_id", 27], ["msg_text", "ggg"], ["created_at", 2017-02-21 21:20:04 UTC], ["updated_at", 2017-02-21 21:20:04 UTC], ["issue_id", 22]]
+  [1m[36mIssue Load (0.8ms)[0m  [1m[34mSELECT  "issues".* FROM "issues" WHERE "issues"."id" = $1 LIMIT $2[0m  [["id", 22], ["LIMIT", 1]]
+  [1m[35m (2.0ms)[0m  [1m[35mCOMMIT[0m
+[active_model_serializers] Rendered MessageSerializer with ActiveModelSerializers::Adapter::Attributes (0.66ms)
+Completed 201 Created in 18ms (Views: 2.1ms | ActiveRecord: 7.8ms)
+
+
+  [1m[35mSQL (2.7ms)[0m  [1m[32mINSERT INTO "messages" ("sender_id", "receiver_id", "created_at", "updated_at", "issue_id") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["sender_id", 27], ["receiver_id", 27], ["created_at", 2017-02-21 21:20:04 UTC], ["updated_at", 2017-02-21 21:20:04 UTC], ["issue_id", 22]]
+  [1m[35m (1.8ms)[0m  [1m[35mCOMMIT[0m
+[active_model_serializers] Rendered MessageSerializer with ActiveModelSerializers::Adapter::Attributes (0.98ms)
+Completed 201 Created in 19ms (Views: 3.6ms | ActiveRecord: 7.4ms)
+
+
+Started GET "/issues/22" for 127.0.0.1 at 2017-02-21 21:20:04 +0000
+Processing by IssuesController#show as HTML
+  Parameters: {"id"=>"22"}
+Started GET "/issues/22" for 127.0.0.1 at 2017-02-21 21:20:04 +0000
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 27], ["LIMIT", 1]]
+Processing by IssuesController#show as HTML
+  [1m[36mIssue Load (2.2ms)[0m  [1m[34mSELECT  "issues".* FROM "issues" WHERE "issues"."id" = $1 LIMIT $2[0m  [["id", 22], ["LIMIT", 1]]
+  Parameters: {"id"=>"22"}
+[active_model_serializers]   [1m[36mMessage Load (0.5ms)[0m  [1m[34mSELECT "messages".* FROM "messages" WHERE "messages"."issue_id" = $1[0m  [["issue_id", 22]]
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 27], ["LIMIT", 1]]
+[active_model_serializers]   [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 27], ["LIMIT", 1]]
+[active_model_serializers] Rendered IssueSerializer with ActiveModelSerializers::Adapter::Attributes (6.96ms)
+  [1m[36mIssue Load (1.7ms)[0m  [1m[34mSELECT  "issues".* FROM "issues" WHERE "issues"."id" = $1 LIMIT $2[0m  [["id", 22], ["LIMIT", 1]]
+Completed 200 OK in 15ms (Views: 7.4ms | ActiveRecord: 3.3ms)
+
+
+[active_model_serializers]   [1m[36mMessage Load (1.4ms)[0m  [1m[34mSELECT "messages".* FROM "messages" WHERE "messages"."issue_id" = $1[0m  [["issue_id", 22]]
+[active_model_serializers]   [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 27], ["LIMIT", 1]]
+[active_model_serializers] Rendered IssueSerializer with ActiveModelSerializers::Adapter::Attributes (10.7ms)
+Completed 200 OK in 18ms (Views: 10.3ms | ActiveRecord: 3.3ms)
+
+
+Started GET "/users/27" for 127.0.0.1 at 2017-02-21 21:20:44 +0000
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"27"}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 27], ["LIMIT", 1]]
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 27], ["LIMIT", 1]]
+[active_model_serializers]   [1m[36mIssue Load (0.3ms)[0m  [1m[34mSELECT "issues".* FROM "issues" WHERE "issues"."user_id" = $1[0m  [["user_id", 27]]
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (5.21ms)
+Completed 200 OK in 9ms (Views: 5.6ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/issues/22" for 127.0.0.1 at 2017-02-21 21:20:44 +0000
+Processing by IssuesController#show as HTML
+  Parameters: {"id"=>"22"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 27], ["LIMIT", 1]]
+  [1m[36mIssue Load (0.4ms)[0m  [1m[34mSELECT  "issues".* FROM "issues" WHERE "issues"."id" = $1 LIMIT $2[0m  [["id", 22], ["LIMIT", 1]]
+Started GET "/users/27" for 127.0.0.1 at 2017-02-21 21:20:45 +0000
+Started GET "/issues/22" for 127.0.0.1 at 2017-02-21 21:20:45 +0000
+[active_model_serializers]   [1m[36mMessage Load (1.3ms)[0m  [1m[34mSELECT "messages".* FROM "messages" WHERE "messages"."issue_id" = $1[0m  [["issue_id", 22]]
+Processing by UsersController#show as HTML
+[active_model_serializers]   [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 27], ["LIMIT", 1]]
+  Parameters: {"id"=>"27"}
+[active_model_serializers] Rendered IssueSerializer with ActiveModelSerializers::Adapter::Attributes (11.02ms)
+Completed 200 OK in 210ms (Views: 11.4ms | ActiveRecord: 2.0ms)
+
+
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 27], ["LIMIT", 1]]
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 27], ["LIMIT", 1]]
+[active_model_serializers]   [1m[36mIssue Load (0.5ms)[0m  [1m[34mSELECT "issues".* FROM "issues" WHERE "issues"."user_id" = $1[0m  [["user_id", 27]]
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (5.04ms)
+Completed 200 OK in 12ms (Views: 5.3ms | ActiveRecord: 1.5ms)
+
+
+Processing by IssuesController#show as HTML
+  Parameters: {"id"=>"22"}
+  [1m[36mUser Load (1.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 27], ["LIMIT", 1]]
+  [1m[36mIssue Load (1.1ms)[0m  [1m[34mSELECT  "issues".* FROM "issues" WHERE "issues"."id" = $1 LIMIT $2[0m  [["id", 22], ["LIMIT", 1]]
+[active_model_serializers]   [1m[36mMessage Load (1.2ms)[0m  [1m[34mSELECT "messages".* FROM "messages" WHERE "messages"."issue_id" = $1[0m  [["issue_id", 22]]
+[active_model_serializers]   [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 27], ["LIMIT", 1]]
+[active_model_serializers] Rendered IssueSerializer with ActiveModelSerializers::Adapter::Attributes (10.15ms)
+Completed 200 OK in 17ms (Views: 10.0ms | ActiveRecord: 3.8ms)
+
+
+Started GET "/users/27" for 127.0.0.1 at 2017-02-21 21:20:45 +0000
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"27"}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 27], ["LIMIT", 1]]
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 27], ["LIMIT", 1]]
+[active_model_serializers]   [1m[36mIssue Load (0.3ms)[0m  [1m[34mSELECT "issues".* FROM "issues" WHERE "issues"."user_id" = $1[0m  [["user_id", 27]]
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (4.36ms)
+Completed 200 OK in 9ms (Views: 4.7ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/issues/22" for 127.0.0.1 at 2017-02-21 21:20:45 +0000
+Processing by IssuesController#show as HTML
+  Parameters: {"id"=>"22"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 27], ["LIMIT", 1]]
+  [1m[36mIssue Load (0.3ms)[0m  [1m[34mSELECT  "issues".* FROM "issues" WHERE "issues"."id" = $1 LIMIT $2[0m  [["id", 22], ["LIMIT", 1]]
+[active_model_serializers]   [1m[36mMessage Load (0.3ms)[0m  [1m[34mSELECT "messages".* FROM "messages" WHERE "messages"."issue_id" = $1[0m  [["issue_id", 22]]
+[active_model_serializers]   [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 27], ["LIMIT", 1]]
+[active_model_serializers] Rendered IssueSerializer with ActiveModelSerializers::Adapter::Attributes (7.98ms)
+Completed 200 OK in 12ms (Views: 8.5ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/users/27" for 127.0.0.1 at 2017-02-21 21:22:35 +0000
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"27"}
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 27], ["LIMIT", 1]]
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 27], ["LIMIT", 1]]
+[active_model_serializers]   [1m[36mIssue Load (31.3ms)[0m  [1m[34mSELECT "issues".* FROM "issues" WHERE "issues"."user_id" = $1[0m  [["user_id", 27]]
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (56.75ms)
+Completed 200 OK in 63ms (Views: 26.2ms | ActiveRecord: 32.8ms)
+
+
+Started GET "/users/27" for 127.0.0.1 at 2017-02-21 21:22:35 +0000
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"27"}
+  [1m[36mUser Load (1.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 27], ["LIMIT", 1]]
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 27], ["LIMIT", 1]]
+[active_model_serializers]   [1m[36mIssue Load (0.3ms)[0m  [1m[34mSELECT "issues".* FROM "issues" WHERE "issues"."user_id" = $1[0m  [["user_id", 27]]
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (5.43ms)
+Completed 200 OK in 11ms (Views: 6.3ms | ActiveRecord: 1.8ms)
+
+
+Started GET "/issues/22" for 127.0.0.1 at 2017-02-21 21:22:35 +0000
+Processing by IssuesController#show as HTML
+  Parameters: {"id"=>"22"}
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 27], ["LIMIT", 1]]
+  [1m[36mIssue Load (0.4ms)[0m  [1m[34mSELECT  "issues".* FROM "issues" WHERE "issues"."id" = $1 LIMIT $2[0m  [["id", 22], ["LIMIT", 1]]
+[active_model_serializers]   [1m[36mMessage Load (0.4ms)[0m  [1m[34mSELECT "messages".* FROM "messages" WHERE "messages"."issue_id" = $1[0m  [["issue_id", 22]]
+[active_model_serializers]   [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 27], ["LIMIT", 1]]
+[active_model_serializers] Rendered IssueSerializer with ActiveModelSerializers::Adapter::Attributes (9.92ms)
+Completed 200 OK in 16ms (Views: 10.9ms | ActiveRecord: 1.4ms)
+
+
+Started GET "/issues/22" for 127.0.0.1 at 2017-02-21 21:22:35 +0000
+Processing by IssuesController#show as HTML
+  Parameters: {"id"=>"22"}
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 27], ["LIMIT", 1]]
+  [1m[36mIssue Load (1.1ms)[0m  [1m[34mSELECT  "issues".* FROM "issues" WHERE "issues"."id" = $1 LIMIT $2[0m  [["id", 22], ["LIMIT", 1]]
+[active_model_serializers]   [1m[36mMessage Load (0.7ms)[0m  [1m[34mSELECT "messages".* FROM "messages" WHERE "messages"."issue_id" = $1[0m  [["issue_id", 22]]
+[active_model_serializers]   [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 27], ["LIMIT", 1]]
+[active_model_serializers] Rendered IssueSerializer with ActiveModelSerializers::Adapter::Attributes (10.36ms)
+Completed 200 OK in 16ms (Views: 10.5ms | ActiveRecord: 2.5ms)
+
+
+Started GET "/users/27" for 127.0.0.1 at 2017-02-21 21:22:35 +0000
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"27"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 27], ["LIMIT", 1]]
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 27], ["LIMIT", 1]]
+[active_model_serializers]   [1m[36mIssue Load (0.3ms)[0m  [1m[34mSELECT "issues".* FROM "issues" WHERE "issues"."user_id" = $1[0m  [["user_id", 27]]
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (4.57ms)
+Completed 200 OK in 9ms (Views: 5.2ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/issues/22" for 127.0.0.1 at 2017-02-21 21:22:35 +0000
+Processing by IssuesController#show as HTML
+  Parameters: {"id"=>"22"}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 27], ["LIMIT", 1]]
+  [1m[36mIssue Load (0.4ms)[0m  [1m[34mSELECT  "issues".* FROM "issues" WHERE "issues"."id" = $1 LIMIT $2[0m  [["id", 22], ["LIMIT", 1]]
+[active_model_serializers]   [1m[36mMessage Load (0.5ms)[0m  [1m[34mSELECT "messages".* FROM "messages" WHERE "messages"."issue_id" = $1[0m  [["issue_id", 22]]
+[active_model_serializers]   [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 27], ["LIMIT", 1]]
+[active_model_serializers] Rendered IssueSerializer with ActiveModelSerializers::Adapter::Attributes (9.8ms)
+Completed 200 OK in 31ms (Views: 10.8ms | ActiveRecord: 1.3ms)
+
+
+Started GET "/users/27" for 127.0.0.1 at 2017-02-21 21:27:31 +0000
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"27"}
+  [1m[36mUser Load (0.9ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 27], ["LIMIT", 1]]
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 27], ["LIMIT", 1]]
+Started GET "/issues/22" for 127.0.0.1 at 2017-02-21 21:27:31 +0000
+[active_model_serializers]   [1m[36mIssue Load (1.3ms)[0m  [1m[34mSELECT "issues".* FROM "issues" WHERE "issues"."user_id" = $1[0m  [["user_id", 27]]
+Processing by IssuesController#show as HTML
+  Parameters: {"id"=>"22"}
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (182.35ms)
+Completed 200 OK in 209ms (Views: 185.2ms | ActiveRecord: 2.9ms)
+
+
+  [1m[36mUser Load (1.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 27], ["LIMIT", 1]]
+  [1m[36mIssue Load (1.0ms)[0m  [1m[34mSELECT  "issues".* FROM "issues" WHERE "issues"."id" = $1 LIMIT $2[0m  [["id", 22], ["LIMIT", 1]]
+[active_model_serializers]   [1m[36mMessage Load (1.5ms)[0m  [1m[34mSELECT "messages".* FROM "messages" WHERE "messages"."issue_id" = $1[0m  [["issue_id", 22]]
+[active_model_serializers]   [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 27], ["LIMIT", 1]]
+[active_model_serializers] Rendered IssueSerializer with ActiveModelSerializers::Adapter::Attributes (10.99ms)
+Completed 200 OK in 21ms (Views: 10.7ms | ActiveRecord: 3.7ms)
+
+
+Started GET "/users/27" for 127.0.0.1 at 2017-02-21 21:27:31 +0000
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"27"}
+  [1m[36mUser Load (1.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 27], ["LIMIT", 1]]
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 27], ["LIMIT", 1]]
+[active_model_serializers]   [1m[36mIssue Load (0.4ms)[0m  [1m[34mSELECT "issues".* FROM "issues" WHERE "issues"."user_id" = $1[0m  [["user_id", 27]]
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (6.85ms)
+Completed 200 OK in 14ms (Views: 7.6ms | ActiveRecord: 2.6ms)
+
+
+Started POST "/login" for 127.0.0.1 at 2017-02-21 21:27:36 +0000
+Processing by AuthenticationsController#login as HTML
+  Parameters: {"email"=>"davinder@kaur.com", "password"=>"[FILTERED]", "authentication"=>{"email"=>"davinder@kaur.com", "password"=>"[FILTERED]"}}
+  [1m[36mUser Load (1.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "davinder@kaur.com"], ["LIMIT", 1]]
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 27], ["LIMIT", 1]]
+[active_model_serializers]   [1m[36mIssue Load (0.4ms)[0m  [1m[34mSELECT "issues".* FROM "issues" WHERE "issues"."user_id" = $1[0m  [["user_id", 27]]
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (2.96ms)
+Completed 200 OK in 85ms (Views: 4.0ms | ActiveRecord: 2.3ms)
+
+
+Started GET "/users/27" for 127.0.0.1 at 2017-02-21 21:27:36 +0000
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"27"}
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 27], ["LIMIT", 1]]
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 27], ["LIMIT", 1]]
+[active_model_serializers]   [1m[36mIssue Load (0.5ms)[0m  [1m[34mSELECT "issues".* FROM "issues" WHERE "issues"."user_id" = $1[0m  [["user_id", 27]]
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (5.44ms)
+Completed 200 OK in 11ms (Views: 5.7ms | ActiveRecord: 1.7ms)
+
+
+Started GET "/users/27" for 127.0.0.1 at 2017-02-21 21:27:36 +0000
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"27"}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 27], ["LIMIT", 1]]
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 27], ["LIMIT", 1]]
+[active_model_serializers]   [1m[36mIssue Load (0.3ms)[0m  [1m[34mSELECT "issues".* FROM "issues" WHERE "issues"."user_id" = $1[0m  [["user_id", 27]]
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (4.36ms)
+Completed 200 OK in 8ms (Views: 4.6ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/issues/22" for 127.0.0.1 at 2017-02-21 21:27:38 +0000
+Processing by IssuesController#show as HTML
+  Parameters: {"id"=>"22"}
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 27], ["LIMIT", 1]]
+  [1m[36mIssue Load (2.5ms)[0m  [1m[34mSELECT  "issues".* FROM "issues" WHERE "issues"."id" = $1 LIMIT $2[0m  [["id", 22], ["LIMIT", 1]]
+[active_model_serializers]   [1m[36mMessage Load (0.6ms)[0m  [1m[34mSELECT "messages".* FROM "messages" WHERE "messages"."issue_id" = $1[0m  [["issue_id", 22]]
+[active_model_serializers]   [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 27], ["LIMIT", 1]]
+[active_model_serializers] Rendered IssueSerializer with ActiveModelSerializers::Adapter::Attributes (18.05ms)
+Completed 200 OK in 26ms (Views: 18.6ms | ActiveRecord: 4.0ms)
+
+
+Started GET "/users/27" for 127.0.0.1 at 2017-02-21 21:27:43 +0000
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"27"}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 27], ["LIMIT", 1]]
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 27], ["LIMIT", 1]]
+[active_model_serializers]   [1m[36mIssue Load (0.3ms)[0m  [1m[34mSELECT "issues".* FROM "issues" WHERE "issues"."user_id" = $1[0m  [["user_id", 27]]
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (4.72ms)
+Completed 200 OK in 10ms (Views: 5.2ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/users/27" for 127.0.0.1 at 2017-02-21 21:27:44 +0000
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"27"}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 27], ["LIMIT", 1]]
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 27], ["LIMIT", 1]]
+[active_model_serializers]   [1m[36mIssue Load (0.3ms)[0m  [1m[34mSELECT "issues".* FROM "issues" WHERE "issues"."user_id" = $1[0m  [["user_id", 27]]
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (3.28ms)
+Completed 200 OK in 7ms (Views: 3.8ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/users/27" for 127.0.0.1 at 2017-02-21 21:27:45 +0000
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"27"}
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 27], ["LIMIT", 1]]
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 27], ["LIMIT", 1]]
+[active_model_serializers]   [1m[36mIssue Load (0.5ms)[0m  [1m[34mSELECT "issues".* FROM "issues" WHERE "issues"."user_id" = $1[0m  [["user_id", 27]]
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (4.19ms)
+Completed 200 OK in 9ms (Views: 4.5ms | ActiveRecord: 1.5ms)
+
+
+Started POST "/login" for 127.0.0.1 at 2017-02-21 21:27:49 +0000
+Processing by AuthenticationsController#login as HTML
+  Parameters: {"email"=>"davinder@kaur.com", "password"=>"[FILTERED]", "authentication"=>{"email"=>"davinder@kaur.com", "password"=>"[FILTERED]"}}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "davinder@kaur.com"], ["LIMIT", 1]]
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 27], ["LIMIT", 1]]
+[active_model_serializers]   [1m[36mIssue Load (0.2ms)[0m  [1m[34mSELECT "issues".* FROM "issues" WHERE "issues"."user_id" = $1[0m  [["user_id", 27]]
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (2.76ms)
+Completed 200 OK in 90ms (Views: 3.9ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/users/27" for 127.0.0.1 at 2017-02-21 21:27:50 +0000
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"27"}
+  [1m[36mUser Load (1.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 27], ["LIMIT", 1]]
+  [1m[36mUser Load (0.9ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 27], ["LIMIT", 1]]
+[active_model_serializers]   [1m[36mIssue Load (0.5ms)[0m  [1m[34mSELECT "issues".* FROM "issues" WHERE "issues"."user_id" = $1[0m  [["user_id", 27]]
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (5.74ms)
+Completed 200 OK in 12ms (Views: 6.0ms | ActiveRecord: 3.2ms)
+
+
+Started GET "/users/27" for 127.0.0.1 at 2017-02-21 21:27:50 +0000
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"27"}
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 27], ["LIMIT", 1]]
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 27], ["LIMIT", 1]]
+[active_model_serializers]   [1m[36mIssue Load (0.7ms)[0m  [1m[34mSELECT "issues".* FROM "issues" WHERE "issues"."user_id" = $1[0m  [["user_id", 27]]
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (4.68ms)
+Completed 200 OK in 10ms (Views: 4.9ms | ActiveRecord: 2.2ms)
+
+
+Started POST "/login" for 127.0.0.1 at 2017-02-21 21:27:57 +0000
+Processing by AuthenticationsController#login as HTML
+  Parameters: {"email"=>"davinder@kaur.com", "password"=>"[FILTERED]", "authentication"=>{"email"=>"davinder@kaur.com", "password"=>"[FILTERED]"}}
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "davinder@kaur.com"], ["LIMIT", 1]]
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 27], ["LIMIT", 1]]
+[active_model_serializers]   [1m[36mIssue Load (0.2ms)[0m  [1m[34mSELECT "issues".* FROM "issues" WHERE "issues"."user_id" = $1[0m  [["user_id", 27]]
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (2.69ms)
+Completed 200 OK in 91ms (Views: 3.6ms | ActiveRecord: 1.3ms)
+
+
+Started GET "/users/27" for 127.0.0.1 at 2017-02-21 21:27:57 +0000
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"27"}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 27], ["LIMIT", 1]]
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 27], ["LIMIT", 1]]
+[active_model_serializers]   [1m[36mIssue Load (0.3ms)[0m  [1m[34mSELECT "issues".* FROM "issues" WHERE "issues"."user_id" = $1[0m  [["user_id", 27]]
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (3.74ms)
+Completed 200 OK in 11ms (Views: 4.3ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/users/27" for 127.0.0.1 at 2017-02-21 21:27:57 +0000
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"27"}
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 27], ["LIMIT", 1]]
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 27], ["LIMIT", 1]]
+[active_model_serializers]   [1m[36mIssue Load (1.0ms)[0m  [1m[34mSELECT "issues".* FROM "issues" WHERE "issues"."user_id" = $1[0m  [["user_id", 27]]
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (6.11ms)
+Completed 200 OK in 12ms (Views: 6.3ms | ActiveRecord: 2.5ms)
+
+
+Started GET "/issues/22" for 127.0.0.1 at 2017-02-21 21:27:58 +0000
+Processing by IssuesController#show as HTML
+  Parameters: {"id"=>"22"}
+  [1m[36mUser Load (1.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 27], ["LIMIT", 1]]
+  [1m[36mIssue Load (1.2ms)[0m  [1m[34mSELECT  "issues".* FROM "issues" WHERE "issues"."id" = $1 LIMIT $2[0m  [["id", 22], ["LIMIT", 1]]
+[active_model_serializers]   [1m[36mMessage Load (0.7ms)[0m  [1m[34mSELECT "messages".* FROM "messages" WHERE "messages"."issue_id" = $1[0m  [["issue_id", 22]]
+[active_model_serializers]   [1m[36mCACHE (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 27], ["LIMIT", 1]]
+[active_model_serializers] Rendered IssueSerializer with ActiveModelSerializers::Adapter::Attributes (11.8ms)
+Completed 200 OK in 18ms (Views: 12.0ms | ActiveRecord: 3.1ms)
+
+
+Started GET "/issues/22" for 127.0.0.1 at 2017-02-21 21:31:58 +0000
+Processing by IssuesController#show as HTML
+  Parameters: {"id"=>"22"}
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (0.11ms)
+Filter chain halted as :authenticate_user! rendered or redirected
+Completed 401 Unauthorized in 1ms (Views: 0.7ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/login" for 127.0.0.1 at 2017-02-21 21:32:09 +0000
+Processing by AuthenticationsController#login as HTML
+  Parameters: {"email"=>"davinder@kaur.com", "password"=>"[FILTERED]", "authentication"=>{"email"=>"davinder@kaur.com", "password"=>"[FILTERED]"}}
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "davinder@kaur.com"], ["LIMIT", 1]]
+[active_model_serializers]   [1m[36mIssue Load (0.5ms)[0m  [1m[34mSELECT "issues".* FROM "issues" WHERE "issues"."user_id" = $1[0m  [["user_id", 27]]
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (3.25ms)
+Completed 200 OK in 79ms (Views: 3.2ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/users/27" for 127.0.0.1 at 2017-02-21 21:32:09 +0000
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"27"}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 27], ["LIMIT", 1]]
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 27], ["LIMIT", 1]]
+[active_model_serializers]   [1m[36mIssue Load (0.3ms)[0m  [1m[34mSELECT "issues".* FROM "issues" WHERE "issues"."user_id" = $1[0m  [["user_id", 27]]
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (4.71ms)
+Completed 200 OK in 9ms (Views: 5.1ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/users/27" for 127.0.0.1 at 2017-02-21 21:32:09 +0000
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"27"}
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 27], ["LIMIT", 1]]
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 27], ["LIMIT", 1]]
+[active_model_serializers]   [1m[36mIssue Load (0.4ms)[0m  [1m[34mSELECT "issues".* FROM "issues" WHERE "issues"."user_id" = $1[0m  [["user_id", 27]]
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (5.74ms)
+Completed 200 OK in 11ms (Views: 6.5ms | ActiveRecord: 1.5ms)
+
+
+Started GET "/issues/22" for 127.0.0.1 at 2017-02-21 21:32:11 +0000
+Processing by IssuesController#show as HTML
+  Parameters: {"id"=>"22"}
+  [1m[36mUser Load (1.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 27], ["LIMIT", 1]]
+  [1m[36mIssue Load (0.7ms)[0m  [1m[34mSELECT  "issues".* FROM "issues" WHERE "issues"."id" = $1 LIMIT $2[0m  [["id", 22], ["LIMIT", 1]]
+[active_model_serializers]   [1m[36mMessage Load (0.5ms)[0m  [1m[34mSELECT "messages".* FROM "messages" WHERE "messages"."issue_id" = $1[0m  [["issue_id", 22]]
+[active_model_serializers]   [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 27], ["LIMIT", 1]]
+[active_model_serializers] Rendered IssueSerializer with ActiveModelSerializers::Adapter::Attributes (6.1ms)
+Completed 200 OK in 13ms (Views: 6.2ms | ActiveRecord: 2.8ms)
+
+
+Started POST "/messages" for 127.0.0.1 at 2017-02-21 21:32:20 +0000
+Processing by MessagesController#create as HTML
+  Parameters: {"msg_text"=>"aaaaaaaaa", "issue_id"=>22, "sender_id"=>27, "receiver_id"=>27, "message"=>{"sender_id"=>27, "receiver_id"=>27, "msg_text"=>"aaaaaaaaa", "issue_id"=>22}}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 27], ["LIMIT", 1]]
+  [1m[35m (0.4ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mIssue Load (0.5ms)[0m  [1m[34mSELECT  "issues".* FROM "issues" WHERE "issues"."id" = $1 LIMIT $2[0m  [["id", 22], ["LIMIT", 1]]
+  [1m[35mSQL (0.9ms)[0m  [1m[32mINSERT INTO "messages" ("sender_id", "receiver_id", "msg_text", "created_at", "updated_at", "issue_id") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["sender_id", 27], ["receiver_id", 27], ["msg_text", "aaaaaaaaa"], ["created_at", 2017-02-21 21:32:20 UTC], ["updated_at", 2017-02-21 21:32:20 UTC], ["issue_id", 22]]
+  [1m[35m (1.3ms)[0m  [1m[35mCOMMIT[0m
+[active_model_serializers] Rendered MessageSerializer with ActiveModelSerializers::Adapter::Attributes (0.81ms)
+Completed 201 Created in 15ms (Views: 2.3ms | ActiveRecord: 3.5ms)
+
+
+Started GET "/issues/22" for 127.0.0.1 at 2017-02-21 21:32:20 +0000
+Processing by IssuesController#show as HTML
+  Parameters: {"id"=>"22"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 27], ["LIMIT", 1]]
+  [1m[36mIssue Load (0.6ms)[0m  [1m[34mSELECT  "issues".* FROM "issues" WHERE "issues"."id" = $1 LIMIT $2[0m  [["id", 22], ["LIMIT", 1]]
+[active_model_serializers]   [1m[36mMessage Load (0.5ms)[0m  [1m[34mSELECT "messages".* FROM "messages" WHERE "messages"."issue_id" = $1[0m  [["issue_id", 22]]
+[active_model_serializers]   [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 27], ["LIMIT", 1]]
+[active_model_serializers] Rendered IssueSerializer with ActiveModelSerializers::Adapter::Attributes (8.42ms)
+Completed 200 OK in 12ms (Views: 8.9ms | ActiveRecord: 1.3ms)
+
+
+Started GET "/users/27" for 127.0.0.1 at 2017-02-21 21:32:26 +0000
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"27"}
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 27], ["LIMIT", 1]]
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 27], ["LIMIT", 1]]
+[active_model_serializers]   [1m[36mIssue Load (0.5ms)[0m  [1m[34mSELECT "issues".* FROM "issues" WHERE "issues"."user_id" = $1[0m  [["user_id", 27]]
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (4.9ms)
+Completed 200 OK in 9ms (Views: 5.0ms | ActiveRecord: 1.6ms)
+
+
+Started GET "/issues/22" for 127.0.0.1 at 2017-02-21 21:32:26 +0000
+Processing by IssuesController#show as HTML
+  Parameters: {"id"=>"22"}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 27], ["LIMIT", 1]]
+  [1m[36mIssue Load (0.3ms)[0m  [1m[34mSELECT  "issues".* FROM "issues" WHERE "issues"."id" = $1 LIMIT $2[0m  [["id", 22], ["LIMIT", 1]]
+[active_model_serializers]   [1m[36mMessage Load (0.3ms)[0m  [1m[34mSELECT "messages".* FROM "messages" WHERE "messages"."issue_id" = $1[0m  [["issue_id", 22]]
+[active_model_serializers]   [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 27], ["LIMIT", 1]]
+[active_model_serializers] Rendered IssueSerializer with ActiveModelSerializers::Adapter::Attributes (7.28ms)
+Completed 200 OK in 12ms (Views: 8.2ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/users/27" for 127.0.0.1 at 2017-02-21 21:32:28 +0000
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"27"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 27], ["LIMIT", 1]]
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 27], ["LIMIT", 1]]
+[active_model_serializers]   [1m[36mIssue Load (0.3ms)[0m  [1m[34mSELECT "issues".* FROM "issues" WHERE "issues"."user_id" = $1[0m  [["user_id", 27]]
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (5.61ms)
+Completed 200 OK in 11ms (Views: 6.6ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/issues/22" for 127.0.0.1 at 2017-02-21 21:32:28 +0000
+Processing by IssuesController#show as HTML
+  Parameters: {"id"=>"22"}
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 27], ["LIMIT", 1]]
+  [1m[36mIssue Load (0.5ms)[0m  [1m[34mSELECT  "issues".* FROM "issues" WHERE "issues"."id" = $1 LIMIT $2[0m  [["id", 22], ["LIMIT", 1]]
+[active_model_serializers]   [1m[36mMessage Load (1.6ms)[0m  [1m[34mSELECT "messages".* FROM "messages" WHERE "messages"."issue_id" = $1[0m  [["issue_id", 22]]
+[active_model_serializers]   [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 27], ["LIMIT", 1]]
+[active_model_serializers] Rendered IssueSerializer with ActiveModelSerializers::Adapter::Attributes (10.27ms)
+Completed 200 OK in 17ms (Views: 9.3ms | ActiveRecord: 2.8ms)
+
+
+Started GET "/users/27" for 127.0.0.1 at 2017-02-21 21:32:30 +0000
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"27"}
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 27], ["LIMIT", 1]]
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 27], ["LIMIT", 1]]
+[active_model_serializers]   [1m[36mIssue Load (0.5ms)[0m  [1m[34mSELECT "issues".* FROM "issues" WHERE "issues"."user_id" = $1[0m  [["user_id", 27]]
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (6.85ms)
+Completed 200 OK in 13ms (Views: 7.3ms | ActiveRecord: 1.4ms)
+
+
+Started GET "/issues/22" for 127.0.0.1 at 2017-02-21 21:32:30 +0000
+Processing by IssuesController#show as HTML
+  Parameters: {"id"=>"22"}
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 27], ["LIMIT", 1]]
+  [1m[36mIssue Load (0.7ms)[0m  [1m[34mSELECT  "issues".* FROM "issues" WHERE "issues"."id" = $1 LIMIT $2[0m  [["id", 22], ["LIMIT", 1]]
+[active_model_serializers]   [1m[36mMessage Load (0.4ms)[0m  [1m[34mSELECT "messages".* FROM "messages" WHERE "messages"."issue_id" = $1[0m  [["issue_id", 22]]
+[active_model_serializers]   [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 27], ["LIMIT", 1]]
+[active_model_serializers] Rendered IssueSerializer with ActiveModelSerializers::Adapter::Attributes (14.62ms)
+Completed 200 OK in 20ms (Views: 15.2ms | ActiveRecord: 1.8ms)
+
+
+Started GET "/login" for 127.0.0.1 at 2017-02-21 21:37:19 +0000
+  
+ActionController::RoutingError (No route matches [GET] "/login"):
+  
+actionpack (5.0.1) lib/action_dispatch/middleware/debug_exceptions.rb:53:in `call'
+actionpack (5.0.1) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.0.1) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.0.1) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.0.1) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.0.1) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.0.1) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.0.1) lib/rails/rack/logger.rb:24:in `call'
+actionpack (5.0.1) lib/action_dispatch/middleware/request_id.rb:24:in `call'
+rack (2.0.1) lib/rack/runtime.rb:22:in `call'
+activesupport (5.0.1) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+actionpack (5.0.1) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.0.1) lib/action_dispatch/middleware/static.rb:136:in `call'
+rack (2.0.1) lib/rack/sendfile.rb:111:in `call'
+rack-cors (0.4.1) lib/rack/cors.rb:81:in `call'
+railties (5.0.1) lib/rails/engine.rb:522:in `call'
+puma (3.7.0) lib/puma/configuration.rb:226:in `call'
+puma (3.7.0) lib/puma/server.rb:578:in `handle_request'
+puma (3.7.0) lib/puma/server.rb:415:in `process_client'
+puma (3.7.0) lib/puma/server.rb:275:in `block in run'
+puma (3.7.0) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+  [1m[36mActiveRecord::SchemaMigration Load (2.2ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[36mUser Load (1.1ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.5ms)[0m  [1m[31mDELETE FROM "users" WHERE "users"."id" = $1[0m  [["id", 27]]
+  [1m[35m (1.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[31mDELETE FROM "users" WHERE "users"."id" = $1[0m  [["id", 28]]
+  [1m[35m (1.5ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mIssue Load (0.9ms)[0m  [1m[34mSELECT "issues".* FROM "issues"[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[31mDELETE FROM "issues" WHERE "issues"."id" = $1[0m  [["id", 22]]
+  [1m[35m (1.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[31mDELETE FROM "issues" WHERE "issues"."id" = $1[0m  [["id", 23]]
+  [1m[35m (1.6ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mMessage Load (0.8ms)[0m  [1m[34mSELECT "messages".* FROM "messages"[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[31mDELETE FROM "messages" WHERE "messages"."id" = $1[0m  [["id", 66]]
+  [1m[35m (1.1ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.7ms)[0m  [1m[31mDELETE FROM "messages" WHERE "messages"."id" = $1[0m  [["id", 67]]
+  [1m[35m (1.8ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.6ms)[0m  [1m[31mDELETE FROM "messages" WHERE "messages"."id" = $1[0m  [["id", 68]]
+  [1m[35m (1.7ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (2.6ms)[0m  [1m[31mDELETE FROM "messages" WHERE "messages"."id" = $1[0m  [["id", 69]]
+  [1m[35m (0.6ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (1.4ms)[0m  [1m[31mDELETE FROM "messages" WHERE "messages"."id" = $1[0m  [["id", 70]]
+  [1m[35m (1.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.7ms)[0m  [1m[31mDELETE FROM "messages" WHERE "messages"."id" = $1[0m  [["id", 71]]
+  [1m[35m (1.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.5ms)[0m  [1m[31mDELETE FROM "messages" WHERE "messages"."id" = $1[0m  [["id", 72]]
+  [1m[35m (0.6ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.5ms)[0m  [1m[31mDELETE FROM "messages" WHERE "messages"."id" = $1[0m  [["id", 73]]
+  [1m[35m (1.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.5ms)[0m  [1m[31mDELETE FROM "messages" WHERE "messages"."id" = $1[0m  [["id", 74]]
+  [1m[35m (1.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUser Exists (1.4ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "davinder@kaur.com"], ["LIMIT", 1]]
+  [1m[36mUser Exists (0.7ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."alias" = $1 LIMIT $2[0m  [["alias", "MissDavinderKaur"], ["LIMIT", 1]]
+  [1m[35mSQL (0.9ms)[0m  [1m[32mINSERT INTO "users" ("email", "password_digest", "created_at", "updated_at", "alias", "sector", "city") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["email", "davinder@kaur.com"], ["password_digest", "$2a$10$QyAuZAn6Wd08RwVsX1LZFexTY3ZvFRpatWzrUSeNOb54HCfomq6P."], ["created_at", 2017-02-21 21:37:56 UTC], ["updated_at", 2017-02-21 21:37:56 UTC], ["alias", "MissDavinderKaur"], ["sector", "Financial Services"], ["city", "London"]]
+  [1m[35m (2.0ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUser Exists (0.7ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "harpreet@kaur.com"], ["LIMIT", 1]]
+  [1m[36mUser Exists (1.4ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."alias" = $1 LIMIT $2[0m  [["alias", "MissHarpreetKaur"], ["LIMIT", 1]]
+  [1m[35mSQL (0.5ms)[0m  [1m[32mINSERT INTO "users" ("email", "password_digest", "created_at", "updated_at", "alias", "sector", "city") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["email", "harpreet@kaur.com"], ["password_digest", "$2a$10$dqsveMgQCtW5Ejoj80Opv.NaiWdaO2IExkE14Viqy19lTwc2K/mQ."], ["created_at", 2017-02-21 21:37:56 UTC], ["updated_at", 2017-02-21 21:37:56 UTC], ["alias", "MissHarpreetKaur"], ["sector", "Consulting Services"], ["city", "London"]]
+  [1m[35m (1.1ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.5ms)[0m  [1m[32mINSERT INTO "issues" ("user_id", "title", "category", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["user_id", 29], ["title", "My super serious sexism issue"], ["category", "sexism"], ["created_at", 2017-02-21 21:37:56 UTC], ["updated_at", 2017-02-21 21:37:56 UTC]]
+  [1m[35m (1.0ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.6ms)[0m  [1m[32mINSERT INTO "messages" ("sender_id", "receiver_id", "msg_text", "created_at", "updated_at", "issue_id") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["sender_id", 30], ["receiver_id", 29], ["msg_text", "Some advice"], ["created_at", 2017-02-21 21:37:56 UTC], ["updated_at", 2017-02-21 21:37:56 UTC], ["issue_id", 24]]
+  [1m[35m (1.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.6ms)[0m  [1m[32mINSERT INTO "messages" ("sender_id", "receiver_id", "msg_text", "created_at", "updated_at", "issue_id") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["sender_id", 29], ["receiver_id", 29], ["msg_text", "Thank you for the advice"], ["created_at", 2017-02-21 21:37:56 UTC], ["updated_at", 2017-02-21 21:37:56 UTC], ["issue_id", 24]]
+  [1m[35m (1.1ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[32mINSERT INTO "issues" ("user_id", "title", "category", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["user_id", 29], ["title", "Another super serious issue"], ["category", "racism"], ["created_at", 2017-02-21 21:37:56 UTC], ["updated_at", 2017-02-21 21:37:56 UTC]]
+  [1m[35m (1.5ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.6ms)[0m  [1m[32mINSERT INTO "messages" ("sender_id", "receiver_id", "msg_text", "created_at", "updated_at", "issue_id") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["sender_id", 30], ["receiver_id", 29], ["msg_text", "Some good advice"], ["created_at", 2017-02-21 21:37:56 UTC], ["updated_at", 2017-02-21 21:37:56 UTC], ["issue_id", 25]]
+  [1m[35m (1.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[32mINSERT INTO "messages" ("sender_id", "receiver_id", "msg_text", "created_at", "updated_at", "issue_id") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["sender_id", 29], ["receiver_id", 29], ["msg_text", "Thank you for the good advice"], ["created_at", 2017-02-21 21:37:56 UTC], ["updated_at", 2017-02-21 21:37:56 UTC], ["issue_id", 25]]
+  [1m[35m (1.3ms)[0m  [1m[35mCOMMIT[0m
+Started POST "/login" for 127.0.0.1 at 2017-02-21 21:38:19 +0000
+  [1m[36mActiveRecord::SchemaMigration Load (0.6ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by AuthenticationsController#login as HTML
+  Parameters: {"email"=>"davinder@kaur.com", "password"=>"[FILTERED]", "authentication"=>{"email"=>"davinder@kaur.com", "password"=>"[FILTERED]"}}
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "davinder@kaur.com"], ["LIMIT", 1]]
+[active_model_serializers]   [1m[36mIssue Load (0.4ms)[0m  [1m[34mSELECT "issues".* FROM "issues" WHERE "issues"."user_id" = $1[0m  [["user_id", 29]]
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (56.28ms)
+Completed 200 OK in 189ms (Views: 58.3ms | ActiveRecord: 11.0ms)
+
+
+Started GET "/users/29" for 127.0.0.1 at 2017-02-21 21:38:20 +0000
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"29"}
+  [1m[36mUser Load (1.8ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 29], ["LIMIT", 1]]
+  [1m[36mUser Load (1.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 29], ["LIMIT", 1]]
+[active_model_serializers]   [1m[36mIssue Load (0.3ms)[0m  [1m[34mSELECT "issues".* FROM "issues" WHERE "issues"."user_id" = $1[0m  [["user_id", 29]]
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (5.3ms)
+Completed 200 OK in 16ms (Views: 6.1ms | ActiveRecord: 3.1ms)
+
+
+Started GET "/users/29" for 127.0.0.1 at 2017-02-21 21:38:20 +0000
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"29"}
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 29], ["LIMIT", 1]]
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 29], ["LIMIT", 1]]
+[active_model_serializers]   [1m[36mIssue Load (0.7ms)[0m  [1m[34mSELECT "issues".* FROM "issues" WHERE "issues"."user_id" = $1[0m  [["user_id", 29]]
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (4.56ms)
+Completed 200 OK in 9ms (Views: 4.9ms | ActiveRecord: 1.5ms)
+
+
+Started GET "/issues/24" for 127.0.0.1 at 2017-02-21 21:38:24 +0000
+Processing by IssuesController#show as HTML
+  Parameters: {"id"=>"24"}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 29], ["LIMIT", 1]]
+  [1m[36mIssue Load (0.3ms)[0m  [1m[34mSELECT  "issues".* FROM "issues" WHERE "issues"."id" = $1 LIMIT $2[0m  [["id", 24], ["LIMIT", 1]]
+[active_model_serializers]   [1m[36mMessage Load (0.4ms)[0m  [1m[34mSELECT "messages".* FROM "messages" WHERE "messages"."issue_id" = $1[0m  [["issue_id", 24]]
+[active_model_serializers]   [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 29], ["LIMIT", 1]]
+[active_model_serializers] Rendered IssueSerializer with ActiveModelSerializers::Adapter::Attributes (29.33ms)
+Completed 200 OK in 34ms (Views: 26.2ms | ActiveRecord: 4.7ms)
+
+
+Started POST "/login" for 127.0.0.1 at 2017-02-21 21:38:48 +0000
+Processing by AuthenticationsController#login as HTML
+  Parameters: {"email"=>"harpreet@kaur.com", "password"=>"[FILTERED]", "authentication"=>{"email"=>"harpreet@kaur.com", "password"=>"[FILTERED]"}}
+Started POST "/login" for 127.0.0.1 at 2017-02-21 21:38:48 +0000
+  [1m[36mUser Load (3.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "harpreet@kaur.com"], ["LIMIT", 1]]
+[active_model_serializers]   [1m[36mIssue Load (0.4ms)[0m  [1m[34mSELECT "issues".* FROM "issues" WHERE "issues"."user_id" = $1[0m  [["user_id", 30]]
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (3.37ms)
+Completed 200 OK in 167ms (Views: 4.0ms | ActiveRecord: 3.4ms)
+
+
+Processing by AuthenticationsController#login as HTML
+Started GET "/users/30" for 127.0.0.1 at 2017-02-21 21:38:48 +0000
+  [1m[36mUser Load (16.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" IS NULL LIMIT $1[0m  [["LIMIT", 1]]
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (0.09ms)
+Processing by UsersController#show as HTML
+Completed 401 Unauthorized in 24ms (Views: 1.8ms | ActiveRecord: 16.6ms)
+
+
+  Parameters: {"id"=>"30"}
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 30], ["LIMIT", 1]]
+  [1m[36mUser Load (1.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 30], ["LIMIT", 1]]
+[active_model_serializers]   [1m[36mIssue Load (0.6ms)[0m  [1m[34mSELECT "issues".* FROM "issues" WHERE "issues"."user_id" = $1[0m  [["user_id", 30]]
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (5.26ms)
+Completed 200 OK in 13ms (Views: 5.9ms | ActiveRecord: 2.6ms)
+
+
+Started GET "/users/30" for 127.0.0.1 at 2017-02-21 21:38:48 +0000
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"30"}
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 30], ["LIMIT", 1]]
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 30], ["LIMIT", 1]]
+[active_model_serializers]   [1m[36mIssue Load (1.2ms)[0m  [1m[34mSELECT "issues".* FROM "issues" WHERE "issues"."user_id" = $1[0m  [["user_id", 30]]
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (6.59ms)
+Completed 200 OK in 32ms (Views: 9.7ms | ActiveRecord: 2.6ms)
+
+
+Started GET "/users/30" for 127.0.0.1 at 2017-02-21 21:38:49 +0000
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"30"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 30], ["LIMIT", 1]]
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 30], ["LIMIT", 1]]
+[active_model_serializers]   [1m[36mIssue Load (0.5ms)[0m  [1m[34mSELECT "issues".* FROM "issues" WHERE "issues"."user_id" = $1[0m  [["user_id", 30]]
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (5.33ms)
+Completed 200 OK in 10ms (Views: 5.6ms | ActiveRecord: 1.4ms)
+
+
+Started GET "/users/30" for 127.0.0.1 at 2017-02-21 21:38:59 +0000
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"30"}
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 30], ["LIMIT", 1]]
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 30], ["LIMIT", 1]]
+[active_model_serializers]   [1m[36mIssue Load (0.3ms)[0m  [1m[34mSELECT "issues".* FROM "issues" WHERE "issues"."user_id" = $1[0m  [["user_id", 30]]
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (4.05ms)
+Completed 200 OK in 10ms (Views: 5.2ms | ActiveRecord: 1.7ms)
+
+
+Started GET "/issues/24" for 127.0.0.1 at 2017-02-21 21:38:59 +0000
+Processing by IssuesController#show as HTML
+  Parameters: {"id"=>"24"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 30], ["LIMIT", 1]]
+  [1m[36mIssue Load (0.5ms)[0m  [1m[34mSELECT  "issues".* FROM "issues" WHERE "issues"."id" = $1 LIMIT $2[0m  [["id", 24], ["LIMIT", 1]]
+[active_model_serializers]   [1m[36mMessage Load (0.3ms)[0m  [1m[34mSELECT "messages".* FROM "messages" WHERE "messages"."issue_id" = $1[0m  [["issue_id", 24]]
+[active_model_serializers]   [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 29], ["LIMIT", 1]]
+[active_model_serializers] Rendered IssueSerializer with ActiveModelSerializers::Adapter::Attributes (6.6ms)
+Completed 200 OK in 11ms (Views: 6.7ms | ActiveRecord: 1.5ms)
+
+
+Started POST "/messages" for 127.0.0.1 at 2017-02-21 21:39:11 +0000
+Processing by MessagesController#create as HTML
+  Parameters: {"msg_text"=>"More advice", "issue_id"=>24, "sender_id"=>30, "receiver_id"=>29, "message"=>{"sender_id"=>30, "receiver_id"=>29, "msg_text"=>"More advice", "issue_id"=>24}}
+  [1m[36mUser Load (1.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 30], ["LIMIT", 1]]
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mIssue Load (0.4ms)[0m  [1m[34mSELECT  "issues".* FROM "issues" WHERE "issues"."id" = $1 LIMIT $2[0m  [["id", 24], ["LIMIT", 1]]
+  [1m[35mSQL (0.8ms)[0m  [1m[32mINSERT INTO "messages" ("sender_id", "receiver_id", "msg_text", "created_at", "updated_at", "issue_id") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["sender_id", 30], ["receiver_id", 29], ["msg_text", "More advice"], ["created_at", 2017-02-21 21:39:11 UTC], ["updated_at", 2017-02-21 21:39:11 UTC], ["issue_id", 24]]
+  [1m[35m (1.5ms)[0m  [1m[35mCOMMIT[0m
+[active_model_serializers] Rendered MessageSerializer with ActiveModelSerializers::Adapter::Attributes (1.19ms)
+Completed 201 Created in 19ms (Views: 3.3ms | ActiveRecord: 4.1ms)
+
+
+Started GET "/issues/24" for 127.0.0.1 at 2017-02-21 21:39:11 +0000
+Processing by IssuesController#show as HTML
+  Parameters: {"id"=>"24"}
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 30], ["LIMIT", 1]]
+  [1m[36mIssue Load (0.9ms)[0m  [1m[34mSELECT  "issues".* FROM "issues" WHERE "issues"."id" = $1 LIMIT $2[0m  [["id", 24], ["LIMIT", 1]]
+[active_model_serializers]   [1m[36mMessage Load (0.4ms)[0m  [1m[34mSELECT "messages".* FROM "messages" WHERE "messages"."issue_id" = $1[0m  [["issue_id", 24]]
+[active_model_serializers]   [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 29], ["LIMIT", 1]]
+[active_model_serializers] Rendered IssueSerializer with ActiveModelSerializers::Adapter::Attributes (11.09ms)
+Completed 200 OK in 34ms (Views: 28.9ms | ActiveRecord: 2.3ms)
+
+
+Started GET "/users/29" for 127.0.0.1 at 2017-02-21 21:39:15 +0000
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"29"}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 29], ["LIMIT", 1]]
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 29], ["LIMIT", 1]]
+[active_model_serializers]   [1m[36mIssue Load (0.4ms)[0m  [1m[34mSELECT "issues".* FROM "issues" WHERE "issues"."user_id" = $1[0m  [["user_id", 29]]
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (4.7ms)
+Completed 200 OK in 8ms (Views: 5.1ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/issues/24" for 127.0.0.1 at 2017-02-21 21:39:15 +0000
+Processing by IssuesController#show as HTML
+  Parameters: {"id"=>"24"}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 29], ["LIMIT", 1]]
+  [1m[36mIssue Load (0.5ms)[0m  [1m[34mSELECT  "issues".* FROM "issues" WHERE "issues"."id" = $1 LIMIT $2[0m  [["id", 24], ["LIMIT", 1]]
+[active_model_serializers]   [1m[36mMessage Load (0.4ms)[0m  [1m[34mSELECT "messages".* FROM "messages" WHERE "messages"."issue_id" = $1[0m  [["issue_id", 24]]
+[active_model_serializers]   [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 29], ["LIMIT", 1]]
+[active_model_serializers] Rendered IssueSerializer with ActiveModelSerializers::Adapter::Attributes (7.01ms)
+Completed 200 OK in 12ms (Views: 7.2ms | ActiveRecord: 1.4ms)
+
+
+Started POST "/messages" for 127.0.0.1 at 2017-02-21 21:39:21 +0000
+Processing by MessagesController#create as HTML
+  Parameters: {"msg_text"=>"Another reply", "issue_id"=>24, "sender_id"=>29, "receiver_id"=>29, "message"=>{"sender_id"=>29, "receiver_id"=>29, "msg_text"=>"Another reply", "issue_id"=>24}}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 29], ["LIMIT", 1]]
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mIssue Load (0.4ms)[0m  [1m[34mSELECT  "issues".* FROM "issues" WHERE "issues"."id" = $1 LIMIT $2[0m  [["id", 24], ["LIMIT", 1]]
+  [1m[35mSQL (0.5ms)[0m  [1m[32mINSERT INTO "messages" ("sender_id", "receiver_id", "msg_text", "created_at", "updated_at", "issue_id") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["sender_id", 29], ["receiver_id", 29], ["msg_text", "Another reply"], ["created_at", 2017-02-21 21:39:21 UTC], ["updated_at", 2017-02-21 21:39:21 UTC], ["issue_id", 24]]
+  [1m[35m (1.2ms)[0m  [1m[35mCOMMIT[0m
+[active_model_serializers] Rendered MessageSerializer with ActiveModelSerializers::Adapter::Attributes (0.94ms)
+Completed 201 Created in 14ms (Views: 2.7ms | ActiveRecord: 2.7ms)
+
+
+Started GET "/issues/24" for 127.0.0.1 at 2017-02-21 21:39:21 +0000
+Processing by IssuesController#show as HTML
+  Parameters: {"id"=>"24"}
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 29], ["LIMIT", 1]]
+  [1m[36mIssue Load (0.7ms)[0m  [1m[34mSELECT  "issues".* FROM "issues" WHERE "issues"."id" = $1 LIMIT $2[0m  [["id", 24], ["LIMIT", 1]]
+[active_model_serializers]   [1m[36mMessage Load (4.6ms)[0m  [1m[34mSELECT "messages".* FROM "messages" WHERE "messages"."issue_id" = $1[0m  [["issue_id", 24]]
+[active_model_serializers]   [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 29], ["LIMIT", 1]]
+[active_model_serializers] Rendered IssueSerializer with ActiveModelSerializers::Adapter::Attributes (22.89ms)
+Completed 200 OK in 30ms (Views: 19.4ms | ActiveRecord: 5.9ms)
+
+
+Started GET "/users/30" for 127.0.0.1 at 2017-02-21 21:39:26 +0000
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"30"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 30], ["LIMIT", 1]]
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 30], ["LIMIT", 1]]
+[active_model_serializers]   [1m[36mIssue Load (0.3ms)[0m  [1m[34mSELECT "issues".* FROM "issues" WHERE "issues"."user_id" = $1[0m  [["user_id", 30]]
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (3.12ms)
+Completed 200 OK in 7ms (Views: 3.6ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/issues/24" for 127.0.0.1 at 2017-02-21 21:39:26 +0000
+Processing by IssuesController#show as HTML
+  Parameters: {"id"=>"24"}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 30], ["LIMIT", 1]]
+  [1m[36mIssue Load (0.5ms)[0m  [1m[34mSELECT  "issues".* FROM "issues" WHERE "issues"."id" = $1 LIMIT $2[0m  [["id", 24], ["LIMIT", 1]]
+[active_model_serializers]   [1m[36mMessage Load (0.5ms)[0m  [1m[34mSELECT "messages".* FROM "messages" WHERE "messages"."issue_id" = $1[0m  [["issue_id", 24]]
+[active_model_serializers]   [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 29], ["LIMIT", 1]]
+[active_model_serializers] Rendered IssueSerializer with ActiveModelSerializers::Adapter::Attributes (7.97ms)
+Completed 200 OK in 12ms (Views: 7.9ms | ActiveRecord: 1.7ms)
+
+
