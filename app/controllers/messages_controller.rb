@@ -5,7 +5,7 @@ class MessagesController < ApplicationController
   def index
     @messages = Message.all
 
-    render json: @messages.order(:created_at)
+    render json: @messages
   end
 
   # GET /messages/1
