@@ -1,5 +1,4 @@
 class EmailFriendsMailer < ApplicationMailer
-  default from: 'letstalk@friendinneed.com'
 
   def find_friends_email(emailsArray)
     @url  = 'http://localhost:7000/login'

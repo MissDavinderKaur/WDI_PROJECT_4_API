@@ -45,8 +45,12 @@ Rails.application.configure do
   # routes, locales, etc. This feature depends on the listen gem.
   config.file_watcher = ActiveSupport::EventedFileUpdateChecker
 
+  # Websockets stuff
   Rails.application.config.action_cable.allowed_request_origins = [
     'http://localhost:7000',
     'http://localhost:4000',
   ]
+
+  # Emailer stuff
+  config.action_mailer.delivery_method = :smtp
 end
