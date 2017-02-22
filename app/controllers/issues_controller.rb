@@ -1,6 +1,7 @@
 class IssuesController < ApplicationController
   before_action :set_issue, only: [:show, :update, :destroy]
-
+  skip_before_action :authenticate_user!, only:[:index]
+  
   # GET /issues
   def index
     @issues = Issue.all
