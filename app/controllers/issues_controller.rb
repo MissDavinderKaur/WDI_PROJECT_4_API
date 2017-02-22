@@ -1,7 +1,7 @@
 class IssuesController < ApplicationController
   before_action :set_issue, only: [:show, :update, :destroy]
   skip_before_action :authenticate_user!, only:[:index]
-  
+
   # GET /issues
   def index
     @issues = Issue.all
@@ -48,6 +48,6 @@ class IssuesController < ApplicationController
 
     # Only allow a trusted parameter "white list" through.
     def issue_params
-      params.require(:issue).permit(:user_id, :title, :category)
+      params.require(:issue).permit(:user_id, :title, :category, :active)
     end
   end
