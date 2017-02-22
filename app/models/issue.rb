@@ -6,14 +6,12 @@ class Issue < ApplicationRecord
 
   private
   def send_emails
-    @users = User.where(city: self.user.city)
+    users = User.where(city: self.user.city)
 
-    @emailsArray = []
-    for user in @users
-      @emailsArray.push(user.email)
+    emailsArray = []
+    for user in users
+      emailsArray.push(user.email)
     end
-    puts "******************************************"
-    puts @emailsArray
-    puts "******************************************"
+    EmailFriendsMailer.find_friends_email(emailsArray).deliver_now
   end
 end

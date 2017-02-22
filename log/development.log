@@ -30713,3 +30713,886 @@ Started GET "/cable/" [WebSocket] for 127.0.0.1 at 2017-02-22 20:27:36 +0000
 Successfully upgraded to WebSocket (REQUEST_METHOD: GET, HTTP_CONNECTION: Upgrade, HTTP_UPGRADE: websocket)
 IssuesChannel is transmitting the subscription confirmation
 IssuesChannel is streaming from issues_channel_55
+  [1m[36mActiveRecord::SchemaMigration Load (1.0ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (1.1ms)[0m  [1m[31mDELETE FROM "users" WHERE "users"."id" = $1[0m  [["id", 64]]
+  [1m[35m (1.8ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[31mDELETE FROM "users" WHERE "users"."id" = $1[0m  [["id", 65]]
+  [1m[35m (1.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[31mDELETE FROM "users" WHERE "users"."id" = $1[0m  [["id", 66]]
+  [1m[35m (1.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[31mDELETE FROM "users" WHERE "users"."id" = $1[0m  [["id", 67]]
+  [1m[35m (1.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[31mDELETE FROM "users" WHERE "users"."id" = $1[0m  [["id", 68]]
+  [1m[35m (1.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[31mDELETE FROM "users" WHERE "users"."id" = $1[0m  [["id", 69]]
+  [1m[35m (1.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mIssue Load (0.6ms)[0m  [1m[34mSELECT "issues".* FROM "issues"[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[31mDELETE FROM "issues" WHERE "issues"."id" = $1[0m  [["id", 63]]
+  [1m[35m (1.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[31mDELETE FROM "issues" WHERE "issues"."id" = $1[0m  [["id", 64]]
+  [1m[35m (1.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[31mDELETE FROM "issues" WHERE "issues"."id" = $1[0m  [["id", 65]]
+  [1m[35m (1.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[31mDELETE FROM "issues" WHERE "issues"."id" = $1[0m  [["id", 66]]
+  [1m[35m (1.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[31mDELETE FROM "issues" WHERE "issues"."id" = $1[0m  [["id", 67]]
+  [1m[35m (1.1ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.6ms)[0m  [1m[31mDELETE FROM "issues" WHERE "issues"."id" = $1[0m  [["id", 68]]
+  [1m[35m (1.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[31mDELETE FROM "issues" WHERE "issues"."id" = $1[0m  [["id", 69]]
+  [1m[35m (1.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mMessage Load (0.6ms)[0m  [1m[34mSELECT "messages".* FROM "messages"[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[31mDELETE FROM "messages" WHERE "messages"."id" = $1[0m  [["id", 178]]
+  [1m[35m (1.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[31mDELETE FROM "messages" WHERE "messages"."id" = $1[0m  [["id", 179]]
+  [1m[35m (1.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[31mDELETE FROM "messages" WHERE "messages"."id" = $1[0m  [["id", 180]]
+  [1m[35m (1.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[31mDELETE FROM "messages" WHERE "messages"."id" = $1[0m  [["id", 181]]
+  [1m[35m (1.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.8ms)[0m  [1m[31mDELETE FROM "messages" WHERE "messages"."id" = $1[0m  [["id", 182]]
+  [1m[35m (1.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[31mDELETE FROM "messages" WHERE "messages"."id" = $1[0m  [["id", 183]]
+  [1m[35m (1.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[31mDELETE FROM "messages" WHERE "messages"."id" = $1[0m  [["id", 184]]
+  [1m[35m (1.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.5ms)[0m  [1m[31mDELETE FROM "messages" WHERE "messages"."id" = $1[0m  [["id", 185]]
+  [1m[35m (1.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUser Exists (0.9ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "davinder@kaur.com"], ["LIMIT", 1]]
+  [1m[36mUser Exists (0.4ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."alias" = $1 LIMIT $2[0m  [["alias", "MissDavinderKaur"], ["LIMIT", 1]]
+  [1m[35mSQL (0.5ms)[0m  [1m[32mINSERT INTO "users" ("email", "password_digest", "created_at", "updated_at", "alias", "sector", "city") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["email", "davinder@kaur.com"], ["password_digest", "$2a$10$mqVu/cHCxgDPt6PqzVAPTO4Fb8t8RIEiBu9W0J08o9Fr.BctqsFli"], ["created_at", 2017-02-22 20:52:14 UTC], ["updated_at", 2017-02-22 20:52:14 UTC], ["alias", "MissDavinderKaur"], ["sector", "Banking and Finance"], ["city", "London"]]
+  [1m[35m (1.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUser Exists (0.4ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "miss_davinder_kaur@hotmail.co.uk"], ["LIMIT", 1]]
+  [1m[36mUser Exists (0.3ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."alias" = $1 LIMIT $2[0m  [["alias", "MissHarpreetKaur"], ["LIMIT", 1]]
+  [1m[35mSQL (0.4ms)[0m  [1m[32mINSERT INTO "users" ("email", "password_digest", "created_at", "updated_at", "alias", "sector", "city") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["email", "miss_davinder_kaur@hotmail.co.uk"], ["password_digest", "$2a$10$fGC8MRtcSzmzDiHQTi2srueWwqFEMsm7ZDjxKwNEhraDQUzsdUJFW"], ["created_at", 2017-02-22 20:52:14 UTC], ["updated_at", 2017-02-22 20:52:14 UTC], ["alias", "MissHarpreetKaur"], ["sector", "Consulting"], ["city", "Brimingham"]]
+  [1m[35m (1.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."city" = $1[0m  [["city", "London"]]
+  [1m[35m (0.3ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.6ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.5ms)[0m  [1m[31mDELETE FROM "users" WHERE "users"."id" = $1[0m  [["id", 70]]
+  [1m[35m (1.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[31mDELETE FROM "users" WHERE "users"."id" = $1[0m  [["id", 71]]
+  [1m[35m (1.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mIssue Load (0.6ms)[0m  [1m[34mSELECT "issues".* FROM "issues"[0m
+  [1m[36mMessage Load (0.6ms)[0m  [1m[34mSELECT "messages".* FROM "messages"[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUser Exists (0.8ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "davinder@kaur.com"], ["LIMIT", 1]]
+  [1m[36mUser Exists (0.3ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."alias" = $1 LIMIT $2[0m  [["alias", "MissDavinderKaur"], ["LIMIT", 1]]
+  [1m[35mSQL (0.5ms)[0m  [1m[32mINSERT INTO "users" ("email", "password_digest", "created_at", "updated_at", "alias", "sector", "city") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["email", "davinder@kaur.com"], ["password_digest", "$2a$10$77osQYFFhCKbfkiyg4WfGeDIkw6Y73C0.3c6pX3tpkB/.9U4ty/uG"], ["created_at", 2017-02-22 20:52:54 UTC], ["updated_at", 2017-02-22 20:52:54 UTC], ["alias", "MissDavinderKaur"], ["sector", "Banking and Finance"], ["city", "London"]]
+  [1m[35m (1.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUser Exists (0.3ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "miss_davinder_kaur@hotmail.co.uk"], ["LIMIT", 1]]
+  [1m[36mUser Exists (0.3ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."alias" = $1 LIMIT $2[0m  [["alias", "MissHarpreetKaur"], ["LIMIT", 1]]
+  [1m[35mSQL (0.4ms)[0m  [1m[32mINSERT INTO "users" ("email", "password_digest", "created_at", "updated_at", "alias", "sector", "city") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["email", "miss_davinder_kaur@hotmail.co.uk"], ["password_digest", "$2a$10$.2l.3.VLMgUY530/A/xIe.2E9T5bR.ZqAxguYY7xEzG/UeUgeCOr2"], ["created_at", 2017-02-22 20:52:54 UTC], ["updated_at", 2017-02-22 20:52:54 UTC], ["alias", "MissHarpreetKaur"], ["sector", "Consulting"], ["city", "Brimingham"]]
+  [1m[35m (1.5ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."city" = $1[0m  [["city", "London"]]
+  [1m[35m (0.3ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.6ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.6ms)[0m  [1m[31mDELETE FROM "users" WHERE "users"."id" = $1[0m  [["id", 72]]
+  [1m[35m (1.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[31mDELETE FROM "users" WHERE "users"."id" = $1[0m  [["id", 73]]
+  [1m[35m (1.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mIssue Load (0.6ms)[0m  [1m[34mSELECT "issues".* FROM "issues"[0m
+  [1m[36mMessage Load (0.6ms)[0m  [1m[34mSELECT "messages".* FROM "messages"[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUser Exists (0.8ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "davinder@kaur.com"], ["LIMIT", 1]]
+  [1m[36mUser Exists (0.4ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."alias" = $1 LIMIT $2[0m  [["alias", "MissDavinderKaur"], ["LIMIT", 1]]
+  [1m[35mSQL (0.5ms)[0m  [1m[32mINSERT INTO "users" ("email", "password_digest", "created_at", "updated_at", "alias", "sector", "city") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["email", "davinder@kaur.com"], ["password_digest", "$2a$10$4TxCBq8Fzpib.O45enw69uV6IoUKofQK5ppWhQqK.7iwgmQjDgVxq"], ["created_at", 2017-02-22 20:56:23 UTC], ["updated_at", 2017-02-22 20:56:23 UTC], ["alias", "MissDavinderKaur"], ["sector", "Banking and Finance"], ["city", "London"]]
+  [1m[35m (1.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUser Exists (0.3ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "miss_davinder_kaur@hotmail.co.uk"], ["LIMIT", 1]]
+  [1m[36mUser Exists (0.3ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."alias" = $1 LIMIT $2[0m  [["alias", "MissHarpreetKaur"], ["LIMIT", 1]]
+  [1m[35mSQL (0.4ms)[0m  [1m[32mINSERT INTO "users" ("email", "password_digest", "created_at", "updated_at", "alias", "sector", "city") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["email", "miss_davinder_kaur@hotmail.co.uk"], ["password_digest", "$2a$10$ke9BkYkTkUvgVHZjP.pZquSajdXodB4.VLaoSyyCgsD6An5hCqy6y"], ["created_at", 2017-02-22 20:56:23 UTC], ["updated_at", 2017-02-22 20:56:23 UTC], ["alias", "MissHarpreetKaur"], ["sector", "Consulting"], ["city", "Brimingham"]]
+  [1m[35m (1.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."city" = $1[0m  [["city", "London"]]
+  [1m[35m (0.3ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.7ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.5ms)[0m  [1m[31mDELETE FROM "users" WHERE "users"."id" = $1[0m  [["id", 74]]
+  [1m[35m (1.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.7ms)[0m  [1m[31mDELETE FROM "users" WHERE "users"."id" = $1[0m  [["id", 75]]
+  [1m[35m (1.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mIssue Load (0.9ms)[0m  [1m[34mSELECT "issues".* FROM "issues"[0m
+  [1m[36mMessage Load (0.6ms)[0m  [1m[34mSELECT "messages".* FROM "messages"[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUser Exists (1.0ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "davinder@kaur.com"], ["LIMIT", 1]]
+  [1m[36mUser Exists (0.3ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."alias" = $1 LIMIT $2[0m  [["alias", "MissDavinderKaur"], ["LIMIT", 1]]
+  [1m[35mSQL (0.6ms)[0m  [1m[32mINSERT INTO "users" ("email", "password_digest", "created_at", "updated_at", "alias", "sector", "city") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["email", "davinder@kaur.com"], ["password_digest", "$2a$10$fUK6YToNKJ8Ve1WlBBV84ucuRQiFm6cFLDUhcRyOGsc47L6yoBob2"], ["created_at", 2017-02-22 20:56:48 UTC], ["updated_at", 2017-02-22 20:56:48 UTC], ["alias", "MissDavinderKaur"], ["sector", "Banking and Finance"], ["city", "London"]]
+  [1m[35m (1.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUser Exists (0.5ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "miss_davinder_kaur@hotmail.co.uk"], ["LIMIT", 1]]
+  [1m[36mUser Exists (0.3ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."alias" = $1 LIMIT $2[0m  [["alias", "MissHarpreetKaur"], ["LIMIT", 1]]
+  [1m[35mSQL (0.4ms)[0m  [1m[32mINSERT INTO "users" ("email", "password_digest", "created_at", "updated_at", "alias", "sector", "city") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["email", "miss_davinder_kaur@hotmail.co.uk"], ["password_digest", "$2a$10$ipFUgF/RUWV.2fz6L9p4fuykR1D0YTXa3tAaMOV/7CRg5W2gguVcC"], ["created_at", 2017-02-22 20:56:48 UTC], ["updated_at", 2017-02-22 20:56:48 UTC], ["alias", "MissHarpreetKaur"], ["sector", "Consulting"], ["city", "Brimingham"]]
+  [1m[35m (1.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."city" = $1[0m  [["city", "London"]]
+  Rendering email_friends_mailer/find_friends_email.html.erb within layouts/mailer
+  Rendered email_friends_mailer/find_friends_email.html.erb within layouts/mailer (3.8ms)
+EmailFriendsMailer#find_friends_email: processed outbound mail in 245.4ms
+Sent mail to davinder@kaur.com (28.1ms)
+Date: Wed, 22 Feb 2017 20:56:49 +0000
+From: letstalk@friendinneed.com
+To: davinder@kaur.com
+Message-ID: <58adfb11437bf_a9663fe5ac43fa0452969@Davinders-MacBook-Air.local.mail>
+Subject: Let's Talk - There is a Friend In Need in your city!
+Mime-Version: 1.0
+Content-Type: text/html;
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <style>
+      /* Email styles need to be inline */
+    </style>
+  </head>
+
+  <body>
+    <!DOCTYPE html>
+<html>
+  <head>
+    <meta content='text/html; charset=UTF-8' http-equiv='Content-Type' />
+  </head>
+  <body>
+    <h1>A Friend In Need wants your help!</h1>
+    <p>
+      One of your fellow city dwellers has just posted a problem!
+      Please log in and help them resolve this!
+    </p>
+    <p>
+      To login to the site, just follow this link: http://localhost:7000/login.
+    </p>
+    <p>Thanks for being a great friend and have a great day!</p>
+  </body>
+</html>
+
+  </body>
+</html>
+
+  [1m[35mSQL (1.3ms)[0m  [1m[32mINSERT INTO "issues" ("user_id", "title", "category", "created_at", "updated_at", "active") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["user_id", 76], ["title", "My super serious sexism issue"], ["category", "Sexim"], ["created_at", 2017-02-22 20:56:49 UTC], ["updated_at", 2017-02-22 20:56:49 UTC], ["active", true]]
+  [1m[35m (0.7ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.7ms)[0m  [1m[32mINSERT INTO "messages" ("sender_id", "receiver_id", "msg_text", "created_at", "updated_at", "issue_id") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["sender_id", 77], ["receiver_id", 76], ["msg_text", "Some advice"], ["created_at", 2017-02-22 20:56:49 UTC], ["updated_at", 2017-02-22 20:56:49 UTC], ["issue_id", 70]]
+  [1m[35m (1.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.4ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[32mINSERT INTO "messages" ("sender_id", "receiver_id", "msg_text", "created_at", "updated_at", "issue_id") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["sender_id", 76], ["receiver_id", 76], ["msg_text", "Thank you for the advice"], ["created_at", 2017-02-22 20:56:49 UTC], ["updated_at", 2017-02-22 20:56:49 UTC], ["issue_id", 70]]
+  [1m[35m (1.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."city" = $1[0m  [["city", "London"]]
+  Rendering email_friends_mailer/find_friends_email.html.erb within layouts/mailer
+  Rendered email_friends_mailer/find_friends_email.html.erb within layouts/mailer (0.1ms)
+EmailFriendsMailer#find_friends_email: processed outbound mail in 10.5ms
+Sent mail to davinder@kaur.com (2.9ms)
+Date: Wed, 22 Feb 2017 20:56:49 +0000
+From: letstalk@friendinneed.com
+To: davinder@kaur.com
+Message-ID: <58adfb1152333_a9663fe5ac43fa04530e8@Davinders-MacBook-Air.local.mail>
+Subject: Let's Talk - There is a Friend In Need in your city!
+Mime-Version: 1.0
+Content-Type: text/html;
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <style>
+      /* Email styles need to be inline */
+    </style>
+  </head>
+
+  <body>
+    <!DOCTYPE html>
+<html>
+  <head>
+    <meta content='text/html; charset=UTF-8' http-equiv='Content-Type' />
+  </head>
+  <body>
+    <h1>A Friend In Need wants your help!</h1>
+    <p>
+      One of your fellow city dwellers has just posted a problem!
+      Please log in and help them resolve this!
+    </p>
+    <p>
+      To login to the site, just follow this link: http://localhost:7000/login.
+    </p>
+    <p>Thanks for being a great friend and have a great day!</p>
+  </body>
+</html>
+
+  </body>
+</html>
+
+  [1m[35mSQL (0.5ms)[0m  [1m[32mINSERT INTO "issues" ("user_id", "title", "category", "created_at", "updated_at", "active") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["user_id", 76], ["title", "Another super serious issue"], ["category", "Racism"], ["created_at", 2017-02-22 20:56:49 UTC], ["updated_at", 2017-02-22 20:56:49 UTC], ["active", true]]
+  [1m[35m (1.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[32mINSERT INTO "messages" ("sender_id", "receiver_id", "msg_text", "created_at", "updated_at", "issue_id") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["sender_id", 77], ["receiver_id", 76], ["msg_text", "Some good advice"], ["created_at", 2017-02-22 20:56:49 UTC], ["updated_at", 2017-02-22 20:56:49 UTC], ["issue_id", 71]]
+  [1m[35m (1.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[32mINSERT INTO "messages" ("sender_id", "receiver_id", "msg_text", "created_at", "updated_at", "issue_id") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["sender_id", 76], ["receiver_id", 76], ["msg_text", "Thank you for the good advice"], ["created_at", 2017-02-22 20:56:49 UTC], ["updated_at", 2017-02-22 20:56:49 UTC], ["issue_id", 71]]
+  [1m[35m (1.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."city" = $1[0m  [["city", "Brimingham"]]
+  Rendering email_friends_mailer/find_friends_email.html.erb within layouts/mailer
+  Rendered email_friends_mailer/find_friends_email.html.erb within layouts/mailer (0.0ms)
+EmailFriendsMailer#find_friends_email: processed outbound mail in 13.2ms
+Sent mail to miss_davinder_kaur@hotmail.co.uk (3.4ms)
+Date: Wed, 22 Feb 2017 20:56:49 +0000
+From: letstalk@friendinneed.com
+To: miss_davinder_kaur@hotmail.co.uk
+Message-ID: <58adfb1159c2e_a9663fe5ac43fa0453186@Davinders-MacBook-Air.local.mail>
+Subject: Let's Talk - There is a Friend In Need in your city!
+Mime-Version: 1.0
+Content-Type: text/html;
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <style>
+      /* Email styles need to be inline */
+    </style>
+  </head>
+
+  <body>
+    <!DOCTYPE html>
+<html>
+  <head>
+    <meta content='text/html; charset=UTF-8' http-equiv='Content-Type' />
+  </head>
+  <body>
+    <h1>A Friend In Need wants your help!</h1>
+    <p>
+      One of your fellow city dwellers has just posted a problem!
+      Please log in and help them resolve this!
+    </p>
+    <p>
+      To login to the site, just follow this link: http://localhost:7000/login.
+    </p>
+    <p>Thanks for being a great friend and have a great day!</p>
+  </body>
+</html>
+
+  </body>
+</html>
+
+  [1m[35mSQL (0.4ms)[0m  [1m[32mINSERT INTO "issues" ("user_id", "title", "category", "created_at", "updated_at", "active") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["user_id", 77], ["title", "My racism issue"], ["category", "Racism"], ["created_at", 2017-02-22 20:56:49 UTC], ["updated_at", 2017-02-22 20:56:49 UTC], ["active", true]]
+  [1m[35m (1.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.5ms)[0m  [1m[32mINSERT INTO "messages" ("sender_id", "receiver_id", "msg_text", "created_at", "updated_at", "issue_id") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["sender_id", 76], ["receiver_id", 77], ["msg_text", "Some advice"], ["created_at", 2017-02-22 20:56:49 UTC], ["updated_at", 2017-02-22 20:56:49 UTC], ["issue_id", 72]]
+  [1m[35m (1.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[32mINSERT INTO "messages" ("sender_id", "receiver_id", "msg_text", "created_at", "updated_at", "issue_id") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["sender_id", 77], ["receiver_id", 76], ["msg_text", "Thank you for the advice"], ["created_at", 2017-02-22 20:56:49 UTC], ["updated_at", 2017-02-22 20:56:49 UTC], ["issue_id", 72]]
+  [1m[35m (1.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."city" = $1[0m  [["city", "Brimingham"]]
+  Rendering email_friends_mailer/find_friends_email.html.erb within layouts/mailer
+  Rendered email_friends_mailer/find_friends_email.html.erb within layouts/mailer (0.0ms)
+EmailFriendsMailer#find_friends_email: processed outbound mail in 12.4ms
+Sent mail to miss_davinder_kaur@hotmail.co.uk (2.7ms)
+Date: Wed, 22 Feb 2017 20:56:49 +0000
+From: letstalk@friendinneed.com
+To: miss_davinder_kaur@hotmail.co.uk
+Message-ID: <58adfb1161095_a9663fe5ac43fa04532e8@Davinders-MacBook-Air.local.mail>
+Subject: Let's Talk - There is a Friend In Need in your city!
+Mime-Version: 1.0
+Content-Type: text/html;
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <style>
+      /* Email styles need to be inline */
+    </style>
+  </head>
+
+  <body>
+    <!DOCTYPE html>
+<html>
+  <head>
+    <meta content='text/html; charset=UTF-8' http-equiv='Content-Type' />
+  </head>
+  <body>
+    <h1>A Friend In Need wants your help!</h1>
+    <p>
+      One of your fellow city dwellers has just posted a problem!
+      Please log in and help them resolve this!
+    </p>
+    <p>
+      To login to the site, just follow this link: http://localhost:7000/login.
+    </p>
+    <p>Thanks for being a great friend and have a great day!</p>
+  </body>
+</html>
+
+  </body>
+</html>
+
+  [1m[35mSQL (0.4ms)[0m  [1m[32mINSERT INTO "issues" ("user_id", "title", "category", "created_at", "updated_at", "active") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["user_id", 77], ["title", "Another ageism issue"], ["category", "Ageism"], ["created_at", 2017-02-22 20:56:49 UTC], ["updated_at", 2017-02-22 20:56:49 UTC], ["active", true]]
+  [1m[35m (1.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[32mINSERT INTO "messages" ("sender_id", "receiver_id", "msg_text", "created_at", "updated_at", "issue_id") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["sender_id", 76], ["receiver_id", 77], ["msg_text", "Some good advice"], ["created_at", 2017-02-22 20:56:49 UTC], ["updated_at", 2017-02-22 20:56:49 UTC], ["issue_id", 73]]
+  [1m[35m (1.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[32mINSERT INTO "messages" ("sender_id", "receiver_id", "msg_text", "created_at", "updated_at", "issue_id") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["sender_id", 77], ["receiver_id", 76], ["msg_text", "Thank you for the good advice"], ["created_at", 2017-02-22 20:56:49 UTC], ["updated_at", 2017-02-22 20:56:49 UTC], ["issue_id", 73]]
+  [1m[35m (1.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUser Exists (0.3ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "miss.davinder.kaur@gmail.com"], ["LIMIT", 1]]
+  [1m[36mUser Exists (0.4ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."alias" = $1 LIMIT $2[0m  [["alias", "Test User 1"], ["LIMIT", 1]]
+  [1m[35mSQL (0.4ms)[0m  [1m[32mINSERT INTO "users" ("email", "password_digest", "created_at", "updated_at", "alias", "sector", "city") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["email", "miss.davinder.kaur@gmail.com"], ["password_digest", "$2a$10$qaWdql294FYr1zzU6Mp6Ae73FC8kN4J30pE3BaOpXcYpqV5e.yjzu"], ["created_at", 2017-02-22 20:56:49 UTC], ["updated_at", 2017-02-22 20:56:49 UTC], ["alias", "Test User 1"], ["sector", "Advertising"], ["city", "London"]]
+  [1m[35m (1.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.6ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.5ms)[0m  [1m[31mDELETE FROM "users" WHERE "users"."id" = $1[0m  [["id", 76]]
+  [1m[35m (1.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.5ms)[0m  [1m[31mDELETE FROM "users" WHERE "users"."id" = $1[0m  [["id", 77]]
+  [1m[35m (1.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[31mDELETE FROM "users" WHERE "users"."id" = $1[0m  [["id", 78]]
+  [1m[35m (1.1ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mIssue Load (0.7ms)[0m  [1m[34mSELECT "issues".* FROM "issues"[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[31mDELETE FROM "issues" WHERE "issues"."id" = $1[0m  [["id", 70]]
+  [1m[35m (1.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[31mDELETE FROM "issues" WHERE "issues"."id" = $1[0m  [["id", 71]]
+  [1m[35m (1.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[31mDELETE FROM "issues" WHERE "issues"."id" = $1[0m  [["id", 72]]
+  [1m[35m (1.0ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[31mDELETE FROM "issues" WHERE "issues"."id" = $1[0m  [["id", 73]]
+  [1m[35m (1.0ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mMessage Load (0.6ms)[0m  [1m[34mSELECT "messages".* FROM "messages"[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[31mDELETE FROM "messages" WHERE "messages"."id" = $1[0m  [["id", 186]]
+  [1m[35m (1.1ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[31mDELETE FROM "messages" WHERE "messages"."id" = $1[0m  [["id", 187]]
+  [1m[35m (1.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[31mDELETE FROM "messages" WHERE "messages"."id" = $1[0m  [["id", 188]]
+  [1m[35m (1.0ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[31mDELETE FROM "messages" WHERE "messages"."id" = $1[0m  [["id", 189]]
+  [1m[35m (1.1ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[31mDELETE FROM "messages" WHERE "messages"."id" = $1[0m  [["id", 190]]
+  [1m[35m (1.1ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[31mDELETE FROM "messages" WHERE "messages"."id" = $1[0m  [["id", 191]]
+  [1m[35m (1.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[31mDELETE FROM "messages" WHERE "messages"."id" = $1[0m  [["id", 192]]
+  [1m[35m (1.0ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[31mDELETE FROM "messages" WHERE "messages"."id" = $1[0m  [["id", 193]]
+  [1m[35m (1.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUser Exists (0.8ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "davinder@kaur.com"], ["LIMIT", 1]]
+  [1m[36mUser Exists (0.3ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."alias" = $1 LIMIT $2[0m  [["alias", "MissDavinderKaur"], ["LIMIT", 1]]
+  [1m[35mSQL (0.5ms)[0m  [1m[32mINSERT INTO "users" ("email", "password_digest", "created_at", "updated_at", "alias", "sector", "city") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["email", "davinder@kaur.com"], ["password_digest", "$2a$10$Hb.oN12IeI6AwYdqcrXFrOMpql4Ts.nDHey/wA6u0O0Nr.j7nhFmy"], ["created_at", 2017-02-22 20:57:35 UTC], ["updated_at", 2017-02-22 20:57:35 UTC], ["alias", "MissDavinderKaur"], ["sector", "Banking and Finance"], ["city", "London"]]
+  [1m[35m (1.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUser Exists (0.4ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "miss_davinder_kaur@hotmail.co.uk"], ["LIMIT", 1]]
+  [1m[36mUser Exists (0.3ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."alias" = $1 LIMIT $2[0m  [["alias", "MissHarpreetKaur"], ["LIMIT", 1]]
+  [1m[35mSQL (0.4ms)[0m  [1m[32mINSERT INTO "users" ("email", "password_digest", "created_at", "updated_at", "alias", "sector", "city") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["email", "miss_davinder_kaur@hotmail.co.uk"], ["password_digest", "$2a$10$OYvjPPtq0FjD/OKjZ2vKmepMMste4qSEEEfSeE/Uf8UN4hYRhJhwe"], ["created_at", 2017-02-22 20:57:35 UTC], ["updated_at", 2017-02-22 20:57:35 UTC], ["alias", "MissHarpreetKaur"], ["sector", "Consulting"], ["city", "Brimingham"]]
+  [1m[35m (1.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."city" = $1[0m  [["city", "London"]]
+  Rendering email_friends_mailer/find_friends_email.html.erb within layouts/mailer
+  Rendered email_friends_mailer/find_friends_email.html.erb within layouts/mailer (1.4ms)
+EmailFriendsMailer#find_friends_email: processed outbound mail in 155.2ms
+Sent mail to davinder@kaur.com (9.2ms)
+Date: Wed, 22 Feb 2017 20:57:36 +0000
+From: letstalk@friendinneed.com
+To: davinder@kaur.com
+Message-ID: <58adfb406f851_aac83ff2db43fa04442c5@Davinders-MacBook-Air.local.mail>
+Subject: Let's Talk - There is a Friend In Need in your city!
+Mime-Version: 1.0
+Content-Type: text/html;
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <style>
+      /* Email styles need to be inline */
+    </style>
+  </head>
+
+  <body>
+    <!DOCTYPE html>
+<html>
+  <head>
+    <meta content='text/html; charset=UTF-8' http-equiv='Content-Type' />
+  </head>
+  <body>
+    <h1>A Friend In Need wants your help!</h1>
+    <p>
+      One of your fellow city dwellers has just posted a problem!
+      Please log in and help them resolve this!
+    </p>
+    <p>
+      To login to the site, just follow this link: http://localhost:7000/login.
+    </p>
+    <p>Thanks for being a great friend and have a great day!</p>
+  </body>
+</html>
+
+  </body>
+</html>
+
+  [1m[35mSQL (0.6ms)[0m  [1m[32mINSERT INTO "issues" ("user_id", "title", "category", "created_at", "updated_at", "active") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["user_id", 79], ["title", "My super serious sexism issue"], ["category", "Sexim"], ["created_at", 2017-02-22 20:57:36 UTC], ["updated_at", 2017-02-22 20:57:36 UTC], ["active", true]]
+  [1m[35m (1.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.6ms)[0m  [1m[32mINSERT INTO "messages" ("sender_id", "receiver_id", "msg_text", "created_at", "updated_at", "issue_id") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["sender_id", 80], ["receiver_id", 79], ["msg_text", "Some advice"], ["created_at", 2017-02-22 20:57:36 UTC], ["updated_at", 2017-02-22 20:57:36 UTC], ["issue_id", 74]]
+  [1m[35m (1.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[32mINSERT INTO "messages" ("sender_id", "receiver_id", "msg_text", "created_at", "updated_at", "issue_id") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["sender_id", 79], ["receiver_id", 79], ["msg_text", "Thank you for the advice"], ["created_at", 2017-02-22 20:57:36 UTC], ["updated_at", 2017-02-22 20:57:36 UTC], ["issue_id", 74]]
+  [1m[35m (1.5ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."city" = $1[0m  [["city", "London"]]
+  Rendering email_friends_mailer/find_friends_email.html.erb within layouts/mailer
+  Rendered email_friends_mailer/find_friends_email.html.erb within layouts/mailer (0.1ms)
+EmailFriendsMailer#find_friends_email: processed outbound mail in 11.5ms
+Sent mail to davinder@kaur.com (5.2ms)
+Date: Wed, 22 Feb 2017 20:57:36 +0000
+From: letstalk@friendinneed.com
+To: davinder@kaur.com
+Message-ID: <58adfb407897c_aac83ff2db43fa04443da@Davinders-MacBook-Air.local.mail>
+Subject: Let's Talk - There is a Friend In Need in your city!
+Mime-Version: 1.0
+Content-Type: text/html;
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <style>
+      /* Email styles need to be inline */
+    </style>
+  </head>
+
+  <body>
+    <!DOCTYPE html>
+<html>
+  <head>
+    <meta content='text/html; charset=UTF-8' http-equiv='Content-Type' />
+  </head>
+  <body>
+    <h1>A Friend In Need wants your help!</h1>
+    <p>
+      One of your fellow city dwellers has just posted a problem!
+      Please log in and help them resolve this!
+    </p>
+    <p>
+      To login to the site, just follow this link: http://localhost:7000/login.
+    </p>
+    <p>Thanks for being a great friend and have a great day!</p>
+  </body>
+</html>
+
+  </body>
+</html>
+
+  [1m[35mSQL (0.7ms)[0m  [1m[32mINSERT INTO "issues" ("user_id", "title", "category", "created_at", "updated_at", "active") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["user_id", 79], ["title", "Another super serious issue"], ["category", "Racism"], ["created_at", 2017-02-22 20:57:36 UTC], ["updated_at", 2017-02-22 20:57:36 UTC], ["active", true]]
+  [1m[35m (1.5ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.5ms)[0m  [1m[32mINSERT INTO "messages" ("sender_id", "receiver_id", "msg_text", "created_at", "updated_at", "issue_id") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["sender_id", 80], ["receiver_id", 79], ["msg_text", "Some good advice"], ["created_at", 2017-02-22 20:57:36 UTC], ["updated_at", 2017-02-22 20:57:36 UTC], ["issue_id", 75]]
+  [1m[35m (1.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[32mINSERT INTO "messages" ("sender_id", "receiver_id", "msg_text", "created_at", "updated_at", "issue_id") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["sender_id", 79], ["receiver_id", 79], ["msg_text", "Thank you for the good advice"], ["created_at", 2017-02-22 20:57:36 UTC], ["updated_at", 2017-02-22 20:57:36 UTC], ["issue_id", 75]]
+  [1m[35m (1.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."city" = $1[0m  [["city", "Brimingham"]]
+  Rendering email_friends_mailer/find_friends_email.html.erb within layouts/mailer
+  Rendered email_friends_mailer/find_friends_email.html.erb within layouts/mailer (0.0ms)
+EmailFriendsMailer#find_friends_email: processed outbound mail in 15.5ms
+Sent mail to miss_davinder_kaur@hotmail.co.uk (2.8ms)
+Date: Wed, 22 Feb 2017 20:57:36 +0000
+From: letstalk@friendinneed.com
+To: miss_davinder_kaur@hotmail.co.uk
+Message-ID: <58adfb4081d75_aac83ff2db43fa04444d8@Davinders-MacBook-Air.local.mail>
+Subject: Let's Talk - There is a Friend In Need in your city!
+Mime-Version: 1.0
+Content-Type: text/html;
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <style>
+      /* Email styles need to be inline */
+    </style>
+  </head>
+
+  <body>
+    <!DOCTYPE html>
+<html>
+  <head>
+    <meta content='text/html; charset=UTF-8' http-equiv='Content-Type' />
+  </head>
+  <body>
+    <h1>A Friend In Need wants your help!</h1>
+    <p>
+      One of your fellow city dwellers has just posted a problem!
+      Please log in and help them resolve this!
+    </p>
+    <p>
+      To login to the site, just follow this link: http://localhost:7000/login.
+    </p>
+    <p>Thanks for being a great friend and have a great day!</p>
+  </body>
+</html>
+
+  </body>
+</html>
+
+  [1m[35mSQL (0.5ms)[0m  [1m[32mINSERT INTO "issues" ("user_id", "title", "category", "created_at", "updated_at", "active") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["user_id", 80], ["title", "My racism issue"], ["category", "Racism"], ["created_at", 2017-02-22 20:57:36 UTC], ["updated_at", 2017-02-22 20:57:36 UTC], ["active", true]]
+  [1m[35m (1.5ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.5ms)[0m  [1m[32mINSERT INTO "messages" ("sender_id", "receiver_id", "msg_text", "created_at", "updated_at", "issue_id") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["sender_id", 79], ["receiver_id", 80], ["msg_text", "Some advice"], ["created_at", 2017-02-22 20:57:36 UTC], ["updated_at", 2017-02-22 20:57:36 UTC], ["issue_id", 76]]
+  [1m[35m (1.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[32mINSERT INTO "messages" ("sender_id", "receiver_id", "msg_text", "created_at", "updated_at", "issue_id") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["sender_id", 80], ["receiver_id", 79], ["msg_text", "Thank you for the advice"], ["created_at", 2017-02-22 20:57:36 UTC], ["updated_at", 2017-02-22 20:57:36 UTC], ["issue_id", 76]]
+  [1m[35m (1.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."city" = $1[0m  [["city", "Brimingham"]]
+  Rendering email_friends_mailer/find_friends_email.html.erb within layouts/mailer
+  Rendered email_friends_mailer/find_friends_email.html.erb within layouts/mailer (0.1ms)
+EmailFriendsMailer#find_friends_email: processed outbound mail in 10.8ms
+Sent mail to miss_davinder_kaur@hotmail.co.uk (2.9ms)
+Date: Wed, 22 Feb 2017 20:57:36 +0000
+From: letstalk@friendinneed.com
+To: miss_davinder_kaur@hotmail.co.uk
+Message-ID: <58adfb4088cd0_aac83ff2db43fa0444532@Davinders-MacBook-Air.local.mail>
+Subject: Let's Talk - There is a Friend In Need in your city!
+Mime-Version: 1.0
+Content-Type: text/html;
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <style>
+      /* Email styles need to be inline */
+    </style>
+  </head>
+
+  <body>
+    <!DOCTYPE html>
+<html>
+  <head>
+    <meta content='text/html; charset=UTF-8' http-equiv='Content-Type' />
+  </head>
+  <body>
+    <h1>A Friend In Need wants your help!</h1>
+    <p>
+      One of your fellow city dwellers has just posted a problem!
+      Please log in and help them resolve this!
+    </p>
+    <p>
+      To login to the site, just follow this link: http://localhost:7000/login.
+    </p>
+    <p>Thanks for being a great friend and have a great day!</p>
+  </body>
+</html>
+
+  </body>
+</html>
+
+  [1m[35mSQL (0.5ms)[0m  [1m[32mINSERT INTO "issues" ("user_id", "title", "category", "created_at", "updated_at", "active") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["user_id", 80], ["title", "Another ageism issue"], ["category", "Ageism"], ["created_at", 2017-02-22 20:57:36 UTC], ["updated_at", 2017-02-22 20:57:36 UTC], ["active", true]]
+  [1m[35m (1.5ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[32mINSERT INTO "messages" ("sender_id", "receiver_id", "msg_text", "created_at", "updated_at", "issue_id") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["sender_id", 79], ["receiver_id", 80], ["msg_text", "Some good advice"], ["created_at", 2017-02-22 20:57:36 UTC], ["updated_at", 2017-02-22 20:57:36 UTC], ["issue_id", 77]]
+  [1m[35m (1.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[32mINSERT INTO "messages" ("sender_id", "receiver_id", "msg_text", "created_at", "updated_at", "issue_id") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["sender_id", 80], ["receiver_id", 79], ["msg_text", "Thank you for the good advice"], ["created_at", 2017-02-22 20:57:36 UTC], ["updated_at", 2017-02-22 20:57:36 UTC], ["issue_id", 77]]
+  [1m[35m (1.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUser Exists (0.5ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "miss.davinder.kaur@gmail.com"], ["LIMIT", 1]]
+  [1m[36mUser Exists (0.3ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."alias" = $1 LIMIT $2[0m  [["alias", "Test User 1"], ["LIMIT", 1]]
+  [1m[35mSQL (0.4ms)[0m  [1m[32mINSERT INTO "users" ("email", "password_digest", "created_at", "updated_at", "alias", "sector", "city") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["email", "miss.davinder.kaur@gmail.com"], ["password_digest", "$2a$10$dJSgPFmXULJWYpJrWfku0OeS.VpXCk5a4LDnmXfX03ScQwCxQZ5ui"], ["created_at", 2017-02-22 20:57:36 UTC], ["updated_at", 2017-02-22 20:57:36 UTC], ["alias", "Test User 1"], ["sector", "Advertising"], ["city", "London"]]
+  [1m[35m (1.2ms)[0m  [1m[35mCOMMIT[0m
+Started GET "/cable" for 127.0.0.1 at 2017-02-22 20:59:50 +0000
+  [1m[36mActiveRecord::SchemaMigration Load (0.6ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Started GET "/cable/" [WebSocket] for 127.0.0.1 at 2017-02-22 20:59:51 +0000
+Successfully upgraded to WebSocket (REQUEST_METHOD: GET, HTTP_CONNECTION: Upgrade, HTTP_UPGRADE: websocket)
+IssuesChannel is transmitting the subscription confirmation
+IssuesChannel is streaming from issues_channel_55
+Started GET "/users/64" for 127.0.0.1 at 2017-02-22 21:00:30 +0000
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"64"}
+  [1m[36mUser Load (1.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 64], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 64], ["LIMIT", 1]]
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (0.22ms)
+Filter chain halted as :authenticate_user! rendered or redirected
+Completed 401 Unauthorized in 105ms (Views: 12.9ms | ActiveRecord: 16.7ms)
+
+
+Started POST "/login" for 127.0.0.1 at 2017-02-22 21:00:36 +0000
+Processing by AuthenticationsController#login as HTML
+  Parameters: {"email"=>"davinder@kaur.com", "password"=>"[FILTERED]", "authentication"=>{"email"=>"davinder@kaur.com", "password"=>"[FILTERED]"}}
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "davinder@kaur.com"], ["LIMIT", 1]]
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 64], ["LIMIT", 1]]
+[active_model_serializers]   [1m[36mIssue Load (0.6ms)[0m  [1m[34mSELECT "issues".* FROM "issues" WHERE "issues"."user_id" = $1[0m  [["user_id", 79]]
+[active_model_serializers]   [1m[36mMessage Load (0.5ms)[0m  [1m[34mSELECT "messages".* FROM "messages" WHERE "messages"."issue_id" = $1[0m  [["issue_id", 74]]
+[active_model_serializers]   [1m[36mMessage Load (0.4ms)[0m  [1m[34mSELECT "messages".* FROM "messages" WHERE "messages"."issue_id" = $1[0m  [["issue_id", 75]]
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (119.02ms)
+Completed 200 OK in 230ms (Views: 110.6ms | ActiveRecord: 14.3ms)
+
+
+Started GET "/users/79" for 127.0.0.1 at 2017-02-22 21:00:36 +0000
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"79"}
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 79], ["LIMIT", 1]]
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 79], ["LIMIT", 1]]
+[active_model_serializers]   [1m[36mIssue Load (0.9ms)[0m  [1m[34mSELECT "issues".* FROM "issues" WHERE "issues"."user_id" = $1[0m  [["user_id", 79]]
+[active_model_serializers]   [1m[36mMessage Load (0.6ms)[0m  [1m[34mSELECT "messages".* FROM "messages" WHERE "messages"."issue_id" = $1[0m  [["issue_id", 74]]
+[active_model_serializers]   [1m[36mMessage Load (0.3ms)[0m  [1m[34mSELECT "messages".* FROM "messages" WHERE "messages"."issue_id" = $1[0m  [["issue_id", 75]]
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (12.7ms)
+Completed 200 OK in 17ms (Views: 11.4ms | ActiveRecord: 2.8ms)
+
+
+Started GET "/users/79" for 127.0.0.1 at 2017-02-22 21:00:36 +0000
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"79"}
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 79], ["LIMIT", 1]]
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 79], ["LIMIT", 1]]
+[active_model_serializers]   [1m[36mIssue Load (4.3ms)[0m  [1m[34mSELECT "issues".* FROM "issues" WHERE "issues"."user_id" = $1[0m  [["user_id", 79]]
+[active_model_serializers]   [1m[36mMessage Load (5.6ms)[0m  [1m[34mSELECT "messages".* FROM "messages" WHERE "messages"."issue_id" = $1[0m  [["issue_id", 74]]
+[active_model_serializers]   [1m[36mMessage Load (0.5ms)[0m  [1m[34mSELECT "messages".* FROM "messages" WHERE "messages"."issue_id" = $1[0m  [["issue_id", 75]]
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (25.73ms)
+Completed 200 OK in 32ms (Views: 16.3ms | ActiveRecord: 11.9ms)
+
+
+Started POST "/issues" for 127.0.0.1 at 2017-02-22 21:00:46 +0000
+Processing by IssuesController#create as HTML
+  Parameters: {"title"=>"HELP me with something", "category"=>"Ageism", "user_id"=>79, "issue"=>{"user_id"=>79, "title"=>"HELP me with something", "category"=>"Ageism"}}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 79], ["LIMIT", 1]]
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 79], ["LIMIT", 1]]
+  [1m[36mUser Load (0.9ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."city" = $1[0m  [["city", "London"]]
+  Rendering email_friends_mailer/find_friends_email.html.erb within layouts/mailer
+  Rendered email_friends_mailer/find_friends_email.html.erb within layouts/mailer (3.3ms)
+EmailFriendsMailer#find_friends_email: processed outbound mail in 242.7ms
+Sent mail to davinder@kaur.com, miss.davinder.kaur@gmail.com (21.4ms)
+Date: Wed, 22 Feb 2017 21:00:46 +0000
+From: letstalk@friendinneed.com
+To: davinder@kaur.com, 
+ miss.davinder.kaur@gmail.com
+Message-ID: <58adfbfed9f83_ab7a3fe828800250955d7@Davinders-MacBook-Air.local.mail>
+Subject: Let's Talk - There is a Friend In Need in your city!
+Mime-Version: 1.0
+Content-Type: text/html;
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <style>
+      /* Email styles need to be inline */
+    </style>
+  </head>
+
+  <body>
+    <!DOCTYPE html>
+<html>
+  <head>
+    <meta content='text/html; charset=UTF-8' http-equiv='Content-Type' />
+  </head>
+  <body>
+    <h1>A Friend In Need wants your help!</h1>
+    <p>
+      One of your fellow city dwellers has just posted a problem!
+      Please log in and help them resolve this!
+    </p>
+    <p>
+      To login to the site, just follow this link: http://localhost:7000/login.
+    </p>
+    <p>Thanks for being a great friend and have a great day!</p>
+  </body>
+</html>
+
+  </body>
+</html>
+
+  [1m[35mSQL (0.7ms)[0m  [1m[32mINSERT INTO "issues" ("user_id", "title", "category", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["user_id", 79], ["title", "HELP me with something"], ["category", "Ageism"], ["created_at", 2017-02-22 21:00:46 UTC], ["updated_at", 2017-02-22 21:00:46 UTC]]
+  [1m[35m (2.0ms)[0m  [1m[35mCOMMIT[0m
+[active_model_serializers]   [1m[36mMessage Load (0.5ms)[0m  [1m[34mSELECT "messages".* FROM "messages" WHERE "messages"."issue_id" = $1[0m  [["issue_id", 78]]
+[active_model_serializers] Rendered IssueSerializer with ActiveModelSerializers::Adapter::Attributes (5.48ms)
+Completed 201 Created in 896ms (Views: 6.8ms | ActiveRecord: 4.7ms)
+
+
+Started GET "/cable" for 127.0.0.1 at 2017-02-22 21:00:46 +0000
+Started GET "/cable/" [WebSocket] for 127.0.0.1 at 2017-02-22 21:00:46 +0000
+Successfully upgraded to WebSocket (REQUEST_METHOD: GET, HTTP_CONNECTION: Upgrade, HTTP_UPGRADE: websocket)
+IssuesChannel is transmitting the subscription confirmation
+IssuesChannel is streaming from issues_channel_78
+Started GET "/issues/78" for 127.0.0.1 at 2017-02-22 21:00:47 +0000
+Processing by IssuesController#show as HTML
+  Parameters: {"id"=>"78"}
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 79], ["LIMIT", 1]]
+  [1m[36mIssue Load (0.6ms)[0m  [1m[34mSELECT  "issues".* FROM "issues" WHERE "issues"."id" = $1 LIMIT $2[0m  [["id", 78], ["LIMIT", 1]]
+[active_model_serializers]   [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 79], ["LIMIT", 1]]
+[active_model_serializers]   [1m[36mMessage Load (0.5ms)[0m  [1m[34mSELECT "messages".* FROM "messages" WHERE "messages"."issue_id" = $1[0m  [["issue_id", 78]]
+[active_model_serializers] Rendered IssueSerializer with ActiveModelSerializers::Adapter::Attributes (3.7ms)
+Completed 200 OK in 10ms (Views: 3.8ms | ActiveRecord: 1.7ms)
+
+
+Started POST "/issues" for 127.0.0.1 at 2017-02-22 21:06:25 +0000
+Processing by IssuesController#create as HTML
+  Parameters: {"title"=>"A topic to test emails", "category"=>"Sexism", "user_id"=>79, "issue"=>{"user_id"=>79, "title"=>"A topic to test emails", "category"=>"Sexism"}}
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 79], ["LIMIT", 1]]
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 79], ["LIMIT", 1]]
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."city" = $1[0m  [["city", "London"]]
+  Rendering email_friends_mailer/find_friends_email.html.erb within layouts/mailer
+  Rendered email_friends_mailer/find_friends_email.html.erb within layouts/mailer (2.2ms)
+  Rendering email_friends_mailer/find_friends_email.text.erb within layouts/mailer
+  Rendered email_friends_mailer/find_friends_email.text.erb within layouts/mailer (0.9ms)
+EmailFriendsMailer#find_friends_email: processed outbound mail in 28.8ms
+Sent mail to davinder@kaur.com, miss.davinder.kaur@gmail.com (8.2ms)
+Date: Wed, 22 Feb 2017 21:06:25 +0000
+From: letstalk@friendinneed.com
+To: davinder@kaur.com, 
+ miss.davinder.kaur@gmail.com
+Message-ID: <58adfd511488b_ab7a3fe828800138957a5@Davinders-MacBook-Air.local.mail>
+Subject: Let's Talk - There is a Friend In Need in your city!
+Mime-Version: 1.0
+Content-Type: multipart/alternative;
+ boundary="--==_mimepart_58adfd511385e_ab7a3fe828800138956c1";
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+
+----==_mimepart_58adfd511385e_ab7a3fe828800138956c1
+Content-Type: text/plain;
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+A Friend In Need wants your help!
+===============================================
+
+One of your fellow city dwellers has just posted a problem!
+Please log in and help them resolve this!
+
+To login to the site, just follow this link: http://localhost:7000/login.
+
+Thanks for being a great friend and have a great day!
+
+
+----==_mimepart_58adfd511385e_ab7a3fe828800138956c1
+Content-Type: text/html;
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <style>
+      /* Email styles need to be inline */
+    </style>
+  </head>
+
+  <body>
+    <!DOCTYPE html>
+<html>
+  <head>
+    <meta content='text/html; charset=UTF-8' http-equiv='Content-Type' />
+  </head>
+  <body>
+    <h1>A Friend In Need wants your help!</h1>
+    <p>
+      One of your fellow city dwellers has just posted a problem!
+      Please log in and help them resolve this!
+    </p>
+    <p>
+      To login to the site, just follow this link: http://localhost:7000/login.
+    </p>
+    <p>Thanks for being a great friend and have a great day!</p>
+  </body>
+</html>
+
+  </body>
+</html>
+
+----==_mimepart_58adfd511385e_ab7a3fe828800138956c1--
+
+  [1m[35mSQL (0.9ms)[0m  [1m[32mINSERT INTO "issues" ("user_id", "title", "category", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["user_id", 79], ["title", "A topic to test emails"], ["category", "Sexism"], ["created_at", 2017-02-22 21:06:25 UTC], ["updated_at", 2017-02-22 21:06:25 UTC]]
+  [1m[35m (1.6ms)[0m  [1m[35mCOMMIT[0m
+[active_model_serializers]   [1m[36mMessage Load (0.4ms)[0m  [1m[34mSELECT "messages".* FROM "messages" WHERE "messages"."issue_id" = $1[0m  [["issue_id", 79]]
+[active_model_serializers] Rendered IssueSerializer with ActiveModelSerializers::Adapter::Attributes (3.63ms)
+Completed 201 Created in 84ms (Views: 6.5ms | ActiveRecord: 4.3ms)
+
+
+IssuesChannel is transmitting the subscription confirmation
+IssuesChannel is streaming from issues_channel_79
+Started GET "/issues/79" for 127.0.0.1 at 2017-02-22 21:06:25 +0000
+Processing by IssuesController#show as HTML
+  Parameters: {"id"=>"79"}
+  [1m[36mUser Load (5.9ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 79], ["LIMIT", 1]]
+  [1m[36mIssue Load (2.1ms)[0m  [1m[34mSELECT  "issues".* FROM "issues" WHERE "issues"."id" = $1 LIMIT $2[0m  [["id", 79], ["LIMIT", 1]]
+[active_model_serializers]   [1m[36mCACHE (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 79], ["LIMIT", 1]]
+[active_model_serializers]   [1m[36mMessage Load (1.0ms)[0m  [1m[34mSELECT "messages".* FROM "messages" WHERE "messages"."issue_id" = $1[0m  [["issue_id", 79]]
+[active_model_serializers] Rendered IssueSerializer with ActiveModelSerializers::Adapter::Attributes (6.96ms)
+Completed 200 OK in 19ms (Views: 6.5ms | ActiveRecord: 9.3ms)
+
+
