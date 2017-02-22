@@ -4,12 +4,11 @@ class IssuesChannel < ApplicationCable::Channel
   end
 
   # generic
-  def receive(data)
-    ActionCable.server.broadcast stream_name, data.fetch('message')
-  end
+  # def receive(data)
+  #   ActionCable.server.broadcast stream_name, data.fetch('message')
+  # end
 
   def new_message(data)
-p "*************************************"
     ActionCable.server.broadcast stream_name, data.fetch('message')
   end
 

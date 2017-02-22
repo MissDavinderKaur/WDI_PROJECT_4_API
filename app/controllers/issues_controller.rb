@@ -18,7 +18,6 @@ class IssuesController < ApplicationController
     # POST /issues
     def create
       @issue = Issue.new(issue_params)
-
       if @issue.save
         render json: @issue, status: :created, location: @issue
       else
@@ -50,4 +49,5 @@ class IssuesController < ApplicationController
     def issue_params
       params.require(:issue).permit(:user_id, :title, :category, :active)
     end
+
   end
