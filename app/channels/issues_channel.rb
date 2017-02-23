@@ -9,9 +9,6 @@ class IssuesChannel < ApplicationCable::Channel
   # end
 
   def new_message(data)
-    p "**********************DATA***************************"
-    p data
-    p "**********************DATA***************************"
     ActionCable.server.broadcast stream_name, data.fetch('message')
   end
 

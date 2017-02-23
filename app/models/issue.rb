@@ -7,7 +7,7 @@ class Issue < ApplicationRecord
   # private
   # def send_emails
   #   title = self.title
-  #   users = User.where(city: self.user.city) 
+  #   users = User.where(city: self.user.city)
   #
   #   emailsArray = []
   #   for user in users
