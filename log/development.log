@@ -38276,3 +38276,143 @@ Processing by IssuesController#show as HTML
 Completed 200 OK in 17ms (Views: 7.7ms | ActiveRecord: 4.8ms)
 
 
+  [1m[36mActiveRecord::SchemaMigration Load (0.8ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.7ms)[0m  [1m[31mDELETE FROM "users" WHERE "users"."id" = $1[0m  [["id", 109]]
+  [1m[35m (1.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[31mDELETE FROM "users" WHERE "users"."id" = $1[0m  [["id", 110]]
+  [1m[35m (1.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[31mDELETE FROM "users" WHERE "users"."id" = $1[0m  [["id", 111]]
+  [1m[35m (1.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[31mDELETE FROM "users" WHERE "users"."id" = $1[0m  [["id", 112]]
+  [1m[35m (1.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[31mDELETE FROM "users" WHERE "users"."id" = $1[0m  [["id", 113]]
+  [1m[35m (1.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[31mDELETE FROM "users" WHERE "users"."id" = $1[0m  [["id", 114]]
+  [1m[35m (1.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mIssue Load (0.7ms)[0m  [1m[34mSELECT "issues".* FROM "issues"[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.6ms)[0m  [1m[31mDELETE FROM "issues" WHERE "issues"."id" = $1[0m  [["id", 110]]
+  [1m[35m (1.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[31mDELETE FROM "issues" WHERE "issues"."id" = $1[0m  [["id", 111]]
+  [1m[35m (1.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[31mDELETE FROM "issues" WHERE "issues"."id" = $1[0m  [["id", 112]]
+  [1m[35m (1.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[31mDELETE FROM "issues" WHERE "issues"."id" = $1[0m  [["id", 113]]
+  [1m[35m (1.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[31mDELETE FROM "issues" WHERE "issues"."id" = $1[0m  [["id", 114]]
+  [1m[35m (1.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mMessage Load (1.0ms)[0m  [1m[34mSELECT "messages".* FROM "messages"[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[31mDELETE FROM "messages" WHERE "messages"."id" = $1[0m  [["id", 288]]
+  [1m[35m (1.5ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.5ms)[0m  [1m[31mDELETE FROM "messages" WHERE "messages"."id" = $1[0m  [["id", 289]]
+  [1m[35m (1.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[31mDELETE FROM "messages" WHERE "messages"."id" = $1[0m  [["id", 290]]
+  [1m[35m (1.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[31mDELETE FROM "messages" WHERE "messages"."id" = $1[0m  [["id", 291]]
+  [1m[35m (1.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[31mDELETE FROM "messages" WHERE "messages"."id" = $1[0m  [["id", 292]]
+  [1m[35m (1.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[31mDELETE FROM "messages" WHERE "messages"."id" = $1[0m  [["id", 293]]
+  [1m[35m (1.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[31mDELETE FROM "messages" WHERE "messages"."id" = $1[0m  [["id", 294]]
+  [1m[35m (1.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.5ms)[0m  [1m[31mDELETE FROM "messages" WHERE "messages"."id" = $1[0m  [["id", 295]]
+  [1m[35m (1.1ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUser Exists (1.1ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "davinder@kaur.com"], ["LIMIT", 1]]
+  [1m[36mUser Exists (0.4ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."alias" = $1 LIMIT $2[0m  [["alias", "MissDavinderKaur"], ["LIMIT", 1]]
+  [1m[35mSQL (0.7ms)[0m  [1m[32mINSERT INTO "users" ("email", "password_digest", "created_at", "updated_at", "alias", "sector", "city") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["email", "davinder@kaur.com"], ["password_digest", "$2a$10$kzjvw.4CeORlFuo41MJ5Me0HQ/YHjPtsuAMz2kaS6jUGUD/Rxr0IO"], ["created_at", 2017-02-23 10:36:38 UTC], ["updated_at", 2017-02-23 10:36:38 UTC], ["alias", "MissDavinderKaur"], ["sector", "Banking and Finance"], ["city", "London"]]
+  [1m[35m (1.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUser Exists (0.5ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "miss_davinder_kaur@hotmail.co.uk"], ["LIMIT", 1]]
+  [1m[36mUser Exists (0.6ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."alias" = $1 LIMIT $2[0m  [["alias", "MissHarpreetKaur"], ["LIMIT", 1]]
+  [1m[35mSQL (0.6ms)[0m  [1m[32mINSERT INTO "users" ("email", "password_digest", "created_at", "updated_at", "alias", "sector", "city") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["email", "miss_davinder_kaur@hotmail.co.uk"], ["password_digest", "$2a$10$ZVDuDIH6rXJFl7YMKXYBoORXndlfhXGdTOii47S8rfeIXjgolS3p2"], ["created_at", 2017-02-23 10:36:38 UTC], ["updated_at", 2017-02-23 10:36:38 UTC], ["alias", "MissHarpreetKaur"], ["sector", "Consulting"], ["city", "Brimingham"]]
+  [1m[35m (1.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.5ms)[0m  [1m[32mINSERT INTO "issues" ("user_id", "title", "category", "created_at", "updated_at", "active") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["user_id", 115], ["title", "My super serious sexism issue"], ["category", "Sexism"], ["created_at", 2017-02-23 10:36:38 UTC], ["updated_at", 2017-02-23 10:36:38 UTC], ["active", true]]
+  [1m[35m (1.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.8ms)[0m  [1m[32mINSERT INTO "messages" ("sender_id", "receiver_id", "msg_text", "created_at", "updated_at", "issue_id") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["sender_id", 116], ["receiver_id", 115], ["msg_text", "Some advice"], ["created_at", 2017-02-23 10:36:38 UTC], ["updated_at", 2017-02-23 10:36:38 UTC], ["issue_id", 115]]
+  [1m[35m (1.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[32mINSERT INTO "messages" ("sender_id", "receiver_id", "msg_text", "created_at", "updated_at", "issue_id") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["sender_id", 115], ["receiver_id", 115], ["msg_text", "Thank you for the advice"], ["created_at", 2017-02-23 10:36:38 UTC], ["updated_at", 2017-02-23 10:36:38 UTC], ["issue_id", 115]]
+  [1m[35m (1.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[32mINSERT INTO "issues" ("user_id", "title", "category", "created_at", "updated_at", "active") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["user_id", 115], ["title", "Another super serious issue"], ["category", "Racism"], ["created_at", 2017-02-23 10:36:38 UTC], ["updated_at", 2017-02-23 10:36:38 UTC], ["active", true]]
+  [1m[35m (1.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.5ms)[0m  [1m[32mINSERT INTO "messages" ("sender_id", "receiver_id", "msg_text", "created_at", "updated_at", "issue_id") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["sender_id", 116], ["receiver_id", 115], ["msg_text", "Some good advice"], ["created_at", 2017-02-23 10:36:38 UTC], ["updated_at", 2017-02-23 10:36:38 UTC], ["issue_id", 116]]
+  [1m[35m (1.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.5ms)[0m  [1m[32mINSERT INTO "messages" ("sender_id", "receiver_id", "msg_text", "created_at", "updated_at", "issue_id") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["sender_id", 115], ["receiver_id", 115], ["msg_text", "Thank you for the good advice"], ["created_at", 2017-02-23 10:36:38 UTC], ["updated_at", 2017-02-23 10:36:38 UTC], ["issue_id", 116]]
+  [1m[35m (1.5ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[32mINSERT INTO "issues" ("user_id", "title", "category", "created_at", "updated_at", "active") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["user_id", 116], ["title", "My racism issue"], ["category", "Racism"], ["created_at", 2017-02-23 10:36:38 UTC], ["updated_at", 2017-02-23 10:36:38 UTC], ["active", true]]
+  [1m[35m (1.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[32mINSERT INTO "messages" ("sender_id", "receiver_id", "msg_text", "created_at", "updated_at", "issue_id") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["sender_id", 115], ["receiver_id", 116], ["msg_text", "Some advice"], ["created_at", 2017-02-23 10:36:38 UTC], ["updated_at", 2017-02-23 10:36:38 UTC], ["issue_id", 117]]
+  [1m[35m (1.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[32mINSERT INTO "messages" ("sender_id", "receiver_id", "msg_text", "created_at", "updated_at", "issue_id") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["sender_id", 116], ["receiver_id", 115], ["msg_text", "Thank you for the advice"], ["created_at", 2017-02-23 10:36:38 UTC], ["updated_at", 2017-02-23 10:36:38 UTC], ["issue_id", 117]]
+  [1m[35m (1.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.5ms)[0m  [1m[32mINSERT INTO "issues" ("user_id", "title", "category", "created_at", "updated_at", "active") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["user_id", 116], ["title", "Another ageism issue"], ["category", "Ageism"], ["created_at", 2017-02-23 10:36:38 UTC], ["updated_at", 2017-02-23 10:36:38 UTC], ["active", true]]
+  [1m[35m (1.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[32mINSERT INTO "messages" ("sender_id", "receiver_id", "msg_text", "created_at", "updated_at", "issue_id") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["sender_id", 115], ["receiver_id", 116], ["msg_text", "Some good advice"], ["created_at", 2017-02-23 10:36:38 UTC], ["updated_at", 2017-02-23 10:36:38 UTC], ["issue_id", 118]]
+  [1m[35m (1.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[32mINSERT INTO "messages" ("sender_id", "receiver_id", "msg_text", "created_at", "updated_at", "issue_id") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["sender_id", 116], ["receiver_id", 115], ["msg_text", "Thank you for the good advice"], ["created_at", 2017-02-23 10:36:38 UTC], ["updated_at", 2017-02-23 10:36:38 UTC], ["issue_id", 118]]
+  [1m[35m (1.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUser Exists (0.3ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "miss.davinder.kaur@gmail.com"], ["LIMIT", 1]]
+  [1m[36mUser Exists (0.4ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."alias" = $1 LIMIT $2[0m  [["alias", "Test User 1"], ["LIMIT", 1]]
+  [1m[35mSQL (0.4ms)[0m  [1m[32mINSERT INTO "users" ("email", "password_digest", "created_at", "updated_at", "alias", "sector", "city") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["email", "miss.davinder.kaur@gmail.com"], ["password_digest", "$2a$10$tw9MVMga8WnkvuMFOSOOv.zEt0F14/UwSbu68hgp6s9qQb8cbIYOi"], ["created_at", 2017-02-23 10:36:38 UTC], ["updated_at", 2017-02-23 10:36:38 UTC], ["alias", "Test User 1"], ["sector", "Advertising"], ["city", "London"]]
+  [1m[35m (1.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUser Exists (0.4ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "test2@test2.com"], ["LIMIT", 1]]
+  [1m[36mUser Exists (0.3ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."alias" = $1 LIMIT $2[0m  [["alias", "Test User 2"], ["LIMIT", 1]]
+  [1m[35mSQL (0.4ms)[0m  [1m[32mINSERT INTO "users" ("email", "password_digest", "created_at", "updated_at", "alias", "sector", "city") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["email", "test2@test2.com"], ["password_digest", "$2a$10$s/9.WDPWDXvxLQbXSbBQSuNSR7ypVuVvMYmhOiwtUMTxc7dB8W232"], ["created_at", 2017-02-23 10:36:38 UTC], ["updated_at", 2017-02-23 10:36:38 UTC], ["alias", "Test User 2"], ["sector", "Clothing and Fashion"], ["city", "London"]]
+  [1m[35m (1.5ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUser Exists (0.5ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "test3@test3.com"], ["LIMIT", 1]]
+  [1m[36mUser Exists (0.3ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."alias" = $1 LIMIT $2[0m  [["alias", "Test User 3"], ["LIMIT", 1]]
+  [1m[35mSQL (0.4ms)[0m  [1m[32mINSERT INTO "users" ("email", "password_digest", "created_at", "updated_at", "alias", "sector", "city") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["email", "test3@test3.com"], ["password_digest", "$2a$10$ZUkv9sXZi0c0MCyo4vk6VelCcoe5kYMnMPkSg/ADQ06/RLr3FsO6S"], ["created_at", 2017-02-23 10:36:38 UTC], ["updated_at", 2017-02-23 10:36:38 UTC], ["alias", "Test User 3"], ["sector", "Healthcare Professionals"], ["city", "London"]]
+  [1m[35m (1.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUser Exists (0.4ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "test4@test4.com"], ["LIMIT", 1]]
+  [1m[36mUser Exists (0.3ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."alias" = $1 LIMIT $2[0m  [["alias", "Test User 4"], ["LIMIT", 1]]
+  [1m[35mSQL (0.4ms)[0m  [1m[32mINSERT INTO "users" ("email", "password_digest", "created_at", "updated_at", "alias", "sector", "city") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["email", "test4@test4.com"], ["password_digest", "$2a$10$NqIy2l28vO0GdFbiGgMMYu/kgfnEZCCknr34VXtPkSQM6d/9Gcd3W"], ["created_at", 2017-02-23 10:36:38 UTC], ["updated_at", 2017-02-23 10:36:38 UTC], ["alias", "Test User 4"], ["sector", "Teachers"], ["city", "London"]]
+  [1m[35m (1.3ms)[0m  [1m[35mCOMMIT[0m
+Started GET "/cable" for 127.0.0.1 at 2017-02-23 10:36:46 +0000
+  [1m[36mActiveRecord::SchemaMigration Load (0.6ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Started GET "/cable/" [WebSocket] for 127.0.0.1 at 2017-02-23 10:36:47 +0000
+Successfully upgraded to WebSocket (REQUEST_METHOD: GET, HTTP_CONNECTION: Upgrade, HTTP_UPGRADE: websocket)
+IssuesChannel is transmitting the subscription confirmation
+IssuesChannel is streaming from issues_channel_106
+IssuesChannel is transmitting the subscription confirmation
+IssuesChannel is streaming from issues_channel_114
+Started GET "/cable" for 127.0.0.1 at 2017-02-23 10:36:50 +0000
+Started GET "/cable/" [WebSocket] for 127.0.0.1 at 2017-02-23 10:36:50 +0000
+Successfully upgraded to WebSocket (REQUEST_METHOD: GET, HTTP_CONNECTION: Upgrade, HTTP_UPGRADE: websocket)
+IssuesChannel is transmitting the subscription confirmation
+IssuesChannel is streaming from issues_channel_106
