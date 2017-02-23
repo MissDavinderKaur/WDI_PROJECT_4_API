@@ -55,8 +55,8 @@ Rails.application.configure do
   config.action_mailer.delivery_method = :smtp
 
   ActionMailer::Base.smtp_settings = {
-  :user_name => 'miss_davinder_kaur@hotmail.co.uk',
-  :password => 'Davinder01',
+  :user_name => ENV['SENDGRID_EMAIL'],
+  :password => ENV['SENDGRID_PASSWORD'],
   :address => 'smtp.sendgrid.net',
   :port => 587,
   :authentication => :plain,
