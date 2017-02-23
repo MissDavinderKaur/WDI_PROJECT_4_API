@@ -14,11 +14,11 @@ class IssuesChannel < ApplicationCable::Channel
 
   private
 
-    def stream_name
-      "issues_channel_#{issue_id}"
-    end
+  def stream_name
+    "issues_channel_#{issue_id}"
+  end
 
-    def issue_id
-      params.fetch('data').fetch('id')
-    end
+  def issue_id
+    params.fetch('data').fetch('id')
+  end
 end
