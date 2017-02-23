@@ -12,9 +12,6 @@ class Issue < ApplicationRecord
     for user in users
       emailsArray.push(user.email)
     end
-    puts "**********************************************"
-    puts emailsArray
-    puts "********************************************"
     EmailFriendsMailer.find_friends_email(emailsArray).deliver_now
   end
 end
