@@ -37908,3 +37908,371 @@ Processing by IssuesController#show as HTML
 Completed 200 OK in 19ms (Views: 9.7ms | ActiveRecord: 3.8ms)
 
 
+  [1m[36mActiveRecord::SchemaMigration Load (2.4ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[36mUser Load (1.0ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.7ms)[0m  [1m[31mDELETE FROM "users" WHERE "users"."id" = $1[0m  [["id", 103]]
+  [1m[35m (1.5ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[31mDELETE FROM "users" WHERE "users"."id" = $1[0m  [["id", 104]]
+  [1m[35m (1.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[31mDELETE FROM "users" WHERE "users"."id" = $1[0m  [["id", 105]]
+  [1m[35m (1.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.7ms)[0m  [1m[31mDELETE FROM "users" WHERE "users"."id" = $1[0m  [["id", 106]]
+  [1m[35m (1.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.5ms)[0m  [1m[31mDELETE FROM "users" WHERE "users"."id" = $1[0m  [["id", 107]]
+  [1m[35m (1.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[31mDELETE FROM "users" WHERE "users"."id" = $1[0m  [["id", 108]]
+  [1m[35m (1.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mIssue Load (0.9ms)[0m  [1m[34mSELECT "issues".* FROM "issues"[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[31mDELETE FROM "issues" WHERE "issues"."id" = $1[0m  [["id", 106]]
+  [1m[35m (1.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.5ms)[0m  [1m[31mDELETE FROM "issues" WHERE "issues"."id" = $1[0m  [["id", 107]]
+  [1m[35m (1.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[31mDELETE FROM "issues" WHERE "issues"."id" = $1[0m  [["id", 108]]
+  [1m[35m (1.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[31mDELETE FROM "issues" WHERE "issues"."id" = $1[0m  [["id", 109]]
+  [1m[35m (1.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mMessage Load (0.8ms)[0m  [1m[34mSELECT "messages".* FROM "messages"[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[31mDELETE FROM "messages" WHERE "messages"."id" = $1[0m  [["id", 270]]
+  [1m[35m (1.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.5ms)[0m  [1m[31mDELETE FROM "messages" WHERE "messages"."id" = $1[0m  [["id", 271]]
+  [1m[35m (1.5ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[31mDELETE FROM "messages" WHERE "messages"."id" = $1[0m  [["id", 272]]
+  [1m[35m (1.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[31mDELETE FROM "messages" WHERE "messages"."id" = $1[0m  [["id", 273]]
+  [1m[35m (1.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[31mDELETE FROM "messages" WHERE "messages"."id" = $1[0m  [["id", 274]]
+  [1m[35m (1.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[31mDELETE FROM "messages" WHERE "messages"."id" = $1[0m  [["id", 275]]
+  [1m[35m (1.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[31mDELETE FROM "messages" WHERE "messages"."id" = $1[0m  [["id", 276]]
+  [1m[35m (1.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[31mDELETE FROM "messages" WHERE "messages"."id" = $1[0m  [["id", 277]]
+  [1m[35m (1.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[31mDELETE FROM "messages" WHERE "messages"."id" = $1[0m  [["id", 278]]
+  [1m[35m (1.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[31mDELETE FROM "messages" WHERE "messages"."id" = $1[0m  [["id", 279]]
+  [1m[35m (1.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[31mDELETE FROM "messages" WHERE "messages"."id" = $1[0m  [["id", 280]]
+  [1m[35m (1.5ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[31mDELETE FROM "messages" WHERE "messages"."id" = $1[0m  [["id", 281]]
+  [1m[35m (1.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.5ms)[0m  [1m[31mDELETE FROM "messages" WHERE "messages"."id" = $1[0m  [["id", 282]]
+  [1m[35m (1.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.5ms)[0m  [1m[31mDELETE FROM "messages" WHERE "messages"."id" = $1[0m  [["id", 283]]
+  [1m[35m (1.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[31mDELETE FROM "messages" WHERE "messages"."id" = $1[0m  [["id", 284]]
+  [1m[35m (1.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[31mDELETE FROM "messages" WHERE "messages"."id" = $1[0m  [["id", 285]]
+  [1m[35m (1.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[31mDELETE FROM "messages" WHERE "messages"."id" = $1[0m  [["id", 286]]
+  [1m[35m (1.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[31mDELETE FROM "messages" WHERE "messages"."id" = $1[0m  [["id", 287]]
+  [1m[35m (1.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[31mDELETE FROM "messages" WHERE "messages"."id" = $1[0m  [["id", 269]]
+  [1m[35m (1.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUser Exists (1.5ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "davinder@kaur.com"], ["LIMIT", 1]]
+  [1m[36mUser Exists (0.4ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."alias" = $1 LIMIT $2[0m  [["alias", "MissDavinderKaur"], ["LIMIT", 1]]
+  [1m[35mSQL (0.9ms)[0m  [1m[32mINSERT INTO "users" ("email", "password_digest", "created_at", "updated_at", "alias", "sector", "city") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["email", "davinder@kaur.com"], ["password_digest", "$2a$10$wOi/EobcOIn3jVhsLovvyOFMsPqKBp7bPktKHyjI17YJF5lz6tBve"], ["created_at", 2017-02-23 10:25:45 UTC], ["updated_at", 2017-02-23 10:25:45 UTC], ["alias", "MissDavinderKaur"], ["sector", "Banking and Finance"], ["city", "London"]]
+  [1m[35m (1.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUser Exists (0.5ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "miss_davinder_kaur@hotmail.co.uk"], ["LIMIT", 1]]
+  [1m[36mUser Exists (0.4ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."alias" = $1 LIMIT $2[0m  [["alias", "MissHarpreetKaur"], ["LIMIT", 1]]
+  [1m[35mSQL (0.5ms)[0m  [1m[32mINSERT INTO "users" ("email", "password_digest", "created_at", "updated_at", "alias", "sector", "city") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["email", "miss_davinder_kaur@hotmail.co.uk"], ["password_digest", "$2a$10$Y1TphPCezX.FRC4ayMILguXgpIEgZ5TD9ehxqwMr4GP47DptzsVOK"], ["created_at", 2017-02-23 10:25:45 UTC], ["updated_at", 2017-02-23 10:25:45 UTC], ["alias", "MissHarpreetKaur"], ["sector", "Consulting"], ["city", "Brimingham"]]
+  [1m[35m (1.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.6ms)[0m  [1m[32mINSERT INTO "issues" ("user_id", "title", "category", "created_at", "updated_at", "active") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["user_id", 109], ["title", "My super serious sexism issue"], ["category", "Sexism"], ["created_at", 2017-02-23 10:25:45 UTC], ["updated_at", 2017-02-23 10:25:45 UTC], ["active", true]]
+  [1m[35m (1.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.8ms)[0m  [1m[32mINSERT INTO "messages" ("sender_id", "receiver_id", "msg_text", "created_at", "updated_at", "issue_id") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["sender_id", 110], ["receiver_id", 109], ["msg_text", "Some advice"], ["created_at", 2017-02-23 10:25:45 UTC], ["updated_at", 2017-02-23 10:25:45 UTC], ["issue_id", 110]]
+  [1m[35m (1.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[32mINSERT INTO "messages" ("sender_id", "receiver_id", "msg_text", "created_at", "updated_at", "issue_id") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["sender_id", 109], ["receiver_id", 109], ["msg_text", "Thank you for the advice"], ["created_at", 2017-02-23 10:25:45 UTC], ["updated_at", 2017-02-23 10:25:45 UTC], ["issue_id", 110]]
+  [1m[35m (1.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[32mINSERT INTO "issues" ("user_id", "title", "category", "created_at", "updated_at", "active") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["user_id", 109], ["title", "Another super serious issue"], ["category", "Racism"], ["created_at", 2017-02-23 10:25:45 UTC], ["updated_at", 2017-02-23 10:25:45 UTC], ["active", true]]
+  [1m[35m (1.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[32mINSERT INTO "messages" ("sender_id", "receiver_id", "msg_text", "created_at", "updated_at", "issue_id") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["sender_id", 110], ["receiver_id", 109], ["msg_text", "Some good advice"], ["created_at", 2017-02-23 10:25:45 UTC], ["updated_at", 2017-02-23 10:25:45 UTC], ["issue_id", 111]]
+  [1m[35m (1.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[32mINSERT INTO "messages" ("sender_id", "receiver_id", "msg_text", "created_at", "updated_at", "issue_id") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["sender_id", 109], ["receiver_id", 109], ["msg_text", "Thank you for the good advice"], ["created_at", 2017-02-23 10:25:45 UTC], ["updated_at", 2017-02-23 10:25:45 UTC], ["issue_id", 111]]
+  [1m[35m (1.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[32mINSERT INTO "issues" ("user_id", "title", "category", "created_at", "updated_at", "active") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["user_id", 110], ["title", "My racism issue"], ["category", "Racism"], ["created_at", 2017-02-23 10:25:45 UTC], ["updated_at", 2017-02-23 10:25:45 UTC], ["active", true]]
+  [1m[35m (1.0ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[32mINSERT INTO "messages" ("sender_id", "receiver_id", "msg_text", "created_at", "updated_at", "issue_id") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["sender_id", 109], ["receiver_id", 110], ["msg_text", "Some advice"], ["created_at", 2017-02-23 10:25:45 UTC], ["updated_at", 2017-02-23 10:25:45 UTC], ["issue_id", 112]]
+  [1m[35m (1.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.5ms)[0m  [1m[32mINSERT INTO "messages" ("sender_id", "receiver_id", "msg_text", "created_at", "updated_at", "issue_id") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["sender_id", 110], ["receiver_id", 109], ["msg_text", "Thank you for the advice"], ["created_at", 2017-02-23 10:25:45 UTC], ["updated_at", 2017-02-23 10:25:45 UTC], ["issue_id", 112]]
+  [1m[35m (1.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[32mINSERT INTO "issues" ("user_id", "title", "category", "created_at", "updated_at", "active") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["user_id", 110], ["title", "Another ageism issue"], ["category", "Ageism"], ["created_at", 2017-02-23 10:25:45 UTC], ["updated_at", 2017-02-23 10:25:45 UTC], ["active", true]]
+  [1m[35m (1.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[32mINSERT INTO "messages" ("sender_id", "receiver_id", "msg_text", "created_at", "updated_at", "issue_id") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["sender_id", 109], ["receiver_id", 110], ["msg_text", "Some good advice"], ["created_at", 2017-02-23 10:25:45 UTC], ["updated_at", 2017-02-23 10:25:45 UTC], ["issue_id", 113]]
+  [1m[35m (1.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.5ms)[0m  [1m[32mINSERT INTO "messages" ("sender_id", "receiver_id", "msg_text", "created_at", "updated_at", "issue_id") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["sender_id", 110], ["receiver_id", 109], ["msg_text", "Thank you for the good advice"], ["created_at", 2017-02-23 10:25:45 UTC], ["updated_at", 2017-02-23 10:25:45 UTC], ["issue_id", 113]]
+  [1m[35m (1.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUser Exists (0.3ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "miss.davinder.kaur@gmail.com"], ["LIMIT", 1]]
+  [1m[36mUser Exists (0.3ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."alias" = $1 LIMIT $2[0m  [["alias", "Test User 1"], ["LIMIT", 1]]
+  [1m[35mSQL (0.4ms)[0m  [1m[32mINSERT INTO "users" ("email", "password_digest", "created_at", "updated_at", "alias", "sector", "city") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["email", "miss.davinder.kaur@gmail.com"], ["password_digest", "$2a$10$bJAEZTbfN0tsTWmeBsiYresNTuKr3cfCQnmzsbKYuQXdrxbR8LFXa"], ["created_at", 2017-02-23 10:25:45 UTC], ["updated_at", 2017-02-23 10:25:45 UTC], ["alias", "Test User 1"], ["sector", "Advertising"], ["city", "London"]]
+  [1m[35m (1.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUser Exists (0.3ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "test2@test2.com"], ["LIMIT", 1]]
+  [1m[36mUser Exists (0.4ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."alias" = $1 LIMIT $2[0m  [["alias", "Test User 2"], ["LIMIT", 1]]
+  [1m[35mSQL (0.4ms)[0m  [1m[32mINSERT INTO "users" ("email", "password_digest", "created_at", "updated_at", "alias", "sector", "city") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["email", "test2@test2.com"], ["password_digest", "$2a$10$nlbT6FqGwjFYExbCOEWUZeW1PQNXyiMsFBme7GHWaXv07Ia5.eeMO"], ["created_at", 2017-02-23 10:25:45 UTC], ["updated_at", 2017-02-23 10:25:45 UTC], ["alias", "Test User 2"], ["sector", "Clothing and Fashion"], ["city", "London"]]
+  [1m[35m (1.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUser Exists (0.4ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "test3@test3.com"], ["LIMIT", 1]]
+  [1m[36mUser Exists (0.3ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."alias" = $1 LIMIT $2[0m  [["alias", "Test User 3"], ["LIMIT", 1]]
+  [1m[35mSQL (0.6ms)[0m  [1m[32mINSERT INTO "users" ("email", "password_digest", "created_at", "updated_at", "alias", "sector", "city") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["email", "test3@test3.com"], ["password_digest", "$2a$10$cFEn9HkoIQp6sl6b9IWpDOHdjg/KwE6cS9D2K0vFi57Esux6tetXy"], ["created_at", 2017-02-23 10:25:46 UTC], ["updated_at", 2017-02-23 10:25:46 UTC], ["alias", "Test User 3"], ["sector", "Healthcare Professionals"], ["city", "London"]]
+  [1m[35m (1.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUser Exists (0.6ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "test4@test4.com"], ["LIMIT", 1]]
+  [1m[36mUser Exists (0.3ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."alias" = $1 LIMIT $2[0m  [["alias", "Test User 4"], ["LIMIT", 1]]
+  [1m[35mSQL (0.4ms)[0m  [1m[32mINSERT INTO "users" ("email", "password_digest", "created_at", "updated_at", "alias", "sector", "city") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["email", "test4@test4.com"], ["password_digest", "$2a$10$j/QXTgy02zIKEehVDTj4yeN7mq60i4uB7hznOsApzmBjxAEmqoQ8m"], ["created_at", 2017-02-23 10:25:46 UTC], ["updated_at", 2017-02-23 10:25:46 UTC], ["alias", "Test User 4"], ["sector", "Teachers"], ["city", "London"]]
+  [1m[35m (1.2ms)[0m  [1m[35mCOMMIT[0m
+Started GET "/cable" for 127.0.0.1 at 2017-02-23 10:25:54 +0000
+  [1m[36mActiveRecord::SchemaMigration Load (1.5ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Started GET "/cable/" [WebSocket] for 127.0.0.1 at 2017-02-23 10:25:55 +0000
+Successfully upgraded to WebSocket (REQUEST_METHOD: GET, HTTP_CONNECTION: Upgrade, HTTP_UPGRADE: websocket)
+Started GET "/cable" for 127.0.0.1 at 2017-02-23 10:25:55 +0000
+IssuesChannel is transmitting the subscription confirmation
+IssuesChannel is streaming from issues_channel_106
+Started GET "/cable/" [WebSocket] for 127.0.0.1 at 2017-02-23 10:25:55 +0000
+Successfully upgraded to WebSocket (REQUEST_METHOD: GET, HTTP_CONNECTION: Upgrade, HTTP_UPGRADE: websocket)
+IssuesChannel is transmitting the subscription confirmation
+IssuesChannel is streaming from issues_channel_106
+Finished "/cable/" [WebSocket] for 127.0.0.1 at 2017-02-23 10:25:56 +0000
+IssuesChannel stopped streaming from issues_channel_106
+Started GET "/users/103" for 127.0.0.1 at 2017-02-23 10:25:57 +0000
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"103"}
+  [1m[36mUser Load (0.9ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 103], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 103], ["LIMIT", 1]]
+Started GET "/cable" for 127.0.0.1 at 2017-02-23 10:25:57 +0000
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (0.2ms)
+Filter chain halted as :authenticate_user! rendered or redirected
+Completed 401 Unauthorized in 95ms (Views: 18.1ms | ActiveRecord: 15.6ms)
+
+
+Started GET "/issues/106" for 127.0.0.1 at 2017-02-23 10:25:57 +0000
+Started GET "/cable/" [WebSocket] for 127.0.0.1 at 2017-02-23 10:25:57 +0000
+Successfully upgraded to WebSocket (REQUEST_METHOD: GET, HTTP_CONNECTION: Upgrade, HTTP_UPGRADE: websocket)
+Processing by IssuesController#show as HTML
+  Parameters: {"id"=>"106"}
+IssuesChannel is transmitting the subscription confirmation
+IssuesChannel is streaming from issues_channel_106
+  [1m[36mUser Load (1.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 103], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 103], ["LIMIT", 1]]
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (0.2ms)
+Filter chain halted as :authenticate_user! rendered or redirected
+Completed 401 Unauthorized in 7ms (Views: 2.2ms | ActiveRecord: 1.4ms)
+
+
+Started POST "/login" for 127.0.0.1 at 2017-02-23 10:26:15 +0000
+Started POST "/login" for 127.0.0.1 at 2017-02-23 10:26:25 +0000
+Processing by AuthenticationsController#login as HTML
+  Parameters: {"email"=>"davinder@kaur.com", "password"=>"[FILTERED]", "authentication"=>{"email"=>"davinder@kaur.com", "password"=>"[FILTERED]"}}
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "davinder@kaur.com"], ["LIMIT", 1]]
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 103], ["LIMIT", 1]]
+[active_model_serializers]   [1m[36mIssue Load (0.4ms)[0m  [1m[34mSELECT "issues".* FROM "issues" WHERE "issues"."user_id" = $1[0m  [["user_id", 109]]
+[active_model_serializers]   [1m[36mMessage Load (0.5ms)[0m  [1m[34mSELECT "messages".* FROM "messages" WHERE "messages"."issue_id" = $1[0m  [["issue_id", 110]]
+[active_model_serializers]   [1m[36mMessage Load (0.5ms)[0m  [1m[34mSELECT "messages".* FROM "messages" WHERE "messages"."issue_id" = $1[0m  [["issue_id", 111]]
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (99.65ms)
+Completed 200 OK in 239ms (Views: 94.8ms | ActiveRecord: 16.1ms)
+
+
+Started GET "/cable" for 127.0.0.1 at 2017-02-23 10:26:25 +0000
+Processing by AuthenticationsController#login as HTML
+  Parameters: {"email"=>"davinder@kaur.com", "password"=>"[FILTERED]", "authentication"=>{"email"=>"davinder@kaur.com", "password"=>"[FILTERED]"}}
+Started GET "/cable/" [WebSocket] for 127.0.0.1 at 2017-02-23 10:26:25 +0000
+Successfully upgraded to WebSocket (REQUEST_METHOD: GET, HTTP_CONNECTION: Upgrade, HTTP_UPGRADE: websocket)
+  [1m[36mUser Load (2.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "davinder@kaur.com"], ["LIMIT", 1]]
+Started GET "/users/109" for 127.0.0.1 at 2017-02-23 10:26:26 +0000
+  [1m[36mUser Load (4.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 103], ["LIMIT", 1]]
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"109"}
+  [1m[36mUser Load (1.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 109], ["LIMIT", 1]]
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 109], ["LIMIT", 1]]
+Started GET "/cable" for 127.0.0.1 at 2017-02-23 10:26:26 +0000
+IssuesChannel is transmitting the subscription confirmation
+Started GET "/cable/" [WebSocket] for 127.0.0.1 at 2017-02-23 10:26:26 +0000
+[active_model_serializers]   [1m[36mIssue Load (6.9ms)[0m  [1m[34mSELECT "issues".* FROM "issues" WHERE "issues"."user_id" = $1[0m  [["user_id", 109]]
+IssuesChannel is streaming from issues_channel_106
+[active_model_serializers]   [1m[36mIssue Load (3.1ms)[0m  [1m[34mSELECT "issues".* FROM "issues" WHERE "issues"."user_id" = $1[0m  [["user_id", 109]]
+Successfully upgraded to WebSocket (REQUEST_METHOD: GET, HTTP_CONNECTION: Upgrade, HTTP_UPGRADE: websocket)
+[active_model_serializers]   [1m[36mMessage Load (7.6ms)[0m  [1m[34mSELECT "messages".* FROM "messages" WHERE "messages"."issue_id" = $1[0m  [["issue_id", 110]]
+[active_model_serializers]   [1m[36mMessage Load (4.3ms)[0m  [1m[34mSELECT "messages".* FROM "messages" WHERE "messages"."issue_id" = $1[0m  [["issue_id", 110]]
+IssuesChannel is transmitting the subscription confirmation
+[active_model_serializers]   [1m[36mMessage Load (1.5ms)[0m  [1m[34mSELECT "messages".* FROM "messages" WHERE "messages"."issue_id" = $1[0m  [["issue_id", 111]]
+IssuesChannel is streaming from issues_channel_106
+[active_model_serializers]   [1m[36mMessage Load (0.8ms)[0m  [1m[34mSELECT "messages".* FROM "messages" WHERE "messages"."issue_id" = $1[0m  [["issue_id", 111]]
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (93.14ms)
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (87.43ms)
+Completed 200 OK in 256ms (Views: 92.2ms | ActiveRecord: 22.2ms)
+
+
+Completed 200 OK in 93ms (Views: 80.9ms | ActiveRecord: 9.6ms)
+
+
+Started GET "/users/109" for 127.0.0.1 at 2017-02-23 10:26:26 +0000
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"109"}
+  [1m[36mUser Load (1.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 109], ["LIMIT", 1]]
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 109], ["LIMIT", 1]]
+[active_model_serializers]   [1m[36mIssue Load (0.7ms)[0m  [1m[34mSELECT "issues".* FROM "issues" WHERE "issues"."user_id" = $1[0m  [["user_id", 109]]
+[active_model_serializers]   [1m[36mMessage Load (0.7ms)[0m  [1m[34mSELECT "messages".* FROM "messages" WHERE "messages"."issue_id" = $1[0m  [["issue_id", 110]]
+[active_model_serializers]   [1m[36mMessage Load (1.0ms)[0m  [1m[34mSELECT "messages".* FROM "messages" WHERE "messages"."issue_id" = $1[0m  [["issue_id", 111]]
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (26.48ms)
+Completed 200 OK in 32ms (Views: 24.8ms | ActiveRecord: 4.0ms)
+
+
+Started GET "/users/109" for 127.0.0.1 at 2017-02-23 10:26:26 +0000
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"109"}
+  [1m[36mUser Load (1.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 109], ["LIMIT", 1]]
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 109], ["LIMIT", 1]]
+[active_model_serializers]   [1m[36mIssue Load (0.4ms)[0m  [1m[34mSELECT "issues".* FROM "issues" WHERE "issues"."user_id" = $1[0m  [["user_id", 109]]
+[active_model_serializers]   [1m[36mMessage Load (0.4ms)[0m  [1m[34mSELECT "messages".* FROM "messages" WHERE "messages"."issue_id" = $1[0m  [["issue_id", 110]]
+[active_model_serializers]   [1m[36mMessage Load (0.4ms)[0m  [1m[34mSELECT "messages".* FROM "messages" WHERE "messages"."issue_id" = $1[0m  [["issue_id", 111]]
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (22.0ms)
+Completed 200 OK in 30ms (Views: 21.5ms | ActiveRecord: 3.5ms)
+
+
+Started POST "/issues" for 127.0.0.1 at 2017-02-23 10:27:32 +0000
+Processing by IssuesController#create as HTML
+  Parameters: {"title"=>"Some topic", "category"=>"Sexism", "user_id"=>109, "issue"=>{"user_id"=>109, "title"=>"Some topic", "category"=>"Sexism"}}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 109], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 109], ["LIMIT", 1]]
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."city" = $1[0m  [["city", "London"]]
+  Rendering email_friends_mailer/find_friends_email.html.erb within layouts/mailer
+  Rendered email_friends_mailer/find_friends_email.html.erb within layouts/mailer (3.5ms)
+  Rendering email_friends_mailer/find_friends_email.text.erb within layouts/mailer
+  Rendered email_friends_mailer/find_friends_email.text.erb within layouts/mailer (0.6ms)
+EmailFriendsMailer#find_friends_email: processed outbound mail in 238.4ms
+Sent mail to davinder@kaur.com, miss.davinder.kaur@gmail.com, test2@test2.com, test3@test3.com, test4@test4.com (605.7ms)
+Date: Thu, 23 Feb 2017 10:27:32 +0000
+From: miss.davinder.kaur@gmail.com
+To: davinder@kaur.com, 
+ miss.davinder.kaur@gmail.com, 
+ test2@test2.com, 
+ test3@test3.com, 
+ test4@test4.com
+Message-ID: <58aeb914671bc_ca5c3ff5a1c9085c157c7@Davinders-MacBook-Air.local.mail>
+Subject: Let's Talk - There is a Friend In Need in your city!
+Mime-Version: 1.0
+Content-Type: multipart/alternative;
+ boundary="--==_mimepart_58aeb91463421_ca5c3ff5a1c9085c15697";
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+
+----==_mimepart_58aeb91463421_ca5c3ff5a1c9085c15697
+Content-Type: text/plain;
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+A Friend In Need wants your help!
+===============================================
+
+One of your fellow city dwellers has just posted a problem!
+Please log in and help them resolve this!
+
+To login to the site, just follow this link: http://localhost:7000/login.
+
+Thanks for being a great friend and have a great day!
+
+
+----==_mimepart_58aeb91463421_ca5c3ff5a1c9085c15697
+Content-Type: text/html;
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <style>
+      /* Email styles need to be inline */
+    </style>
+  </head>
+
+  <body>
+    <!DOCTYPE html>
+<html>
+  <head>
+    <meta content='text/html; charset=UTF-8' http-equiv='Content-Type' />
+  </head>
+  <body>
+    <h1>A Friend In Need wants your help!</h1>
+    <p>
+      One of your fellow city dwellers has just posted a problem!
+      Please log in and help them resolve this!
+    </p>
+    <p>
+      To login to the site, just follow this link: http://localhost:7000/login.
+    </p>
+    <p>Thanks for being a great friend and have a great day!</p>
+  </body>
+</html>
+
+  </body>
+</html>
+
+----==_mimepart_58aeb91463421_ca5c3ff5a1c9085c15697--
+
+  [1m[35mSQL (1.2ms)[0m  [1m[32mINSERT INTO "issues" ("user_id", "title", "category", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["user_id", 109], ["title", "Some topic"], ["category", "Sexism"], ["created_at", 2017-02-23 10:27:33 UTC], ["updated_at", 2017-02-23 10:27:33 UTC]]
+  [1m[35m (1.6ms)[0m  [1m[35mCOMMIT[0m
+[active_model_serializers]   [1m[36mMessage Load (0.6ms)[0m  [1m[34mSELECT "messages".* FROM "messages" WHERE "messages"."issue_id" = $1[0m  [["issue_id", 114]]
+[active_model_serializers] Rendered IssueSerializer with ActiveModelSerializers::Adapter::Attributes (6.06ms)
+Completed 201 Created in 877ms (Views: 8.2ms | ActiveRecord: 4.3ms)
+
+
+IssuesChannel is transmitting the subscription confirmation
+IssuesChannel is streaming from issues_channel_114
+Started GET "/issues/114" for 127.0.0.1 at 2017-02-23 10:27:33 +0000
+Processing by IssuesController#show as HTML
+  Parameters: {"id"=>"114"}
+  [1m[36mUser Load (2.8ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 109], ["LIMIT", 1]]
+  [1m[36mIssue Load (0.6ms)[0m  [1m[34mSELECT  "issues".* FROM "issues" WHERE "issues"."id" = $1 LIMIT $2[0m  [["id", 114], ["LIMIT", 1]]
+[active_model_serializers]   [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 109], ["LIMIT", 1]]
+[active_model_serializers]   [1m[36mMessage Load (1.3ms)[0m  [1m[34mSELECT "messages".* FROM "messages" WHERE "messages"."issue_id" = $1[0m  [["issue_id", 114]]
+[active_model_serializers] Rendered IssueSerializer with ActiveModelSerializers::Adapter::Attributes (7.63ms)
+Completed 200 OK in 17ms (Views: 7.7ms | ActiveRecord: 4.8ms)
+
+

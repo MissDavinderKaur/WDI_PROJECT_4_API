@@ -53,4 +53,15 @@ Rails.application.configure do
 
   # Emailer stuff
   config.action_mailer.delivery_method = :smtp
+
+  ActionMailer::Base.smtp_settings = {
+  :user_name => 'miss_davinder_kaur@hotmail.co.uk',
+  :password => 'Davinder01',
+  # :domain => 'yourdomain.com',
+  :address => 'smtp.sendgrid.net',
+  :port => 587,
+  :authentication => :plain,
+  :enable_starttls_auto => true
+}
+
 end
