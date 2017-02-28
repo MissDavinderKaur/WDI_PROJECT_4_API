@@ -47,8 +47,7 @@ Rails.application.configure do
 
   # Websockets stuff
   Rails.application.config.action_cable.allowed_request_origins = [
-    'http://localhost:7000',
-    'http://localhost:4000',
+    'https://lets-talk-api.herokuapp.com/'
   ]
 
   # Emailer stuff
