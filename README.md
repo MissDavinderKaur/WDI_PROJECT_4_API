@@ -1,24 +1,16 @@
-# README
+# WDI\_PROJECT\_4: Let's Talk (API)
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+## Overview
 
-Things you may want to cover:
+The application can be found here
 
-* Ruby version
+## Code Overview
 
-* System dependencies
 
-* Configuration
+## Successes
 
-* Database creation
 
-* Database initialization
+## Challenges
 
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+ 
+## Next Steps
